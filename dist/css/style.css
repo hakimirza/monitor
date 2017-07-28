@@ -1,0 +1,66 @@
+/*style css*/
+/*common stuff*/
+.bg-white{
+	background-color: white !important;
+}
+.small-box.bg-white:hover{
+	color: black;
+}
+.x-large{
+	font-size: x-large;
+}
+
+table tr[data-href] {
+	cursor: pointer;
+}
+
+table tr[data-href]:hover {
+	background-color: #d8e9f7;
+}
+
+table thead tr th:hover {
+	color: black;
+}
+
+.progress-bg-grey {
+	background-color: #e6e6e6;
+}
+
+/*------------------------*/
+/*specific stuff*/
+ /* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #map_dasbor {
+ 	height: 362px;
+ }
+
+ #mapid{
+ 	height: 362px;
+ }
+
+ .mapinfo {
+ 	padding: 6px 8px;
+ 	font: 14px/16px Arial, Helvetica, sans-serif;
+ 	background: white;
+ 	background: rgba(255,255,255,0.8);
+ 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ 	border-radius: 5px;
+ }
+ 
+ .mapinfo h4 {
+ 	margin: 0 0 5px;
+ 	color: #777;
+ }
+
+ .legend {
+ 	line-height: 18px;
+ 	color: #555;
+ }
+
+ .legend i {
+ 	width: 18px;
+ 	height: 18px;
+ 	float: left;
+ 	margin-right: 8px;
+ 	opacity: 0.7;
+ }

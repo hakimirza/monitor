@@ -1,0 +1,2463 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head><!-- ODK Aggregate upload time: 2016-09-22T23:36:54.100+0000 on https://capi55-007.appspot.com -->
+    <h:title>SUSENAS GEO</h:title>
+    <model>
+      <instance>
+        <susenas id="susenas_geo">
+          <blok1>
+            <P101/>
+            <P102/>
+            <P103/>
+            <P104/>
+            <P105/>
+            <location/>
+            <blok1_group1>
+              <P106/>
+              <P107/>
+              <P108/>
+              <P109/>
+              <P110/>
+            </blok1_group1>
+          </blok1>
+          <blok2>
+            <izin/>
+          </blok2>
+          <blok3>
+            <P301/>
+          </blok3>
+          <blok4>
+            <roster_blok4_count/>
+            <roster_blok4 jr:template="">
+              <P401/>
+              <group_4_1>
+                <P402_krt/>
+                <P402/>
+                <P403_krt>1</P403_krt>
+                <P403/>
+                <P404/>
+                <P405/>
+                <P406_tahun/>
+                <P406_bulan/>
+                <sarang_umur/>
+                <P408/>
+                <P409/>
+              </group_4_1>
+              <P407/>
+            </roster_blok4>
+          </blok4>
+          <blok5>
+            <roster_blok5_count/>
+            <roster_blok5 jr:template="">
+              <no_art_1/>
+              <nama_art_1/>
+              <P501/>
+              <P502/>
+              <P503/>
+              <P504/>
+              <P505/>
+              <P506/>
+              <P507/>
+              <blok5_1>
+                <P508/>
+                <P509/>
+                <P510/>
+                <P511/>
+                <P512/>
+              </blok5_1>
+              <blok5_2>
+                <P514/>
+                <P515/>
+                <P516/>
+              </blok5_2>
+              <blok5_3>
+                <P513/>
+                <P517/>
+                <P518/>
+              </blok5_3>
+              <blok5_4>
+                <note_judul/>
+                <P519/>
+                <P520/>
+              </blok5_4>
+              <P521/>
+            </roster_blok5>
+          </blok5>
+          <blok6>
+            <roster_blok6_count/>
+            <roster_blok6 jr:template="">
+              <no_art_6/>
+              <nama_art_6/>
+              <P601/>
+              <blok6_1>
+                <P602/>
+                <P603/>
+                <P604/>
+                <P605/>
+                <P606/>
+                <P607/>
+              </blok6_1>
+              <blok6_2>
+                <note_biaya/>
+                <P609/>
+                <P610/>
+                <P611/>
+              </blok6_2>
+              <blok6_3>
+                <P608/>
+                <P612/>
+              </blok6_3>
+            </roster_blok6>
+          </blok6>
+          <blok7>
+            <roster_blok7_count/>
+            <roster_blok7 jr:template="">
+              <no_art_7/>
+              <P701/>
+              <nama_art_7/>
+              <blok_8_1>
+                <P702/>
+                <blok7_2>
+                  <note_rokok/>
+                  <P703/>
+                  <P704/>
+                  <P705/>
+                  <P706/>
+                  <P707/>
+                </blok7_2>
+                <P708/>
+                <P709/>
+                <P710/>
+                <P711/>
+                <P712/>
+              </blok_8_1>
+            </roster_blok7>
+          </blok7>
+          <blok8>
+            <roster_blok8_count/>
+            <roster_blok8 jr:template="">
+              <no_art_8/>
+              <P801/>
+              <nama_art_8/>
+              <blok_7_1>
+                <P802/>
+                <blok_7_1_1>
+                  <P803/>
+                  <P804/>
+                </blok_7_1_1>
+                <blok_7_1_2>
+                  <P805/>
+                  <P806/>
+                </blok_7_1_2>
+                <blok_7_1_3>
+                  <P807/>
+                  <P808/>
+                </blok_7_1_3>
+                <blok_7_1_4>
+                  <P809/>
+                  <P810/>
+                </blok_7_1_4>
+                <blok_7_1_5>
+                  <P811/>
+                  <P812/>
+                </blok_7_1_5>
+              </blok_7_1>
+            </roster_blok8>
+          </blok8>
+          <blok9>
+            <roster_blok9_count/>
+            <roster_blok9 jr:template="">
+              <no_art_9/>
+              <P901/>
+              <nama_art_9/>
+              <blok_9_1>
+                <blok_9_1_1>
+                  <note_9_1/>
+                  <P902/>
+                  <P903/>
+                  <P904/>
+                </blok_9_1_1>
+                <P905/>
+                <P906/>
+                <P907/>
+                <P908/>
+              </blok_9_1>
+              <blok_9_2>
+                <P909/>
+                <P910/>
+              </blok_9_2>
+              <blok_9_3>
+                <P911/>
+                <P912/>
+                <P913/>
+                <P914/>
+              </blok_9_3>
+            </roster_blok9>
+          </blok9>
+          <blok_ppk>
+            <roster_blok10_count/>
+            <roster_blok10 jr:template="">
+              <no_art_10/>
+              <ppk/>
+              <nama_ppk/>
+              <umur_ppk/>
+              <blok_10>
+                <note_nama_ppk/>
+                <note_no_urut_ppk/>
+                <note_umur_ppk/>
+                <P1001/>
+                <P1002/>
+                <blok_10_1>
+                  <P1003/>
+                  <P1004/>
+                  <P1005/>
+                </blok_10_1>
+              </blok_10>
+            </roster_blok10>
+          </blok_ppk>
+          <metadata>
+            <start/>
+            <end/>
+            <today/>
+            <note_start/>
+            <note_end/>
+          </metadata>
+          <meta>
+            <instanceID/>
+          </meta>
+        </susenas>
+      </instance>
+      <bind nodeset="/susenas/blok1/P101" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok1/P102" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/P103" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/P104" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/P105" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok1/location" required="true()" type="geopoint"/>
+      <bind nodeset="/susenas/blok1/blok1_group1/P106" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/blok1_group1/P107" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/blok1_group1/P108" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok1/blok1_group1/P109" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok1/blok1_group1/P110" type="string"/>
+      <bind nodeset="/susenas/blok2/izin" required="true()" type="select1"/>
+      <bind constraint=".&gt;0 and .&lt;=30" nodeset="/susenas/blok3/P301" relevant="selected( /susenas/blok2/izin ,'1')" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok4" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok4/roster_blok4_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok4/roster_blok4/P401" readonly="true()" type="string"/>
+      <bind calculate=" /susenas/blok1/blok1_group1/P109 " nodeset="/susenas/blok4/roster_blok4/group_4_1/P402_krt" readonly="true()" relevant=" /susenas/blok4/roster_blok4/P401 =1" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok4/roster_blok4/group_4_1/P402" relevant=" /susenas/blok4/roster_blok4/P401 !=1" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok4/roster_blok4/group_4_1/P403_krt" readonly="true()" relevant=" /susenas/blok4/roster_blok4/P401 =1" required="true()" type="select1"/>
+      <bind constraint="if(indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P404 , /susenas/blok4/roster_blok4 ,'1')=1, /susenas/blok4/roster_blok4/group_4_1/P403 ='4' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='7' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='8' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='9',  /susenas/blok4/roster_blok4/group_4_1/P403 ='2' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='3' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='4' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='5' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='6' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='7' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='8' or  /susenas/blok4/roster_blok4/group_4_1/P403 ='9')" jr:constraintMsg="Periksa Kembali Hubungan Dengan KRT" nodeset="/susenas/blok4/roster_blok4/group_4_1/P403" relevant=" /susenas/blok4/roster_blok4/P401 !=1" required="true()" type="select1"/>
+      <bind constraint="if( /susenas/blok4/roster_blok4/group_4_1/P403 =2 or  /susenas/blok4/roster_blok4/group_4_1/P403 =5, /susenas/blok4/roster_blok4/group_4_1/P404 ='2',if( /susenas/blok4/roster_blok4/group_4_1/P403 =7, /susenas/blok4/roster_blok4/group_4_1/P404 ='2' or  /susenas/blok4/roster_blok4/group_4_1/P404 ='3' or  /susenas/blok4/roster_blok4/group_4_1/P404 ='4', /susenas/blok4/roster_blok4/group_4_1/P404 ='1' or  /susenas/blok4/roster_blok4/group_4_1/P404 ='2' or  /susenas/blok4/roster_blok4/group_4_1/P404 ='3' or  /susenas/blok4/roster_blok4/group_4_1/P404 ='4'))" jr:constraintMsg="Periksa Kembali Status Perkawinan" nodeset="/susenas/blok4/roster_blok4/group_4_1/P404" required="true()" type="select1"/>
+      <bind constraint="if( /susenas/blok4/roster_blok4/group_4_1/P403 =2 and indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P405 , /susenas/blok4/roster_blok4 ,'1')=1, /susenas/blok4/roster_blok4/group_4_1/P405 ='2',if( /susenas/blok4/roster_blok4/group_4_1/P403 =2 and indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P405 , /susenas/blok4/roster_blok4 ,'1')=2, /susenas/blok4/roster_blok4/group_4_1/P405 ='1', /susenas/blok4/roster_blok4/group_4_1/P405 ='1' or  /susenas/blok4/roster_blok4/group_4_1/P405 ='2'))" jr:constraintMsg="Periksa Kembali Jenis Kelamin" nodeset="/susenas/blok4/roster_blok4/group_4_1/P405" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok4/roster_blok4/group_4_1/P406_tahun" required="true()" type="select1"/>
+      <bind constraint="if( /susenas/blok4/roster_blok4/group_4_1/P406_tahun =2016, /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='1' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='2' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='3' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='4' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='5' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='6' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='7' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='8' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='9' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='10', /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='1' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='2' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='3' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='4' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='5' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='6' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='7' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='8' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='9' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='10' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='11' or  /susenas/blok4/roster_blok4/group_4_1/P406_bulan ='12')" nodeset="/susenas/blok4/roster_blok4/group_4_1/P406_bulan" required="true()" type="select1"/>
+      <bind calculate="2016- /susenas/blok4/roster_blok4/group_4_1/P406_tahun " nodeset="/susenas/blok4/roster_blok4/group_4_1/sarang_umur" required="true()" type="string"/>
+      <bind constraint=".&gt;=1 and .&lt;=7" jr:constraintMsg="Nomor urut keluarga harus antara 1 sampai 7" nodeset="/susenas/blok4/roster_blok4/group_4_1/P408" required="true()" type="int"/>
+      <bind constraint="if( /susenas/blok4/roster_blok4/group_4_1/P404 =1, /susenas/blok4/roster_blok4/group_4_1/P409 ='3' or  /susenas/blok4/roster_blok4/group_4_1/P409 ='4', /susenas/blok4/roster_blok4/group_4_1/P409 ='1' or  /susenas/blok4/roster_blok4/group_4_1/P409 ='2' or  /susenas/blok4/roster_blok4/group_4_1/P409 ='3' or  /susenas/blok4/roster_blok4/group_4_1/P409 ='4')" jr:constraintMsg="Periksa Kembali Hubungan dengan Kepala Keluarga" nodeset="/susenas/blok4/roster_blok4/group_4_1/P409" required="true()" type="select1"/>
+      <bind calculate="if( /susenas/blok4/roster_blok4/group_4_1/sarang_umur &gt;=97,'97',if( /susenas/blok4/roster_blok4/group_4_1/sarang_umur &lt;97, /susenas/blok4/roster_blok4/group_4_1/sarang_umur ,0))" nodeset="/susenas/blok4/roster_blok4/P407" readonly="true()" required="true()" type="string"/>
+      <bind nodeset="/susenas/blok5" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok5/roster_blok5_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok5/roster_blok5/no_art_1" type="string"/>
+      <bind calculate="if( /susenas/blok5/roster_blok5/no_art_1 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok5/roster_blok5/nama_art_1" readonly="true()" type="string"/>
+      <bind jr:constraintMsg="Periksa kembali Jaminan Kesehatan yang dimiliki" nodeset="/susenas/blok5/roster_blok5/P501" required="true()" type="select"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P502" relevant="selected( /susenas/blok5/roster_blok5/P501 ,'C') or selected( /susenas/blok5/roster_blok5/P501 ,'D')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P503" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P504" relevant="selected( /susenas/blok5/roster_blok5/P503 ,'1')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P505" relevant="selected( /susenas/blok5/roster_blok5/P503 ,'1')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P506" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'5')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P507" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'1')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_1" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'1')"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_1/P508" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'1') and (selected( /susenas/blok5/roster_blok5/P507 ,'1') or selected( /susenas/blok5/roster_blok5/P507 ,'2') or selected( /susenas/blok5/roster_blok5/P507 ,'3') or selected( /susenas/blok5/roster_blok5/P507 ,'4') or selected( /susenas/blok5/roster_blok5/P507 ,'5') or selected( /susenas/blok5/roster_blok5/P507 ,'6') or selected( /susenas/blok5/roster_blok5/P507 ,'7'))" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_1/P509" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_1/P510" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_1/P511" required="true()" type="select1"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Besar biaya transportasi" nodeset="/susenas/blok5/roster_blok5/blok5_1/P512" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_2" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'1')"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa kembali biaya" nodeset="/susenas/blok5/roster_blok5/blok5_2/P514" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa kembali biaya" nodeset="/susenas/blok5/roster_blok5/blok5_2/P515" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa kembali biaya" nodeset="/susenas/blok5/roster_blok5/blok5_2/P516" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_3" relevant="selected( /susenas/blok5/roster_blok5/P505 ,'1')"/>
+      <bind calculate=" /susenas/blok5/roster_blok5/blok5_2/P514  +  /susenas/blok5/roster_blok5/blok5_2/P515  +  /susenas/blok5/roster_blok5/blok5_2/P516 " nodeset="/susenas/blok5/roster_blok5/blok5_3/P513" readonly="true()" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_3/P517" required="true()" type="select"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_3/P518" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_4" relevant="selected( /susenas/blok5/roster_blok5/blok5_3/P518 ,'1')"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/blok5_4/note_judul" readonly="true()" type="string"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa kembali biaya" nodeset="/susenas/blok5/roster_blok5/blok5_4/P519" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa kembali biaya" nodeset="/susenas/blok5/roster_blok5/blok5_4/P520" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok5/roster_blok5/P521" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok6" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok6/roster_blok6_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok6/roster_blok6/no_art_6" type="string"/>
+      <bind calculate="if( /susenas/blok6/roster_blok6/no_art_6 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok6/roster_blok6/nama_art_6" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/P601" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1" relevant="selected( /susenas/blok6/roster_blok6/P601 ,'1')"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P602" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P603" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P604" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P605" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P606" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_1/P607" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_2" relevant="selected( /susenas/blok6/roster_blok6/P601 ,'1')"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_2/note_biaya" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_2/P609" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_2/P610" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_2/P611" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_3" relevant="selected( /susenas/blok6/roster_blok6/P601 ,'1')"/>
+      <bind calculate=" /susenas/blok6/roster_blok6/blok6_2/P609 + /susenas/blok6/roster_blok6/blok6_2/P610 + /susenas/blok6/roster_blok6/blok6_2/P611 " nodeset="/susenas/blok6/roster_blok6/blok6_3/P608" readonly="true()" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok6/roster_blok6/blok6_3/P612" required="true()" type="select"/>
+      <bind nodeset="/susenas/blok7" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok7/roster_blok7_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok7/roster_blok7/no_art_7" type="string"/>
+      <bind calculate="if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;= 5,'1','0')" nodeset="/susenas/blok7/roster_blok7/P701" type="string"/>
+      <bind calculate="if( /susenas/blok7/roster_blok7/no_art_7 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok7/roster_blok7/nama_art_7" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/P702" relevant=" /susenas/blok7/roster_blok7/P701 =1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P702 =2"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/note_rokok" readonly="true()" type="string"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Kembali Jumlah Rokok putih" nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P703" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Kembali jumlah Rokok kretek" nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P704" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Kembali jumlah Rokok lintngan/kawung" nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P705" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Kembali jumlah Rokok Pipi/cangklong" nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P706" required="true()" type="int"/>
+      <bind constraint=".&gt;=0" jr:constraintMsg="Periksa Kembali jumlah Rokok Cerutu/lisong" nodeset="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P707" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/P708" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P702 =2" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/P709" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =5 or  /susenas/blok7/roster_blok7/blok_8_1/P702 =8 or  /susenas/blok7/roster_blok7/blok_8_1/P708 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P708 =2 or  /susenas/blok7/roster_blok7/blok_8_1/P708 =5 or  /susenas/blok7/roster_blok7/blok_8_1/P708 =8" required="true()" type="select1"/>
+      <bind constraint=".&gt;=5 and .&lt;=indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 , /susenas/blok7/roster_blok7/no_art_7 )" jr:constraintMsg="Periksa Kembali umur pertama kali mulai merokok SETIAP HARI" nodeset="/susenas/blok7/roster_blok7/blok_8_1/P710" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P709 =1" required="true()" type="int"/>
+      <bind constraint=".&gt;=5 and .&lt;=indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 , /susenas/blok7/roster_blok7/no_art_7 )" jr:constraintMsg="Periksa Kembali umur pertama kali mulai merokok" nodeset="/susenas/blok7/roster_blok7/blok_8_1/P711" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P702 =2 or  /susenas/blok7/roster_blok7/blok_8_1/P709 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P709 =2" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok7/roster_blok7/blok_8_1/P712" relevant=" /susenas/blok7/roster_blok7/blok_8_1/P702 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P702 =2 or  /susenas/blok7/roster_blok7/blok_8_1/P709 =1 or  /susenas/blok7/roster_blok7/blok_8_1/P709 =2" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok8" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok8/roster_blok8_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok8/roster_blok8/no_art_8" type="string"/>
+      <bind calculate="if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;= 5,'1','0')" nodeset="/susenas/blok8/roster_blok8/P801" type="string"/>
+      <bind calculate="if( /susenas/blok8/roster_blok8/no_art_8 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok8/roster_blok8/nama_art_8" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok8/roster_blok8/blok_7_1" relevant=" /susenas/blok8/roster_blok8/P801 =1"/>
+      <bind nodeset="/susenas/blok8/roster_blok8/blok_7_1/P802" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1" relevant=" /susenas/blok8/roster_blok8/blok_7_1/P802 =1"/>
+      <bind nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1/P803" required="true()" type="select"/>
+      <bind nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1/P804" required="true()" type="select"/>
+      <bind constraint=".&gt;=0 and .&lt;=7" jr:constraintMsg="Periksa kembali jumlah hari mengkonsumsi sayuran" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2/P805" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=97" jr:constraintMsg="Periksa kembali porsi buah-buahan" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2/P806" relevant=" /susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2/P805 !=0" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=7" jr:constraintMsg="Periksa kembali jumlah hari mengkonsumsi sayuran" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3/P807" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=97" jr:constraintMsg="Periksa kembali porsi sayuran" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3/P808" relevant=" /susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3/P807 !=0" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=7" jr:constraintMsg="Periksa kembali jumlah hari aktivitas fisik sedang" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4/P809" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=999" jr:constraintMsg="Periksa kembali lama aktivitas sedang" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4/P810" relevant=" /susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4/P809 !=0" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=7" jr:constraintMsg="Periksa kembali jumlah hari aktivitas fisik berat" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5/P811" required="true()" type="int"/>
+      <bind constraint=".&gt;=0 and .&lt;=999" jr:constraintMsg="Periksa kembali lama aktivitas berat" nodeset="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5/P812" relevant=" /susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5/P811 !=0" required="true()" type="int"/>
+      <bind nodeset="/susenas/blok9" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok9/roster_blok9_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok9/roster_blok9/no_art_9" type="string"/>
+      <bind calculate="if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;=0 and indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &lt;=4,'0',if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) =5,'1',if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;=6 and indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &lt;=9,'2',if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;=10 and indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &lt;=21,'3',if(indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;=22,'4','0')))))" nodeset="/susenas/blok9/roster_blok9/P901" type="string"/>
+      <bind calculate="if( /susenas/blok9/roster_blok9/no_art_9 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok9/roster_blok9/nama_art_9" type="string"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1" relevant=" /susenas/blok9/roster_blok9/P901 !=0"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/note_9_1" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P902" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P903" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P904" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/P905" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/P906" relevant=" /susenas/blok9/roster_blok9/blok_9_1/P905 !=1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/P907" relevant=" /susenas/blok9/roster_blok9/blok_9_1/P905 !=1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_1/P908" relevant=" /susenas/blok9/roster_blok9/blok_9_1/P905 !=1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_2" relevant=" /susenas/blok9/roster_blok9/P901 =2 or  /susenas/blok9/roster_blok9/P901 =3"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_2/P909" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_2/P910" relevant=" /susenas/blok9/roster_blok9/blok_9_2/P909 =1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_3" relevant=" /susenas/blok9/roster_blok9/P901 !=0"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_3/P911" required="true()" type="select"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_3/P912" relevant="selected( /susenas/blok9/roster_blok9/blok_9_3/P911 ,'A')" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_3/P913" relevant=" /susenas/blok9/roster_blok9/blok_9_3/P912 =1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok9/roster_blok9/blok_9_3/P914" relevant=" /susenas/blok9/roster_blok9/blok_9_3/P912 =1" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok_ppk" relevant="selected( /susenas/blok2/izin ,'1')"/>
+      <bind calculate=" /susenas/blok3/P301 " nodeset="/susenas/blok_ppk/roster_blok10_count" readonly="true()" type="string"/>
+      <bind calculate="position(..)" nodeset="/susenas/blok_ppk/roster_blok10/no_art_10" type="string"/>
+      <bind calculate="if(indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P405 , /susenas/blok4/roster_blok4 ,position(..)) = 2 and indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P404 , /susenas/blok4/roster_blok4 ,position(..)) != 1 and (indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &gt;=15 and indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..)) &lt;= 49),'1','0')" nodeset="/susenas/blok_ppk/roster_blok10/ppk" type="string"/>
+      <bind calculate="if( /susenas/blok_ppk/roster_blok10/no_art_10 =1, /susenas/blok4/roster_blok4/group_4_1/P402_krt ,indexed-repeat( /susenas/blok4/roster_blok4/group_4_1/P402 , /susenas/blok4/roster_blok4 ,position(..)))" nodeset="/susenas/blok_ppk/roster_blok10/nama_ppk" readonly="true()" type="string"/>
+      <bind calculate="indexed-repeat( /susenas/blok4/roster_blok4/P407 , /susenas/blok4/roster_blok4 ,position(..))" nodeset="/susenas/blok_ppk/roster_blok10/umur_ppk" type="string"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10" relevant=" /susenas/blok_ppk/roster_blok10/ppk =1"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/note_nama_ppk" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/note_no_urut_ppk" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/note_umur_ppk" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/P1001" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/P1002" relevant=" /susenas/blok_ppk/roster_blok10/blok_10/P1001 =2" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1" relevant=" /susenas/blok_ppk/roster_blok10/blok_10/P1001 =2 and ( /susenas/blok_ppk/roster_blok10/blok_10/P1002 !=9 or  /susenas/blok_ppk/roster_blok10/blok_10/P1002 !=10 or  /susenas/blok_ppk/roster_blok10/blok_10/P1002 !=11)"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1003" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1004" required="true()" type="select1"/>
+      <bind nodeset="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1005" required="true()" type="int"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/susenas/metadata/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/susenas/metadata/end" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/susenas/metadata/today" type="date"/>
+      <bind nodeset="/susenas/metadata/note_start" readonly="true()" type="string"/>
+      <bind nodeset="/susenas/metadata/note_end" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/susenas/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/susenas/blok1">
+      <label>Blok I</label>
+      <select1 appearance="minimal" ref="/susenas/blok1/P101">
+        <label>Provinsi</label>
+        <item>
+          <label>ACEH</label>
+          <value>11</value>
+        </item>
+        <item>
+          <label>SUMATERA UTARA</label>
+          <value>12</value>
+        </item>
+        <item>
+          <label>SUMATERA BARAT</label>
+          <value>13</value>
+        </item>
+        <item>
+          <label>RIAU</label>
+          <value>14</value>
+        </item>
+        <item>
+          <label>JAMBI</label>
+          <value>15</value>
+        </item>
+        <item>
+          <label>SUMATERA SELATAN</label>
+          <value>16</value>
+        </item>
+        <item>
+          <label>BENGKULU</label>
+          <value>17</value>
+        </item>
+        <item>
+          <label>LAMPUNG</label>
+          <value>18</value>
+        </item>
+        <item>
+          <label>KEPULAUAN BANGKA BELITUNG</label>
+          <value>19</value>
+        </item>
+        <item>
+          <label>KEPULAUAN RIAU</label>
+          <value>21</value>
+        </item>
+        <item>
+          <label>DKI JAKARTA</label>
+          <value>31</value>
+        </item>
+        <item>
+          <label>JAWA BARAT</label>
+          <value>32</value>
+        </item>
+        <item>
+          <label>JAWA TENGAH</label>
+          <value>33</value>
+        </item>
+        <item>
+          <label>DI YOGYAKARTA</label>
+          <value>34</value>
+        </item>
+        <item>
+          <label>JAWA TIMUR</label>
+          <value>35</value>
+        </item>
+        <item>
+          <label>BANTEN</label>
+          <value>36</value>
+        </item>
+        <item>
+          <label>BALI</label>
+          <value>51</value>
+        </item>
+        <item>
+          <label>NUSA TENGGARA BARAT</label>
+          <value>52</value>
+        </item>
+        <item>
+          <label>NUSA TENGGARA TIMUR</label>
+          <value>53</value>
+        </item>
+        <item>
+          <label>KALIMANTAN BARAT</label>
+          <value>61</value>
+        </item>
+        <item>
+          <label>KALIMANTAN TENGAH</label>
+          <value>62</value>
+        </item>
+        <item>
+          <label>KALIMANTAN SELATAN</label>
+          <value>63</value>
+        </item>
+        <item>
+          <label>KALIMANTAN TIMUR</label>
+          <value>64</value>
+        </item>
+        <item>
+          <label>KALIMANTAN UTARA</label>
+          <value>65</value>
+        </item>
+        <item>
+          <label>SULAWESI UTARA</label>
+          <value>71</value>
+        </item>
+        <item>
+          <label>SULAWESI TENGAH</label>
+          <value>72</value>
+        </item>
+        <item>
+          <label>SULAWESI SELATAN</label>
+          <value>73</value>
+        </item>
+        <item>
+          <label>SULAWESI TENGGARA</label>
+          <value>74</value>
+        </item>
+        <item>
+          <label>GORONTALO</label>
+          <value>75</value>
+        </item>
+        <item>
+          <label>SULAWESI BARAT</label>
+          <value>76</value>
+        </item>
+        <item>
+          <label>MALUKU</label>
+          <value>81</value>
+        </item>
+        <item>
+          <label>MALUKU UTARA</label>
+          <value>82</value>
+        </item>
+        <item>
+          <label>PAPUA BARAT</label>
+          <value>91</value>
+        </item>
+        <item>
+          <label>PAPUA</label>
+          <value>94</value>
+        </item>
+      </select1>
+      <input appearance="minimal" query="instance('kabs')/root/item[prov= /susenas/blok1/P101 ]" ref="/susenas/blok1/P102">
+        <label>Kabupaten</label>
+      </input>
+      <input appearance="minimal" query="instance('kecs')/root/item[kab= /susenas/blok1/P102 ]" ref="/susenas/blok1/P103">
+        <label>Kecamatan</label>
+      </input>
+      <input appearance="minimal" query="instance('des_kel')/root/item[kec= /susenas/blok1/P103 ]" ref="/susenas/blok1/P104">
+        <label>Desa/Kelurahan</label>
+      </input>
+      <select1 appearance="minimal" ref="/susenas/blok1/P105">
+        <label>Klasifikasi Desa/Kelurahan</label>
+        <item>
+          <label>Perkotaan</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Perdesaan</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/susenas/blok1/location" appearance="maps">
+        <label>Tandai lokasi responden di peta</label>
+      </input>
+      <group appearance="field-list" ref="/susenas/blok1/blok1_group1">
+        <label>Blok I</label>
+        <input ref="/susenas/blok1/blok1_group1/P106">
+          <label>Nomor blok sensus</label>
+        </input>
+        <input appearance="numbers" ref="/susenas/blok1/blok1_group1/P107">
+          <label>Nomor kode sampel</label>
+        </input>
+        <input ref="/susenas/blok1/blok1_group1/P108">
+          <label>Nomor urut sampel rumah tangga</label>
+        </input>
+        <input ref="/susenas/blok1/blok1_group1/P109">
+          <label>Nama kepala rumah tangga</label>
+        </input>
+        <input ref="/susenas/blok1/blok1_group1/P110">
+          <label>Alamat(nama jalan/gang,RT/RW/dusun)</label>
+        </input>
+      </group>
+    </group>
+    <group ref="/susenas/blok2">
+      <label>VSEN16.MKP</label>
+      <select1 appearance="minimal" ref="/susenas/blok2/izin">
+        <label>Ketersediaan responden</label>
+        <item>
+          <label>Ya bersedia</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Bersedia dengan perjanjian di lain waktu</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Tidak bersedia</label>
+          <value>3</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/susenas/blok3">
+      <label>Blok III</label>
+      <input ref="/susenas/blok3/P301">
+        <label>Banyaknya ART</label>
+      </input>
+    </group>
+    <group ref="/susenas/blok4">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok4/roster_blok4">
+        <label>Blok IV Keterangan Demografi</label>
+        <repeat jr:count=" /susenas/blok4/roster_blok4_count " nodeset="/susenas/blok4/roster_blok4">
+          <group appearance="field-list" ref="/susenas/blok4/roster_blok4/group_4_1">
+            <label>Daftar ART</label>
+            <input ref="/susenas/blok4/roster_blok4/group_4_1/P402_krt">
+              <label>Nama Anggota Rumah Tangga</label>
+            </input>
+            <input ref="/susenas/blok4/roster_blok4/group_4_1/P402">
+              <label>Nama Anggota Rumah Tangga</label>
+            </input>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P403_krt">
+              <label>Apakah Hubungan Dengan Kepala Rumah Tangga ?</label>
+              <item>
+                <label>Kepala Rumah Tangga</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Istri/Suami</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Anak kandung/anak tiri</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Anak angkat</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Menantu</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Cucu</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Orangtua/mertua</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>Pembantu/sopir</label>
+                <value>8</value>
+              </item>
+              <item>
+                <label>Lainnya (famili lain)</label>
+                <value>9</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P403">
+              <label>Apakah Hubungan Dengan Kepala Rumah Tangga ?</label>
+              <item>
+                <label>Kepala Rumah Tangga</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Istri/Suami</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Anak kandung/anak tiri</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Anak angkat</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Menantu</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Cucu</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Orangtua/mertua</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>Pembantu/sopir</label>
+                <value>8</value>
+              </item>
+              <item>
+                <label>Lainnya (famili lain)</label>
+                <value>9</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P404">
+              <label>Apakah Status Perkawinan ?</label>
+              <item>
+                <label>Belum kawin</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Kawin</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Cerai hidup</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Cerai mati</label>
+                <value>4</value>
+              </item>
+            </select1>
+            <select1 ref="/susenas/blok4/roster_blok4/group_4_1/P405">
+              <label>Jenis Kelamin</label>
+              <item>
+                <label>Laki-laki</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Perempuan</label>
+                <value>2</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P406_tahun">
+              <label>Tahun Lahir</label>
+              <item>
+                <label>1910</label>
+                <value>1910</value>
+              </item>
+              <item>
+                <label>1911</label>
+                <value>1911</value>
+              </item>
+              <item>
+                <label>1912</label>
+                <value>1912</value>
+              </item>
+              <item>
+                <label>1913</label>
+                <value>1913</value>
+              </item>
+              <item>
+                <label>1914</label>
+                <value>1914</value>
+              </item>
+              <item>
+                <label>1915</label>
+                <value>1915</value>
+              </item>
+              <item>
+                <label>1916</label>
+                <value>1916</value>
+              </item>
+              <item>
+                <label>1917</label>
+                <value>1917</value>
+              </item>
+              <item>
+                <label>1918</label>
+                <value>1918</value>
+              </item>
+              <item>
+                <label>1919</label>
+                <value>1919</value>
+              </item>
+              <item>
+                <label>1920</label>
+                <value>1920</value>
+              </item>
+              <item>
+                <label>1921</label>
+                <value>1921</value>
+              </item>
+              <item>
+                <label>1922</label>
+                <value>1922</value>
+              </item>
+              <item>
+                <label>1923</label>
+                <value>1923</value>
+              </item>
+              <item>
+                <label>1924</label>
+                <value>1924</value>
+              </item>
+              <item>
+                <label>1925</label>
+                <value>1925</value>
+              </item>
+              <item>
+                <label>1926</label>
+                <value>1926</value>
+              </item>
+              <item>
+                <label>1927</label>
+                <value>1927</value>
+              </item>
+              <item>
+                <label>1928</label>
+                <value>1928</value>
+              </item>
+              <item>
+                <label>1929</label>
+                <value>1929</value>
+              </item>
+              <item>
+                <label>1930</label>
+                <value>1930</value>
+              </item>
+              <item>
+                <label>1931</label>
+                <value>1931</value>
+              </item>
+              <item>
+                <label>1932</label>
+                <value>1932</value>
+              </item>
+              <item>
+                <label>1933</label>
+                <value>1933</value>
+              </item>
+              <item>
+                <label>1934</label>
+                <value>1934</value>
+              </item>
+              <item>
+                <label>1935</label>
+                <value>1935</value>
+              </item>
+              <item>
+                <label>1936</label>
+                <value>1936</value>
+              </item>
+              <item>
+                <label>1937</label>
+                <value>1937</value>
+              </item>
+              <item>
+                <label>1938</label>
+                <value>1938</value>
+              </item>
+              <item>
+                <label>1939</label>
+                <value>1939</value>
+              </item>
+              <item>
+                <label>1940</label>
+                <value>1940</value>
+              </item>
+              <item>
+                <label>1941</label>
+                <value>1941</value>
+              </item>
+              <item>
+                <label>1942</label>
+                <value>1942</value>
+              </item>
+              <item>
+                <label>1943</label>
+                <value>1943</value>
+              </item>
+              <item>
+                <label>1944</label>
+                <value>1944</value>
+              </item>
+              <item>
+                <label>1945</label>
+                <value>1945</value>
+              </item>
+              <item>
+                <label>1946</label>
+                <value>1946</value>
+              </item>
+              <item>
+                <label>1947</label>
+                <value>1947</value>
+              </item>
+              <item>
+                <label>1948</label>
+                <value>1948</value>
+              </item>
+              <item>
+                <label>1949</label>
+                <value>1949</value>
+              </item>
+              <item>
+                <label>1950</label>
+                <value>1950</value>
+              </item>
+              <item>
+                <label>1951</label>
+                <value>1951</value>
+              </item>
+              <item>
+                <label>1952</label>
+                <value>1952</value>
+              </item>
+              <item>
+                <label>1953</label>
+                <value>1953</value>
+              </item>
+              <item>
+                <label>1954</label>
+                <value>1954</value>
+              </item>
+              <item>
+                <label>1955</label>
+                <value>1955</value>
+              </item>
+              <item>
+                <label>1956</label>
+                <value>1956</value>
+              </item>
+              <item>
+                <label>1957</label>
+                <value>1957</value>
+              </item>
+              <item>
+                <label>1958</label>
+                <value>1958</value>
+              </item>
+              <item>
+                <label>1959</label>
+                <value>1959</value>
+              </item>
+              <item>
+                <label>1960</label>
+                <value>1960</value>
+              </item>
+              <item>
+                <label>1961</label>
+                <value>1961</value>
+              </item>
+              <item>
+                <label>1962</label>
+                <value>1962</value>
+              </item>
+              <item>
+                <label>1963</label>
+                <value>1963</value>
+              </item>
+              <item>
+                <label>1964</label>
+                <value>1964</value>
+              </item>
+              <item>
+                <label>1965</label>
+                <value>1965</value>
+              </item>
+              <item>
+                <label>1966</label>
+                <value>1966</value>
+              </item>
+              <item>
+                <label>1967</label>
+                <value>1967</value>
+              </item>
+              <item>
+                <label>1968</label>
+                <value>1968</value>
+              </item>
+              <item>
+                <label>1969</label>
+                <value>1969</value>
+              </item>
+              <item>
+                <label>1970</label>
+                <value>1970</value>
+              </item>
+              <item>
+                <label>1971</label>
+                <value>1971</value>
+              </item>
+              <item>
+                <label>1972</label>
+                <value>1972</value>
+              </item>
+              <item>
+                <label>1973</label>
+                <value>1973</value>
+              </item>
+              <item>
+                <label>1974</label>
+                <value>1974</value>
+              </item>
+              <item>
+                <label>1975</label>
+                <value>1975</value>
+              </item>
+              <item>
+                <label>1976</label>
+                <value>1976</value>
+              </item>
+              <item>
+                <label>1977</label>
+                <value>1977</value>
+              </item>
+              <item>
+                <label>1978</label>
+                <value>1978</value>
+              </item>
+              <item>
+                <label>1979</label>
+                <value>1979</value>
+              </item>
+              <item>
+                <label>1980</label>
+                <value>1980</value>
+              </item>
+              <item>
+                <label>1981</label>
+                <value>1981</value>
+              </item>
+              <item>
+                <label>1982</label>
+                <value>1982</value>
+              </item>
+              <item>
+                <label>1983</label>
+                <value>1983</value>
+              </item>
+              <item>
+                <label>1984</label>
+                <value>1984</value>
+              </item>
+              <item>
+                <label>1985</label>
+                <value>1985</value>
+              </item>
+              <item>
+                <label>1986</label>
+                <value>1986</value>
+              </item>
+              <item>
+                <label>1987</label>
+                <value>1987</value>
+              </item>
+              <item>
+                <label>1988</label>
+                <value>1988</value>
+              </item>
+              <item>
+                <label>1989</label>
+                <value>1989</value>
+              </item>
+              <item>
+                <label>1990</label>
+                <value>1990</value>
+              </item>
+              <item>
+                <label>1991</label>
+                <value>1991</value>
+              </item>
+              <item>
+                <label>1992</label>
+                <value>1992</value>
+              </item>
+              <item>
+                <label>1993</label>
+                <value>1993</value>
+              </item>
+              <item>
+                <label>1994</label>
+                <value>1994</value>
+              </item>
+              <item>
+                <label>1995</label>
+                <value>1995</value>
+              </item>
+              <item>
+                <label>1996</label>
+                <value>1996</value>
+              </item>
+              <item>
+                <label>1997</label>
+                <value>1997</value>
+              </item>
+              <item>
+                <label>1998</label>
+                <value>1998</value>
+              </item>
+              <item>
+                <label>1999</label>
+                <value>1999</value>
+              </item>
+              <item>
+                <label>2000</label>
+                <value>2000</value>
+              </item>
+              <item>
+                <label>2001</label>
+                <value>2001</value>
+              </item>
+              <item>
+                <label>2002</label>
+                <value>2002</value>
+              </item>
+              <item>
+                <label>2003</label>
+                <value>2003</value>
+              </item>
+              <item>
+                <label>2004</label>
+                <value>2004</value>
+              </item>
+              <item>
+                <label>2005</label>
+                <value>2005</value>
+              </item>
+              <item>
+                <label>2006</label>
+                <value>2006</value>
+              </item>
+              <item>
+                <label>2007</label>
+                <value>2007</value>
+              </item>
+              <item>
+                <label>2008</label>
+                <value>2008</value>
+              </item>
+              <item>
+                <label>2009</label>
+                <value>2009</value>
+              </item>
+              <item>
+                <label>2010</label>
+                <value>2010</value>
+              </item>
+              <item>
+                <label>2011</label>
+                <value>2011</value>
+              </item>
+              <item>
+                <label>2012</label>
+                <value>2012</value>
+              </item>
+              <item>
+                <label>2013</label>
+                <value>2013</value>
+              </item>
+              <item>
+                <label>2014</label>
+                <value>2014</value>
+              </item>
+              <item>
+                <label>2015</label>
+                <value>2015</value>
+              </item>
+              <item>
+                <label>2016</label>
+                <value>2016</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P406_bulan">
+              <label>Bulan Lahir</label>
+              <item>
+                <label>Januari</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Februari</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Maret</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>April</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Mei</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Juni</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Juli</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>Agustus</label>
+                <value>8</value>
+              </item>
+              <item>
+                <label>September</label>
+                <value>9</value>
+              </item>
+              <item>
+                <label>Oktober</label>
+                <value>10</value>
+              </item>
+              <item>
+                <label>November</label>
+                <value>11</value>
+              </item>
+              <item>
+                <label>Desember</label>
+                <value>12</value>
+              </item>
+            </select1>
+            <input ref="/susenas/blok4/roster_blok4/group_4_1/P408">
+              <label>No urut keluarga</label>
+            </input>
+            <select1 appearance="minimal" ref="/susenas/blok4/roster_blok4/group_4_1/P409">
+              <label>Apakah hubungan dengan kepala keluarga ?</label>
+              <item>
+                <label>Kepala Keluarga</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Istri/Suami</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Anak</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Lainnya (famili lain)</label>
+                <value>4</value>
+              </item>
+            </select1>
+          </group>
+          <input appearance="display" ref="/susenas/blok4/roster_blok4/P407">
+            <label>Umur <output value=" /susenas/blok4/roster_blok4/group_4_1/P402 "/> :</label>
+          </input>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok5">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok5/roster_blok5">
+        <label>Blok V Keteranga Kesehatan</label>
+        <repeat jr:count=" /susenas/blok5/roster_blok5_count " nodeset="/susenas/blok5/roster_blok5">
+          <input ref="/susenas/blok5/roster_blok5/nama_art_1">
+            <label>Nama ART ke <output value=" /susenas/blok5/roster_blok5/no_art_1 "/></label></input>
+          <select ref="/susenas/blok5/roster_blok5/P501">
+            <label>Jaminan Pembiayaan Kesehatan apa saja yang dimiliki <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> ?</label>
+            <item>
+              <label>BPJS Kesehatan : Pekerja penerima upah</label>
+              <value>A</value>
+            </item>
+            <item>
+              <label>BPJS Kesehatan : Pekerja bukan penerima upah atau bukan pekerja</label>
+              <value>B</value>
+            </item>
+            <item>
+              <label>BPJS Kesehatan : Penerima bantuan iuran</label>
+              <value>C</value>
+            </item>
+            <item>
+              <label>Jamkesda</label>
+              <value>D</value>
+            </item>
+            <item>
+              <label>Asuransi swasta</label>
+              <value>E</value>
+            </item>
+            <item>
+              <label>Perusahaan/kantor</label>
+              <value>F</value>
+            </item>
+            <item>
+              <label>Tidak punya jaminan</label>
+              <value>X</value>
+            </item>
+          </select>
+          <select1 ref="/susenas/blok5/roster_blok5/P502">
+            <label>Apakah <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> memiliki kartu Indonesia Sehat (KIS)</label>
+            <item>
+              <label>Ya, dapat ditunjukkan</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Ya, tidak dapat ditunjukkan</label>
+              <value>2</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+          <select1 ref="/susenas/blok5/roster_blok5/P503">
+            <label>Dalam sebulan terakhir, Apakah <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> mempunyai keluhan kesehatan (panas,batuk, pilek, diare, pusing, penyakit kronis, gangguan otot dan tulang/rangka, dsb) ?</label>
+            <item>
+              <label>Ya</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+          <select1 ref="/susenas/blok5/roster_blok5/P504">
+            <label>Apakah keluhan kesehatan tersebut mengakibatkan terganggunya kesehatan, sekolah, atau kegiatan sehari-hari?</label>
+            <item>
+              <label>Ya</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+          <select1 ref="/susenas/blok5/roster_blok5/P505">
+            <label>Dalam sebulan terakhir, Apakah <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> pernah berobat jalan ?</label>
+            <item>
+              <label>Ya</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/susenas/blok5/roster_blok5/P506">
+            <label>Apakah alasan utama <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> tidak berobat jalan ?</label>
+            <item>
+              <label>Tidak punya biaya berobat</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak punya biaya transpot</label>
+              <value>2</value>
+            </item>
+            <item>
+              <label>Tidak ada sarana transportasi</label>
+              <value>3</value>
+            </item>
+            <item>
+              <label>Waktu tunggu pelayanan lama</label>
+              <value>4</value>
+            </item>
+            <item>
+              <label>Tidak semua biaya ditanggung BPJS</label>
+              <value>5</value>
+            </item>
+            <item>
+              <label>Mengobati sendiri</label>
+              <value>6</value>
+            </item>
+            <item>
+              <label>Tidak ada yang mendampingi</label>
+              <value>7</value>
+            </item>
+            <item>
+              <label>Merasa tidak perlu</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>Lainnya</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/susenas/blok5/roster_blok5/P507">
+            <label>Dimana tempat <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> berobat jalan yang terakhir ?</label>
+            <item>
+              <label>Rumah sakit pemerintah</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Rumah sakit swasta</label>
+              <value>2</value>
+            </item>
+            <item>
+              <label>Praktik dokter/bidan/perawat</label>
+              <value>3</value>
+            </item>
+            <item>
+              <label>Klinik/praktik dokter bersama</label>
+              <value>4</value>
+            </item>
+            <item>
+              <label>Puskesmas/Pustu</label>
+              <value>5</value>
+            </item>
+            <item>
+              <label>UKBM (Poskesdes, Polindes, Posyandu, pos upaya kesehatan kerja, dll)</label>
+              <value>6</value>
+            </item>
+            <item>
+              <label>Praktik pengobatan tradisional/alternatif</label>
+              <value>7</value>
+            </item>
+            <item>
+              <label>Di rumah sendiri</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>Lainnya</label>
+              <value>9</value>
+            </item>
+          </select1>
+          <group appearance="field-list" ref="/susenas/blok5/roster_blok5/blok5_1">
+            <label>Berobat Jalan</label>
+            <input ref="/susenas/blok5/roster_blok5/blok5_1/P508">
+              <label>Berapa lama <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> menunggu sejak mendaftar hingga mendapatkan pelayanan kesehatan pada berobat jalan yang terakhir (dalam menit) ?</label>
+            </input>
+            <select1 appearance="minimal" ref="/susenas/blok5/roster_blok5/blok5_1/P509">
+              <label>Siapa yang memeriksa <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> pada berobat jalan yang terakhir ?</label>
+              <item>
+                <label>Dokter</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Dokter Gigi</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Bidan</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Perawat</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Nakes lainnya</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Dukun/tabib/sinse</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Lainnya</label>
+                <value>7</value>
+              </item>
+            </select1>
+            <select1 ref="/susenas/blok5/roster_blok5/blok5_1/P510">
+              <label>Apakah yang memeriksa memeberikan penjelasan mengenai penyakit yang diderita <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> ?</label>
+              <item>
+                <label>Ya, jelas</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, tidak jelas</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok5/roster_blok5/blok5_1/P511">
+              <label>Bagaimana penilaian <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> tentang kebersihan tempat berobat jalan pada berobat jalan yang terakhir ?</label>
+              <item>
+                <label>Sangat bersih</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Bersih</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Kotor</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Sangat kotor</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Tidak relevan</label>
+                <value>7</value>
+              </item>
+            </select1>
+            <input ref="/susenas/blok5/roster_blok5/blok5_1/P512">
+              <label>(Dalam rupiah) Berapakah biaya transportasi pulang pergi dari rumah ke fasilitas berobat jalan yang terakhir ?</label>
+            </input>
+          </group>
+          <group appearance="field-list" ref="/susenas/blok5/roster_blok5/blok5_2">
+            <label>Biaya Berobat Jalan <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/></label><input ref="/susenas/blok5/roster_blok5/blok5_2/P514">
+              <label>(Dalam rupiah) Biaya Pemeriksaan kesehatan (medis atau non medis)</label>
+            </input>
+            <input ref="/susenas/blok5/roster_blok5/blok5_2/P515">
+              <label>(Dalam rupiah) Biaya beli obat</label>
+            </input>
+            <input ref="/susenas/blok5/roster_blok5/blok5_2/P516">
+              <label>(Dalam rupiah) Biaya lainnya , seperti: biaya uji lab, administrasi, alat kesehatan, dll</label>
+            </input>
+          </group>
+          <group appearance="field-list" ref="/susenas/blok5/roster_blok5/blok5_3">
+            <label>Biaya Berobat Jalan <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/></label><input ref="/susenas/blok5/roster_blok5/blok5_3/P513">
+              <label>Total Biaya Berobat Jalan <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/></label></input>
+            <select ref="/susenas/blok5/roster_blok5/blok5_3/P517">
+              <label>Selain biaya yang dikeluarkan sendiri, dari mana saja sumber dana untuk biaya berobat jalan yang terakhir (tidak termasuk biaya transportasi) ?</label>
+              <item>
+                <label>BPJS Kesehatan pekerja penerima upah</label>
+                <value>A</value>
+              </item>
+              <item>
+                <label>BPJS Kesehatan pekerja bukan penerima upah atau bukan pekerja</label>
+                <value>B</value>
+              </item>
+              <item>
+                <label>BPJS Kesehatan penerima bantuan iuran</label>
+                <value>C</value>
+              </item>
+              <item>
+                <label>Jamkesda</label>
+                <value>D</value>
+              </item>
+              <item>
+                <label>Asuransi swasta</label>
+                <value>E</value>
+              </item>
+              <item>
+                <label>Perusahaan/kantor</label>
+                <value>F</value>
+              </item>
+              <item>
+                <label>Bantuan perorangan/kelompok</label>
+                <value>G</value>
+              </item>
+              <item>
+                <label>Pinjaman</label>
+                <value>H</value>
+              </item>
+              <item>
+                <label>Tidak ada</label>
+                <value>X</value>
+              </item>
+            </select>
+            <select1 ref="/susenas/blok5/roster_blok5/blok5_3/P518">
+              <label>Dalam sebulan terakhir, apakah pernah mengobati sendiri seperti membeli obat di warung atau apotek tanpa resep dokter atau obat tradisional atau alternatif</label>
+              <item>
+                <label>Ya</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+          </group>
+          <group appearance="field-list" ref="/susenas/blok5/roster_blok5/blok5_4">
+            <label>Biaya Berobat Jalan <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/></label><input appearance="display" ref="/susenas/blok5/roster_blok5/blok5_4/note_judul">
+              <label>Berapakah biaya yang dikeluarkan oleh <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> atau ART lain untuk membeli obat yang terakhir</label>
+            </input>
+            <input ref="/susenas/blok5/roster_blok5/blok5_4/P519">
+              <label>(Dalam rupiah) Obat modern</label>
+            </input>
+            <input ref="/susenas/blok5/roster_blok5/blok5_4/P520">
+              <label>(Dalam rupiah) Obat tradisional atau alternatif seperti : balsam, jamu obat, param, minyak gosok, koyo</label>
+            </input>
+          </group>
+          <select1 ref="/susenas/blok5/roster_blok5/P521">
+            <label>Dari tanggal 1 Januari s.d. 31 Desember 2015, apakah <output value=" /susenas/blok5/roster_blok5/nama_art_1 "/> pernah mengalami kecelakaan lalu lintas ?</label>
+            <item>
+              <label>Ya</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok6">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok6/roster_blok6">
+        <label>Blok VI Keterangan Rawat Inap</label>
+        <repeat jr:count=" /susenas/blok6/roster_blok6_count " nodeset="/susenas/blok6/roster_blok6">
+          <input ref="/susenas/blok6/roster_blok6/nama_art_6">
+            <label>Nama ART ke <output value=" /susenas/blok6/roster_blok6/no_art_6 "/></label></input>
+          <select1 ref="/susenas/blok6/roster_blok6/P601">
+            <label>Dalam setahun terakhir, apakah <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> pernah dirawat inap?</label>
+            <item>
+              <label>Ya</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>Tidak</label>
+              <value>5</value>
+            </item>
+          </select1>
+          <group appearance="field-list" ref="/susenas/blok6/roster_blok6/blok6_1">
+            <label><output value=" /susenas/blok6/roster_blok6/nama_art_6 "/></label>
+            <select1 ref="/susenas/blok6/roster_blok6/blok6_1/P602">
+              <label>Dimana tempat <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> rawat inap yang terakhir ?</label>
+              <item>
+                <label>Rumah sakit pemerintah</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Rumah sakit swasta</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Praktik dokter/bidan/perawat</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Klinik/praktik dokter bersama</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Puskesmas/Pustu</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Praktik pengobatan tradisional/alternatif</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Lainnya</label>
+                <value>7</value>
+              </item>
+            </select1>
+            <input ref="/susenas/blok6/roster_blok6/blok6_1/P603">
+              <label>Berapa hari <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> dirawat inap yang terakhir ?</label>
+            </input>
+            <input ref="/susenas/blok6/roster_blok6/blok6_1/P604">
+              <label>(Dalam menit) Berapa lama <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> menunggu sejak mendaftar hingga mendapat pelayanan rawat inap yang terakhir ?</label>
+            </input>
+            <select1 ref="/susenas/blok6/roster_blok6/blok6_1/P605">
+              <label>Apakah yang memeriksa pada saat rawat inap terakhir memberikan penjelasan mengenai penyakit yang diderita <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/></label><item>
+                <label>Ya, jelas</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, tidak jelas</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <select1 ref="/susenas/blok6/roster_blok6/blok6_1/P606">
+              <label>Bagaimana penilaian <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> tentang kebersihan tempat rawat inap yang terakhir ?</label>
+              <item>
+                <label>Sangat bersih</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Bersih</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Kotor</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Sangat kotor</label>
+                <value>4</value>
+              </item>
+            </select1>
+            <input ref="/susenas/blok6/roster_blok6/blok6_1/P607">
+              <label>(Dalam rupiah) Berapakah biaya transportasi dari rumah ke tempat rawat inap yang terakhir dikunjungi ?</label>
+            </input>
+          </group>
+          <group appearance="field-list" ref="/susenas/blok6/roster_blok6/blok6_2">
+            <label>Biaya rawat inap <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/></label><input ref="/susenas/blok6/roster_blok6/blok6_2/note_biaya">
+              <label>Berapakah biaya rawat inap terakhir yang dikeluarkan oleh <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/> atau ART lain untuk :</label>
+            </input>
+            <input ref="/susenas/blok6/roster_blok6/blok6_2/P609">
+              <label>Biaya pemeriksaan kesehatan medis atau non medis (dalam rupiah)</label>
+            </input>
+            <input ref="/susenas/blok6/roster_blok6/blok6_2/P610">
+              <label>Biaya obat (dalam rupiah)</label>
+            </input>
+            <input ref="/susenas/blok6/roster_blok6/blok6_2/P611">
+              <label>Biaya lainnya seperti : biaya uji lab, kamar, administrasi, alat kesehatan, biaya tindakan, dll (dalam rupiah)</label>
+            </input>
+          </group>
+          <group appearance="field-list" ref="/susenas/blok6/roster_blok6/blok6_3">
+            <label>Biaya rawat inap <output value=" /susenas/blok6/roster_blok6/nama_art_6 "/></label><input ref="/susenas/blok6/roster_blok6/blok6_3/P608">
+              <label>Total Biaya rawat inap</label>
+            </input>
+            <select ref="/susenas/blok6/roster_blok6/blok6_3/P612">
+              <label>Selain biaya yang dikeluarkan sendiri, dari mana saja sumber dana untuk biaya rawat inap yang terakhir (tidak termasuk biaya transportasi) ?</label>
+              <item>
+                <label>BPJS Kesehatan pekerja penerima upah</label>
+                <value>A</value>
+              </item>
+              <item>
+                <label>BPJS Kesehatan pekerja bukan penerima upah atau bukan pekerja</label>
+                <value>B</value>
+              </item>
+              <item>
+                <label>BPJS Kesehatan penerima bantuan iuran</label>
+                <value>C</value>
+              </item>
+              <item>
+                <label>Jamkesda</label>
+                <value>D</value>
+              </item>
+              <item>
+                <label>Asuransi swasta</label>
+                <value>E</value>
+              </item>
+              <item>
+                <label>Perusahaan/kantor</label>
+                <value>F</value>
+              </item>
+              <item>
+                <label>Bantuan perorangan/kelompok</label>
+                <value>G</value>
+              </item>
+              <item>
+                <label>Pinjaman</label>
+                <value>H</value>
+              </item>
+              <item>
+                <label>Tidak ada</label>
+                <value>X</value>
+              </item>
+            </select>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok7">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok7/roster_blok7">
+        <label>Blok VII Perilaku Merokok</label>
+        <repeat jr:count=" /susenas/blok7/roster_blok7_count " nodeset="/susenas/blok7/roster_blok7">
+          <group ref="/susenas/blok7/roster_blok7/blok_8_1">
+            <label><output value=" /susenas/blok7/roster_blok7/nama_art_7 "/></label>
+            <select1 ref="/susenas/blok7/roster_blok7/blok_8_1/P702">
+              <label>Dalam sebulan terakhir, apakah <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> merokok?</label>
+              <item>
+                <label>Ya, setiap hari</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, tidak setiap hari</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <group appearance="field-list" ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2">
+              <label>ART merokok</label>
+              <input appearance="display" ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/note_rokok">
+                <label>Dalam sebulan terakhir, berapa batang rokok per minggu yang biasa <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> hisap (dalam batang) ?</label>
+              </input>
+              <input ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P703">
+                <label>Rokok putih</label>
+              </input>
+              <input ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P704">
+                <label>Rokok kretek</label>
+              </input>
+              <input ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P705">
+                <label>Rokok lintingan/kawung</label>
+              </input>
+              <input ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P706">
+                <label>Pipa/cangklong</label>
+              </input>
+              <input ref="/susenas/blok7/roster_blok7/blok_8_1/blok7_2/P707">
+                <label>Cerutu/lisong</label>
+              </input>
+            </group>
+            <select1 ref="/susenas/blok7/roster_blok7/blok_8_1/P708">
+              <label>Dalam sebulan terakhir, seberapa sering <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> merokok di dalam rumah ?</label>
+              <item>
+                <label>Setiap hari</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Tidak setiap hari</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak pernah</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <select1 ref="/susenas/blok7/roster_blok7/blok_8_1/P709">
+              <label>Sebelum sebulan terakhir, apakah dulu, <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> pernah merokok ?</label>
+              <item>
+                <label>Ya, setiap hari</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, tidak setiap hari</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <input ref="/susenas/blok7/roster_blok7/blok_8_1/P710">
+              <label>Pada umur berapa <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> pertama kali mulai merokok SETIAP HARI? (jika tidak tahu isikan 98)</label>
+            </input>
+            <input ref="/susenas/blok7/roster_blok7/blok_8_1/P711">
+              <label>Pada umur berapa <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> pertama kali mulai merokok ? (jika tidak tahu isikan 98)</label>
+            </input>
+            <select1 ref="/susenas/blok7/roster_blok7/blok_8_1/P712">
+              <label>Dalam setahun terakhir, apakaj <output value=" /susenas/blok7/roster_blok7/nama_art_7 "/> pernah berusaha untuk berhenti merokok ?</label>
+              <item>
+                <label>Ya</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Tidak relevan</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>Tidak tahu</label>
+                <value>8</value>
+              </item>
+            </select1>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok8">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok8/roster_blok8">
+        <label>Blok VIII Perilaku Hidup Bersih dan Sehat</label>
+        <repeat jr:count=" /susenas/blok8/roster_blok8_count " nodeset="/susenas/blok8/roster_blok8">
+          <group ref="/susenas/blok8/roster_blok8/blok_7_1">
+            <label><output value=" /susenas/blok8/roster_blok8/nama_art_8 "/></label>
+            <select1 ref="/susenas/blok8/roster_blok8/blok_7_1/P802">
+              <label>Apakah <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> biasa mencuci tangan pakai sabun ?</label>
+              <item>
+                <label>Ya</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+            <group appearance="field-list" ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1">
+              <label><output value=" /susenas/blok8/roster_blok8/nama_art_8 "/></label>
+              <select ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1/P803">
+                <label>Kapan Biasanya <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> mencuci tangan pakai sabun ?</label>
+                <item>
+                  <label>Sebelum buang air besar/kecil</label>
+                  <value>A</value>
+                </item>
+                <item>
+                  <label>Sesudah buang air besar/kecil</label>
+                  <value>B</value>
+                </item>
+                <item>
+                  <label>Sebelum makan</label>
+                  <value>C</value>
+                </item>
+                <item>
+                  <label>Sesudah makan</label>
+                  <value>D</value>
+                </item>
+                <item>
+                  <label>Sebelum menyiapkan masakan</label>
+                  <value>E</value>
+                </item>
+                <item>
+                  <label>Sesudah menceboki anak</label>
+                  <value>F</value>
+                </item>
+                <item>
+                  <label>Sesudah memegang hewan</label>
+                  <value>G</value>
+                </item>
+                <item>
+                  <label>Lainnya</label>
+                  <value>H</value>
+                </item>
+              </select>
+              <select ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_1/P804">
+                <label>Dimana saja biasanya <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> mencuci tangan ?</label>
+                <item>
+                  <label>Di tempat khusus cuci tangan (wastafel)</label>
+                  <value>A</value>
+                </item>
+                <item>
+                  <label>Di kamar mandi/toilet</label>
+                  <value>B</value>
+                </item>
+                <item>
+                  <label>Di sumur</label>
+                  <value>C</value>
+                </item>
+                <item>
+                  <label>Di tempat cuci piring</label>
+                  <value>D</value>
+                </item>
+                <item>
+                  <label>Lainnya</label>
+                  <value>E</value>
+                </item>
+              </select>
+            </group>
+            <group ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2">
+              <label>Konsumsi Buah-buahan</label>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2/P805">
+                <label>Dalam seminggu terakhir,berapa hari <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> mengonsumsi BUAH-BUAHAN (seperti apel,jeruk,mangga,dll)</label>
+              </input>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_2/P806">
+                <label>Dalam seminggu terakhir, berapa porsi BUAH-BUAHAN yang <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> konsumsi ?</label>
+              </input>
+            </group>
+            <group ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3">
+              <label>Konsumsi Sayuran</label>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3/P807">
+                <label>Dalam seminggu terakhir,berapa hari <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> mengonsumsi SAYURAN (seperti sayur bayam,lalapan,dll) ?</label>
+              </input>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_3/P808">
+                <label>Dalam seminggu terakhir, berapa porsi SAYURAN yang <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> konsumsi ?</label>
+              </input>
+            </group>
+            <group ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4">
+              <label>Aktivitas Fisik Sedang</label>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4/P809">
+                <label>Dalam seminggu terakhir, berapa hari <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> melakukan aktifitas fisik sedang (jalan santai, menyapu, memasak, dll ) ? (dalam hari)</label>
+              </input>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_4/P810">
+                <label>Dalam sehari berapa lama <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> melakukan ativitas fisik sedang tersebut ? (dalam menit)</label>
+              </input>
+            </group>
+            <group appearance="field-list" ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5">
+              <label>Aktivitas Fisik Berat</label>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5/P811">
+                <label>Dalam seminggu terakhir, berapa hari <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> melakukan aktifitas fisik berat (beladiri,aerobik,mengangkat beban,dll ) ? (dalam hari)</label>
+              </input>
+              <input ref="/susenas/blok8/roster_blok8/blok_7_1/blok_7_1_5/P812">
+                <label>Dalam sehari berapa lama <output value=" /susenas/blok8/roster_blok8/nama_art_8 "/> melakukan ativitas fisik berat tersebut ? (dalam menit)</label>
+              </input>
+            </group>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok9">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok9/roster_blok9">
+        <label>Blok IX Keterangan Pendidikan dan Kerenagakerjaan</label>
+        <repeat jr:count=" /susenas/blok9/roster_blok9_count " nodeset="/susenas/blok9/roster_blok9">
+          <group ref="/susenas/blok9/roster_blok9/blok_9_1">
+            <label>ART berumur 5 tahun ke atas</label>
+            <group appearance="field-list" ref="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1">
+              <label>Membaca dan Menulis</label>
+              <input ref="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/note_9_1">
+                <label>Apakah <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> dapat membaca dan menulis kalimat sederhana dalam bahasa sehari-hari dengan menggunakan :</label>
+              </input>
+              <select1 ref="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P902">
+                <label>Huruf latin atau alfabet ?</label>
+                <item>
+                  <label>Ya</label>
+                  <value>1</value>
+                </item>
+                <item>
+                  <label>Tidak</label>
+                  <value>5</value>
+                </item>
+              </select1>
+              <select1 ref="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P903">
+                <label>Huruf arab atau hijaiyah</label>
+                <item>
+                  <label>Ya</label>
+                  <value>1</value>
+                </item>
+                <item>
+                  <label>Tidak</label>
+                  <value>5</value>
+                </item>
+              </select1>
+              <select1 ref="/susenas/blok9/roster_blok9/blok_9_1/blok_9_1_1/P904">
+                <label>Huruf lainnya? (contoh: jawa, kanji,cina)</label>
+                <item>
+                  <label>Ya</label>
+                  <value>1</value>
+                </item>
+                <item>
+                  <label>Tidak</label>
+                  <value>5</value>
+                </item>
+              </select1>
+            </group>
+            <select1 ref="/susenas/blok9/roster_blok9/blok_9_1/P905">
+              <label>Apakah <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> bersekolah ?</label>
+              <item>
+                <label>Tidak/belum pernah bersekolah</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Masih bersekolah</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak bersekolah lagi</label>
+                <value>3</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok9/roster_blok9/blok_9_1/P906">
+              <label>Apa jenjang pendidikan tertinggi yang sedang/pernah diikuti <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> ?</label>
+              <item>
+                <label>SD sederajat</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>SMP sederajat</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>SMA sederajat</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>D1/D2/D3</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>D4/S1</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>S2/S3</label>
+                <value>6</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok9/roster_blok9/blok_9_1/P907">
+              <label>Apa tingkat/kelas tertinggi yang sedang/pernah diduduki <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> ?</label>
+              <item>
+                <label>1</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>2</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>3</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>4</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>5</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>6</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>7</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>8 (Tamat &amp; lulus)</label>
+                <value>8</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok9/roster_blok9/blok_9_1/P908">
+              <label>Apa ijazah/STTB tertinggi yang dimiliki <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> ?</label>
+              <item>
+                <label>Tidak punya ijazah SD</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>SD sederajat</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>SMP sederajat</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>SMA sederajat</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>D1/D2/D3</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>D4/S1</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>S2/S3</label>
+                <value>7</value>
+              </item>
+            </select1>
+          </group>
+          <group ref="/susenas/blok9/roster_blok9/blok_9_2">
+            <label>ART berumur 6 - 21 tahun</label>
+            <select1 ref="/susenas/blok9/roster_blok9/blok_9_2/P909">
+              <label>Apakah <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> memperoleh program Indonesia Pintar (PIP)/bantuan siswa miskin (BSM) ?</label>
+              <item>
+                <label>Ya, PIP</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, BSM</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+            <select1 ref="/susenas/blok9/roster_blok9/blok_9_2/P910">
+              <label>Apakah <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> memiliki Kartu Indonesia Pintar (KIP) ?</label>
+              <item>
+                <label>Ya, dapat ditunjukkan</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, tidak dapat ditunjukkan</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+          </group>
+          <group ref="/susenas/blok9/roster_blok9/blok_9_3">
+            <label>ART berumur 10 tahun ke atas</label>
+            <select ref="/susenas/blok9/roster_blok9/blok_9_3/P911">
+              <label>Selama seminggu terakhir, kegiatan apakah yang dilakukan <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> ?</label>
+              <item>
+                <label>A. Bekerja</label>
+                <value>A</value>
+              </item>
+              <item>
+                <label>B. Sekolah</label>
+                <value>B</value>
+              </item>
+              <item>
+                <label>C. Mengurus Ruta</label>
+                <value>C</value>
+              </item>
+              <item>
+                <label>D. Lainnya selain kegiatan pribadi</label>
+                <value>D</value>
+              </item>
+              <item>
+                <label>Tidak melakukan kegiatan A s.d. D</label>
+                <value>X</value>
+              </item>
+            </select>
+            <select1 ref="/susenas/blok9/roster_blok9/blok_9_3/P912">
+              <label>Selama seminggu terakhir, apakah <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> mempunyai pekerjaan/usaha, tetapi sementara tidak bekerja ?</label>
+              <item>
+                <label>Ya</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok9/roster_blok9/blok_9_3/P913">
+              <label>Selama seminggu terakhir, apa lapangan usaha atau bidang pekerjaan utama dari tempat pekerjaan <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> ?</label>
+              <item>
+                <label>1. Pertanian, Kehutanan, dan Perikanan</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>2. Pertambangan dan Penggalian</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>3. Industri Pengolahan</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>4. Pengadaan Listrik, Gas, Uap/Air Panas, dan Udara Dingin</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>5. Pengelolaan Air, Pengelolaan Air Limbah, Pengelolaan dan Daur Ulang Sampah, dan Remediasi</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>6. Konstruksi</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>7. Perdagangan Besar dan Eceran, Reparasi dan Perawatan Mobil dan Sepeda Motor</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>8. Pengangkutan dan Pergudangan</label>
+                <value>8</value>
+              </item>
+              <item>
+                <label>9. Penyediaan Akomodasi dan Penyediaan Makan Minum</label>
+                <value>9</value>
+              </item>
+              <item>
+                <label>10. Informasi dan Komunikasi</label>
+                <value>10</value>
+              </item>
+              <item>
+                <label>11. Aktivitas Keuangan dan Asuransi</label>
+                <value>11</value>
+              </item>
+              <item>
+                <label>12. Real Estate</label>
+                <value>12</value>
+              </item>
+              <item>
+                <label>13. Jasa Profesional, Ilmiah, dan Teknis</label>
+                <value>13</value>
+              </item>
+              <item>
+                <label>14. Aktivitas Penyewaan dan Sewa Guna Tanpa Hak Opsi, Ketenagakerjaan, Agen Perjalanan dan Penunjang Usaha Lainnya</label>
+                <value>14</value>
+              </item>
+              <item>
+                <label>15. Administrasi Pemerintah, Pertahanan dan Jaminan Sosial Wajib</label>
+                <value>15</value>
+              </item>
+              <item>
+                <label>16. Jasa Pendidikan</label>
+                <value>16</value>
+              </item>
+              <item>
+                <label>17. Jasa aktivitas kesehatan dan aktivitas sosial</label>
+                <value>17</value>
+              </item>
+              <item>
+                <label>18. Jasa kesenian, Hiburan dan Rekreasi</label>
+                <value>18</value>
+              </item>
+              <item>
+                <label>19. Jasa Lainnya</label>
+                <value>19</value>
+              </item>
+              <item>
+                <label>20. Aktivtas Rumah Tangga Sebagai Pemberi Kerja</label>
+                <value>20</value>
+              </item>
+              <item>
+                <label>21. Aktivitas Badan Internasional dan Badan Ekstra Internasional Lainnya</label>
+                <value>21</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok9/roster_blok9/blok_9_3/P914">
+              <label>Selama seminggu terakhir, apa status/kedudukan <output value=" /susenas/blok9/roster_blok9/nama_art_9 "/> dalam pekerjaan utama ?</label>
+              <item>
+                <label>Berusaha Sendiri</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Berusaha dibantu buruh tidak tetap/ buruh tidak dibayar</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Berusaha dibantu buruh tetap/dibayar</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Buruh/karyawan</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Pekerja bebas</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Pekerja keluarga/tidak dibayar</label>
+                <value>6</value>
+              </item>
+            </select1>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/susenas/blok_ppk">
+      <label>VSEN16.MKP</label>
+      <group ref="/susenas/blok_ppk/roster_blok10">
+        <label>Keterangan Perempuan Pernah Kawin (PPK) Berumur 15-49 Tahun</label>
+        <repeat jr:count=" /susenas/blok_ppk/roster_blok10_count " nodeset="/susenas/blok_ppk/roster_blok10">
+          <group ref="/susenas/blok_ppk/roster_blok10/blok_10">
+            <label>Blok X Keluarga Berencana</label>
+            <input appearance="display" ref="/susenas/blok_ppk/roster_blok10/blok_10/note_nama_ppk">
+              <label>Nama PPK : <output value=" /susenas/blok_ppk/roster_blok10/nama_ppk "/></label></input>
+            <input appearance="display" ref="/susenas/blok_ppk/roster_blok10/blok_10/note_no_urut_ppk">
+              <label>No urut PPK : <output value=" /susenas/blok_ppk/roster_blok10/no_art_10 "/></label></input>
+            <input appearance="display" ref="/susenas/blok_ppk/roster_blok10/blok_10/note_umur_ppk">
+              <label>Umur <output value=" /susenas/blok_ppk/roster_blok10/nama_ppk "/> : <output value=" /susenas/blok_ppk/roster_blok10/umur_ppk "/></label></input>
+            <select1 ref="/susenas/blok_ppk/roster_blok10/blok_10/P1001">
+              <label>Apakah <output value=" /susenas/blok_ppk/roster_blok10/nama_ppk "/> Pernah atau Sedang menggunakan alat KB atau cara tradisinal untuk mencegah atau menunda kehamilan ?</label>
+              <item>
+                <label>Ya, pernah</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Ya, sedang</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>Tidak</label>
+                <value>5</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/susenas/blok_ppk/roster_blok10/blok_10/P1002">
+              <label>Alat KB atau cara tradisional apa yang sedang digunakan ?</label>
+              <item>
+                <label>Sterilisasi wanita/tubektomi/MOW</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Sterilisasi pria/vasektomi/MOP</label>
+                <value>2</value>
+              </item>
+              <item>
+                <label>IUD/AKDR/spiral</label>
+                <value>3</value>
+              </item>
+              <item>
+                <label>Suntikan</label>
+                <value>4</value>
+              </item>
+              <item>
+                <label>Susuk KB/Implan</label>
+                <value>5</value>
+              </item>
+              <item>
+                <label>Pil</label>
+                <value>6</value>
+              </item>
+              <item>
+                <label>Kondom pria/karet KB</label>
+                <value>7</value>
+              </item>
+              <item>
+                <label>Intravag/kondom wanita/diafragma</label>
+                <value>8</value>
+              </item>
+              <item>
+                <label>Metode menyusui alami</label>
+                <value>9</value>
+              </item>
+              <item>
+                <label>Pantang berkala/kalender</label>
+                <value>10</value>
+              </item>
+              <item>
+                <label>Lainnya</label>
+                <value>11</value>
+              </item>
+            </select1>
+            <group ref="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1">
+              <label>KB</label>
+              <select1 appearance="minimal" ref="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1003">
+                <label>Di mana <output value=" /susenas/blok_ppk/roster_blok10/nama_ppk "/> memperoleh alat KB terakhir kali ?</label>
+                <item>
+                  <label>RS Pemerintah/Swasta</label>
+                  <value>1</value>
+                </item>
+                <item>
+                  <label>Rumah bersalin</label>
+                  <value>2</value>
+                </item>
+                <item>
+                  <label>Puskesmas/Pustu/klinik</label>
+                  <value>3</value>
+                </item>
+                <item>
+                  <label>Praktik dokter umum/kandungan</label>
+                  <value>4</value>
+                </item>
+                <item>
+                  <label>Praktik bidan/bidan di desa/perawat</label>
+                  <value>5</value>
+                </item>
+                <item>
+                  <label>TKBK/TMK/MUYAN</label>
+                  <value>6</value>
+                </item>
+                <item>
+                  <label>Polindes/Poskesdes</label>
+                  <value>7</value>
+                </item>
+                <item>
+                  <label>Posyandu/Pos KB/PPKBD</label>
+                  <value>8</value>
+                </item>
+                <item>
+                  <label>Apotek/toko obat</label>
+                  <value>9</value>
+                </item>
+                <item>
+                  <label>Lainnya</label>
+                  <value>10</value>
+                </item>
+              </select1>
+              <select1 appearance="minimal" ref="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1004">
+                <label>Siapa yang memberikan pelayanan/alat KB terakhir kali ?</label>
+                <item>
+                  <label>Dokter Kandungan</label>
+                  <value>1</value>
+                </item>
+                <item>
+                  <label>Dokter Umum</label>
+                  <value>2</value>
+                </item>
+                <item>
+                  <label>Bidan</label>
+                  <value>3</value>
+                </item>
+                <item>
+                  <label>Perawat</label>
+                  <value>4</value>
+                </item>
+                <item>
+                  <label>Tenaga kesehatan lainnya</label>
+                  <value>5</value>
+                </item>
+                <item>
+                  <label>Bukan tenaga kesehatan</label>
+                  <value>6</value>
+                </item>
+              </select1>
+              <input ref="/susenas/blok_ppk/roster_blok10/blok_10/blok_10_1/P1005">
+                <label>Berapa Total Biaya KB modern tersebut ? (dalam rupiah)</label>
+              </input>
+            </group>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/susenas/metadata">
+      <label>metadata</label>
+      <input appearance="display" ref="/susenas/metadata/note_start">
+        <label>Start : <output value=" /susenas/metadata/start "/></label></input>
+      <input appearance="display" ref="/susenas/metadata/note_end">
+        <label>End : <output value=" /susenas/metadata/end "/></label></input>
+    </group>
+  </h:body>
+</h:html>

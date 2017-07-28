@@ -1,0 +1,45 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head><!-- ODK Aggregate upload time: 2017-05-18T03:49:24.947+0000 on https://capi55-007.appspot.com -->
+    <h:title>skripsi_</h:title>
+    <model>
+      <instance>
+        <data id="build_skripsi-_1495012526">
+          <meta>
+            <instanceID/>
+          </meta>
+          <no_bangunan/>
+          <foto_bangunan/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="English">
+          <text id="/data/no_bangunan:label">
+            <value>No Bangunan</value>
+          </text>
+          <text id="/data/no_bangunan:hint">
+            <value>Masukan no bangunan</value>
+          </text>
+          <text id="/data/foto_bangunan:label">
+            <value>Foto Bangunan</value>
+          </text>
+          <text id="/data/foto_bangunan:hint">
+            <value>ambil foto bangunan</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/no_bangunan" type="string" required="true()"/>
+      <bind nodeset="/data/foto_bangunan" type="binary"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/no_bangunan">
+      <label ref="jr:itext('/data/no_bangunan:label')"/>
+      <hint ref="jr:itext('/data/no_bangunan:hint')"/>
+    </input>
+    <upload ref="/data/foto_bangunan" mediatype="image/*">
+      <label ref="jr:itext('/data/foto_bangunan:label')"/>
+      <hint ref="jr:itext('/data/foto_bangunan:hint')"/>
+    </upload>
+  </h:body>
+</h:html>

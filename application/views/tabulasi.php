@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content ^_^ -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="row">
@@ -59,7 +59,6 @@
                   <button type="button" class="btn btn-default" title="Muat ulang data" id="reloadTable"><i class="fa fa-refresh"></i></button>
                   <button type="button" class="btn btn-default" title="Simpan tabulasi" id="saveTable"><i class="fa fa-save"></i></button>
                   <button type="button" class="btn btn-default" title="Buka tabulasi" id="openTable"><i class="fa fa-folder-open-o"></i></button>
-
                 </div>
 
                 <hr>

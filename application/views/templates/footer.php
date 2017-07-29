@@ -65,6 +65,30 @@
     }
   }
 
+// custom function to get latest element of an array
+last = function(arr){
+  return arr[arr.length - 1];
+}
+
+//toast
+function toastUp(msg) {
+  var x = document.getElementById("snackbar");
+  x.innerHTML = msg;
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+//today time
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+var d = today.getDate();
+var mo = today.getMonth();
+var y = today.getFullYear();
+
+var now = d + '/' + mo + '/' + y + ' - ' + h + ':' + m + ':' + s;
+
 </script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

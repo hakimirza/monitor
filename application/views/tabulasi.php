@@ -34,10 +34,12 @@
             <div class="row">
               <div class="col-xs-12">
 
-                <button type="button" class="btn btn-default" title="Bersihkan tabel" id="clearTable"><i class="fa fa-eraser"></i></button>
-                
-                <button type="button" class="btn btn-default" title="Undo" id="undo"><i class="fa fa-reply"></i></button>                
-                <button type="button" class="btn btn-default" title="Redo" id="redo"><i class="fa fa-share"></i></button>                
+                <button type="button" class="btn btn-default" title="Bersihkan tabel" id="clearTableBtn" data-toggle="modal" data-target="#isClear"><i class="fa fa-eraser"></i></button>
+
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+
+                <button type="button" class="btn btn-default" title="Undo" id="undo"><i class="fa fa-reply"></i></button>
+                <button type="button" class="btn btn-default" title="Redo" id="redo"><i class="fa fa-share"></i></button>
 
                 <div class="pull-right">
                   <select class="form-control" id="selectDataset">
@@ -57,8 +59,8 @@
                 <div class="pull-right">
 
                   <button type="button" class="btn btn-default" title="Muat ulang data" id="reloadTable"><i class="fa fa-refresh"></i></button>
-                  <button type="button" class="btn btn-default" title="Simpan tabulasi" id="saveTable"><i class="fa fa-save"></i></button>
-                  <button type="button" class="btn btn-default" title="Buka tabulasi" id="openTable"><i class="fa fa-folder-open-o"></i></button>
+                  <button type="button" class="btn btn-default" title="Simpan tabulasi" id="saveTableBtn" data-toggle="modal" data-target="#saveTableModal"><i class="fa fa-save"></i></button>
+                  <button type="button" class="btn btn-default" title="Buka tabulasi" id="openTableBtn" data-toggle="modal" data-target="#openTableModal"><i class="fa fa-folder-open-o"></i></button>
                 </div>
 
                 <hr>
@@ -66,8 +68,10 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-xs-8">
                <div id="output"></div>
+             </div>
+             <div class="col-xs-4">
              </div>
            </div>
          </div>
@@ -79,7 +83,70 @@
    </div>
    <!-- /.row -->
 
- </section>
- <!-- /.content -->
+   <!-- Modal konfirmasi reset -->
+   <div class="modal" id="isClear" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4><i class="fa fa-exclamation-circle"></i> Bersihkan tabel?</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-danger" id="clearTable" data-dismiss="modal"><i class="fa fa-eraser"></i> Bersihkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal save config -->
+  <div class="modal" id="saveTableModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="form-group" id="guoblok">
+            <label>Judul tabulasi</label>
+            <input class="form-control input-lg" type="text" placeholder="Nama layout tabulasi" id="namaTabulasi" autofocus="">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" id="closeModal">Batal</button>
+          <button type="button" class="btn btn-primary" id="saveTable" data-dismiss="modal"><i class="fa fa-save"></i> Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal open config -->
+  <div class="modal" id="openTableModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Daftar tabulasi</h4>
+        </div>
+        
+        <div class="modal-body">
+          <table class="table table-hover">
+            <tbody id="listConfig">
+              <tr>
+                <th></th>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Pilih</th>
+              </tr>
+            </tbody>
+          </table>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-primary" id="openTable" data-dismiss="modal"><i class="fa fa-cloud-download"></i> Muat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /.content -->
 </div>
   <!-- /.content-wrapper

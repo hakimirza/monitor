@@ -43,6 +43,52 @@ class Tabulasi extends CI_Controller {
 		echo json_encode($data);
 	}
 
+	public function saveConfig(){
+
+		if ($this->session->userdata('id_user')) {
+
+			$this->load->model('tabulasi_model');
+
+			$id_user = $this->session->userdata('id_user');
+			$id_project = $this->session->userdata('id_proj');
+
+			$config = $this->input->post('config');
+			$name = $this->input->post('name');
+ 
+			$data = array(
+				'id_user' => $id_user,
+				'id_project' => $id_project,
+				'tabulation_config' => $config,
+				'name' => $name,
+				'is_on' => 1,
+				);
+
+			$this->tabulasi_model->saveConfig($data);
+
+			echo 'Berhasil';
+		}
+		else{
+			echo "404 not found";
+		}
+	}
+
+	public function loadConfig(){
+
+			$this->load->model('tabulasi_model');
+			$id_user = $this->session->userdata('id_user');
+			$id_project = $this->session->userdata('id_proj');
+
+			$data = array(
+				'id_user' => $id_user,
+				'id_project' => $id_project
+				);
+
+			$result = $this->tabulasi_model->loadConfig($data);
+			$result = json_encode($result);
+			// $result = str_replace('"',"'",$result);
+			echo $result;
+	}
+
 	private function splitRuta($data){
 
 		$group = array();

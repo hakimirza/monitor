@@ -6,8 +6,13 @@ class Dasbor extends CI_Controller {
 	public function index($page = 'Dasbor')
 	{
 
-		$id_project = 9; //dummyyyyyyyyyy
+		// dummyyyyyyyyyy ===========================
+		$id_project = 9;
+		$id_user = 51;
 		$this->session->set_userdata('id_proj', $id_project);
+		$this->session->set_userdata('id_user', $id_user);
+		// dummyyyyyyyyyy ===========================
+
 		$id_proj = $this->session->userdata('id_proj');
 		
 		$this->load->library('survei');

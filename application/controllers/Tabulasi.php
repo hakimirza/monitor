@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tabulasi extends CI_Controller {
+class Tabulasi extends MY_Controller {
 
 	public function index(){
 
@@ -31,7 +31,6 @@ class Tabulasi extends CI_Controller {
 
 	public function dataJson(){
 
-		$id_proj = $this->session->userdata('id_proj');
 		$this->load->library('survei');
 
 		$survei = new Survei();

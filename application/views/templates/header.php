@@ -19,13 +19,16 @@
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
-  -->
-  <link rel="stylesheet" href="<?= base_url() ?>dist/css/skins/skin-black.min.css">
-  <!-- custom -->
-  <link rel="stylesheet" href="<?= base_url() ?>dist/css/style.css">
+      -->
+      <link rel="stylesheet" href="<?= base_url() ?>dist/css/skins/skin-black.min.css">
+      <!-- custom -->
+      <link rel="stylesheet" href="<?= base_url() ?>dist/css/style.css">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!-- nprogress -->
+      <link rel="stylesheet" href="<?= base_url() ?>plugins/nprogress/nprogress.css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

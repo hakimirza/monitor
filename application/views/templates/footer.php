@@ -2,7 +2,7 @@
 <footer class="main-footer">
   <!-- To the right -->
   <div class="pull-right hidden-xs">
-    
+
   </div>
   <!-- Default to the left -->
   <strong>2017 &copy; </strong>Monitoring Survei
@@ -18,11 +18,23 @@
 <script src="<?= base_url() ?>bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url() ?>dist/js/app.min.js"></script>
+<!-- nprogress -->
+<script src="<?= base_url() ?>plugins/nprogress/nprogress.js"></script>
 
 <script>
-  $(document).ready(function(){
-    
-    $('table tr[data-href]').click(function(){
+
+// nprogress
+$(document).ajaxStart(function() {
+  NProgress.start();
+});
+
+$(document).ajaxStop(function() {
+  NProgress.done();
+});
+
+$(document).ready(function(){
+
+  $('table tr[data-href]').click(function(){
       window.location = $(this).data('href'); //reload current page
       // window.open($(this).data('href')); //new tab directly
       return false;
@@ -32,10 +44,10 @@
     $('[data-toggle="tooltip"]').tooltip(); 
   });
 
-  function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
     // var s = today.getSeconds();
     m = checkTime(m);
     // s = checkTime(s);

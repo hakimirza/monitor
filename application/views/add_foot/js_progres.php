@@ -38,8 +38,8 @@
 
             return n == 2 ? 'prov.js' :
             n == 4 ? 'kab.js' :
-            n == 7 ? 'kecamatan.js' :
-            n == 10? 'jakarta.js' :
+            n == 7 ? 'kec.js' :
+            n == 10? 'des.js' :
             '';
         }
 
@@ -62,7 +62,7 @@
             },
             error: function() {
 
-                alert('There was a problem with the request.');
+                console.log('There was a problem with the request.');
             }
         });
 
@@ -72,9 +72,9 @@
             for (var i = 0; i < lokus.length; i++) {
 
              properti = n == 2 ? feature.properties.id2013 : 
-                        n == 4 ? feature.properties.PROVNO + feature.properties.KABKOTNO :
-                        n == 7 ? feature.properties.kode :
-                                feature.properties.ID;
+                        n == 4 ? feature.properties.ID2014_2 :
+                        n == 7 ? feature.properties.IDKEC :
+                                feature.properties.IDSP2010;
 
              if (properti == lokus[i].id) {
 
@@ -83,7 +83,7 @@
                 feature.properties.nama = obj.nama;
                 feature.properties.input = obj.count;
                 feature.properties.target = obj.target;
-                feature.properties.progres = obj.count/obj.target*100;
+                feature.properties.progres = Math.round(obj.count/obj.target*100);
             }
         }
         return feature.properties.show_on_map;
@@ -185,7 +185,7 @@ var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
 
-    var div = L.DomUtil.create('div', 'info legend'),
+    var div = L.DomUtil.create('div', 'mapinfo legend'),
     grades = [0, 20, 40, 60, 80],
     labels = [];
 

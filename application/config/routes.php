@@ -54,3 +54,4 @@ $route['default_controller'] = 'dasbor';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['progres/(:any)'] = 'progres/index/$1';
+$route['logout'] = 'login/logout';

@@ -1,6 +1,10 @@
 <script src="<?= base_url() ?>plugins/jQueryUI/jquery-ui.min.js"></script>
 <script src="<?= base_url() ?>plugins/pivot/pivot.js"></script>
+<script src="<?= base_url() ?>plugins/pivot/d3.min.js"></script>
+<script src="<?= base_url() ?>plugins/pivot/c3.min.js"></script>
+
 <script src="<?= base_url() ?>plugins/pivot/export_renderers.js"></script>
+<script src="<?= base_url() ?>plugins/pivot/c3_renderers.js"></script>
 
 <script>
 
@@ -22,7 +26,7 @@ var getData = function(){
             loadDone = true;
 
         // default
-        dataNow = data.group;
+        if(!dataNow) dataNow = data.group;
         setPivotUI(dataNow);
 
         toastUp("Berhasil memuat data");
@@ -46,6 +50,7 @@ function setPivotUI(data, config = {}, reset = false){
 
     if (loadDone) {
         var renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.export_renderers);
+        var renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.c3_renderers);
 
         var functionsConfig = {
             renderers : renderers,
@@ -112,7 +117,8 @@ var saveTable = function(){
 $('#namaTabulasi').keyup(function(e){ 
     var code = e.which; // recommended to use e.which, it's normalized across browsers
     if(code==13)e.preventDefault();
-    if(code==32||code==13||code==188||code==186){
+    // if(code==32||code==13||code==188||code==186){
+    if(code==13){
 
         $( '#closeModal' ).trigger( 'click' );
         saveTable();

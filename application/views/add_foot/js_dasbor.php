@@ -1,13 +1,13 @@
 <!-- Google Map -->
 <?php if(!empty($location)): ?>
-    <script>
-        var map;
-        function initMap() {
-            var jkt = {lat: -6.21462, lng: 106.84513};
-            var map = new google.maps.Map(document.getElementById('map_dasbor'), {
-                center: jkt,
-                zoom: 11
-            });
+  <script>
+    var map;
+    function initMap() {
+      var jkt = {lat: -6.21462, lng: 106.84513};
+      var map = new google.maps.Map(document.getElementById('map_dasbor'), {
+        center: jkt,
+        zoom: 5
+      });
 
          // Create an array of alphabetical characters used to label the markers.
          var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -20,46 +20,64 @@
           return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length]
+          });
         });
-      });
 
         // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-    }
+          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
 
-    var locations = <?php print_r($location) ?>
-    // var locations = [
-    // {lat: -6.2305258, lng: 106.8646361},
-    // {lat: -6.2305258, lng: 106.8646361},
-    // {lat: -6.2305258, lng: 106.8646361}
-    // ]
+      var locations = <?php print_r($location) ?>
 
-        // var marker = new google.maps.Marker({
-        //   position: jkt,
-        //   map: map
-        // });
-    </script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQFjRggMlnBZO62jcu0-awkKaSiA50kho&callback=initMap"
-    async defer></script>
-<?php endif; ?>
+      </script>
+      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQFjRggMlnBZO62jcu0-awkKaSiA50kho&callback=initMap"
+      async defer></script>
+    <?php endif; ?>
 
-<!-- ChartJS 1.0.1 -->
-<script src="<?= base_url() ?>plugins/chartjs/Chart.min.js"></script>
-<script src="<?= base_url() ?>plugins/chartjs/Chart.PieceLabel.js"></script>
+<!-- ========================================= -->
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
+    <!-- ChartJS 1.0.1 -->
+    <script>
 
-<!-- custom -->
-<script src="<?= base_url() ?>dist/js/dasbor/chart_init.js"></script>
+      // used in chart_init.js
+      var dataIzin = new Array();
+      var lineInput = {};
+      var lineDur = {};
 
-<!-- timer -->
+      $.ajax({
+        type: 'GET',
+        url: '<?= base_url() ?>dasbor/ajaxChart/',
+        datatype: 'json',
+        success: function(result){
+          result = JSON.parse(result);
+          dataIzin = result.donatIzin;
+          lineInput = result.lineInput;
+          lineDur = result.lineDur;
+        },
+        error: function(){
+          console.log('There was a problem with the request.');
+        },
+        complete: function() {
 
-<script>
+         $.getScript("<?= base_url() ?>dist/js/dasbor/chart_init.js", function() {
+          console.log('loaded script and content');
+        });
+       }
+     });
+   </script>
+   <script src="<?= base_url() ?>plugins/chartjs/Chart.min.js"></script>
+   <script src="<?= base_url() ?>plugins/chartjs/Chart.PieceLabel.js"></script>
+
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
+
+<!-- ======================================== -->
+
+   <script>
 // Set the date we're counting down to
-var countDownDate = new Date("<?= $deadline ?>").getTime();
+var countDownDate = new Date('<?= $deadline ?>').getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -87,29 +105,60 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// ganti warna progres
+// ==================================
+
+// Progress time interval 1 sec
+var cuobo = setInterval(function() {
+
+  var today = new Date();
+  var start = new Date('<?= $start ?>');
+  var end = new Date('<?= $deadline ?>');
+
+  var p = Math.round(((today - start) / (end - start)) * 100);
+  p = p > 100 ? 100 : p;
+
+  $('#timebarLabel').text(p + ' %');
+
+  $('#timebar').attr({
+    'aria-valuenow': p, 
+    style: 'width: ' + p + '%'
+  });
+
+colorNeg();
+}, 1000);
+
+// ===================================
+
+// change progress color
 // progres positif
-var progpos = $('.progress-positive');
-$( progpos ).each(function( i ) {
-  if($(this).attr('aria-valuenow') < 30){
-    $(this).addClass('progress-bar-danger');
-}else if($(this).attr('aria-valuenow') < 60){
-    $(this).addClass('progress-bar-warning');
-}else{
-    $(this).addClass('progress-bar-success')
+var colorPos = function(){
+  var progpos = $('.progress-positive');
+  $( progpos ).each(function( i ) {
+    if($(this).attr('aria-valuenow') < 30){
+      $(this).addClass('progress-bar-danger');
+    }else if($(this).attr('aria-valuenow') < 60){
+      $(this).addClass('progress-bar-warning');
+    }else{
+      $(this).addClass('progress-bar-success');
+    }
+  });
 }
-});
 
 // progres negatif
+var colorNeg = function(){
 var progneg = $('.progress-negative');
 $( progneg ).each(function( i ) {
  if($(this).attr('aria-valuenow') < 30){
-    $(this).addClass('progress-bar-success');
+  $(this).addClass('progress-bar-success');
 }else if($(this).attr('aria-valuenow') < 60){
-    $(this).addClass('progress-bar-warning');
+  $(this).addClass('progress-bar-warning');
 }else{
-    $(this).addClass('progress-bar-danger')
+  $(this).addClass('progress-bar-danger');
 }
 });
+}
+
+colorPos();
+colorNeg();
 
 </script>

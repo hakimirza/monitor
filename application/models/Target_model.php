@@ -2,6 +2,7 @@
 
 class Target_model extends CI_Model {
 
+	private $id_proj;
 	private $project;
 	private $targetBS;
 	private $table;
@@ -11,13 +12,15 @@ class Target_model extends CI_Model {
 	{
 		$this->load->database();
 		$this->load->model('project_model');
+		$this->setIdProject();
 
 		parent::__construct();
 	}
 
-	public function setIdProject($idProject){
+	private function setIdProject(){
 
-		$this->project = $this->project_model->getProject($idProject);
+		$this->id_proj = $this->session->userdata('id_proj');
+		$this->project = $this->project_model->getProject($this->id_proj);
 		$this->targetBS = $this->project['sample_target_bs'];
 		$this->table = $this->project['sampling_table'];
 		$this->columns = json_decode($this->project['loc_columns']);
@@ -25,7 +28,7 @@ class Target_model extends CI_Model {
 
 	// get general target by id wilayah
 	public function getTarget($id){
-	
+
 		$table = $this->table;
 		$columns = $this->columns;
 		$targetBS = $this->targetBS;
@@ -61,6 +64,7 @@ class Target_model extends CI_Model {
 		return $count * $targetBS;					
 	}
 
+	// get zero input area
 	public function getRestRow($array){
 
 		$table = $this->table;
@@ -68,7 +72,7 @@ class Target_model extends CI_Model {
 
 		$n = strlen(
 			(string)
-				current($array));
+			current($array));
 
 		$cols = '';
 
@@ -97,6 +101,18 @@ class Target_model extends CI_Model {
 		$query = $this->db->get($this->table);
 
 		return $query->result_array();
+	}
+
+	public function getTotalTarget(){
+
+		$table = $this->table;
+		$targetBS = $this->targetBS;
+
+		$this->db->select('*');
+		$this->db->from($table);
+		$result = $this->db->count_all_results() * $targetBS;
+
+		return $result;
 	}
 
 }

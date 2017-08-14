@@ -1,11 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Coba extends CI_Controller {
+class Coba extends MY_Controller {
 
 	public function index()
 	{
-		
 		// // JSON POST Publisher receiver
 		// $input_data = "kosong";
 		// if ($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -16,12 +15,14 @@ class Coba extends CI_Controller {
 		// 	'json' => $input_data
 		// 	);
 		// $this->load->view('blank', $data);
+		
+		$this->load->library('survei');
+		$survei = new Survei();
+		$data = $survei->countByDay();
+		$data2 = $survei->avgDurByDay();
 
-		$this->load->model('location_name');
-		echo $this->location_name->getNamaWil('11').'<br>';
-		echo $this->location_name->getNamaWil('1102').'<br>';
-		echo $this->location_name->getNamaWil('1102011').'<br>';
-		echo $this->location_name->getNamaWil('1102011001').'<br>';
+		print_r($data);
+		print_r($data2);
 
 	}
 }

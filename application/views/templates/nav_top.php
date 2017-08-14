@@ -27,7 +27,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href=<?= '"'.base_url().'"' ?> class="logo">
+    <a href=<?= '"'.base_url().'dasbor"' ?> class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b><i class="fa fa-tv"></i></b></span>
       <!-- logo for regular state and mobile devices -->
@@ -64,12 +64,12 @@ desired effect
                 <img src="<?= base_url() ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Hakimirza - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  Hakimirza - Super Admin
+                  <!-- <small>Member since Jan. 2012</small> -->
                 </p>
               </li>
               <!-- Menu Body -->
-              <li class="user-body">
+             <!--  <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
                     <a href="#">Followers</a>
@@ -80,7 +80,7 @@ desired effect
                   <div class="col-xs-4 text-center">
                     <a href="#">Friends</a>
                   </div>
-                </div>
+                </div> -->
                 <!-- /.row -->
               </li>
               <!-- Menu Footer-->
@@ -89,7 +89,7 @@ desired effect
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?= base_url().'logout' ?>" class="btn btn-default btn-flat">Log out</a>
                 </div>
               </li>
             </ul>

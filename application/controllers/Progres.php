@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Progres extends CI_Controller {
+class Progres extends MY_Controller {
 
 	public function index($id = '')
 	{
@@ -111,7 +111,6 @@ class Progres extends CI_Controller {
 	private function getCountDistinct($id_proj, $id, $data){
 
 		$target = new Target_model();
-		$target->setIdProject($id_proj);
 
 		$id = (string)$id;
 		$n = strlen((string)$id);
@@ -125,7 +124,7 @@ class Progres extends CI_Controller {
 
 		$count = array_count_values($var);
 
-		// get wilayah yg masih belum mendapat input
+		// get zero input area
 		$exist = array();
 		foreach ($count as $key => $val) {
 
@@ -183,7 +182,6 @@ class Progres extends CI_Controller {
 	private function objectify($count, $id_proj){
 
 		$target = new Target_model();
-		$target->setIdProject($id_proj);
 
 		$arrChild = array();
 

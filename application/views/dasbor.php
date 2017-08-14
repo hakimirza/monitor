@@ -21,9 +21,11 @@
             <!-- count input -->
             <div class="small-box bg-green">
               <div class="inner">
+              <p>Input</p>
                 <h3><?= $count_input ?></h3>
 
-                <p>Kuesioner Masuk</p>
+                <p>Target: <b><?= $target_input ?></b></p>
+
               </div>
               <div class="icon">
                 <i class="fa fa-file-text-o"></i>
@@ -33,6 +35,7 @@
             <!-- progres input -->
             <div class="small-box bg-white">
               <div class="inner">
+                <p><b>Progres</b></p>
                 <h3><?= $percent_input ?> %</h3>
                 <div class="progress active">
                   <div class="progress-bar progress-bar-striped progress-positive" role="progressbar" aria-valuenow="<?= $percent_input ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $percent_input ?>%">
@@ -40,7 +43,6 @@
                   </div>
                   <!-- <div class="progress-bar" style="width: <?= $percent_input ?>%"></div> -->
                 </div>
-                <p><b>Total Input</b></p>
               </div>
               <div class="icon">
                 <i class="fa fa-file-text-o"></i>
@@ -49,17 +51,16 @@
             <!-- alokasi waktu terpakai -->
             <div class="small-box bg-white">
               <div class="inner">
-                <b class="x-large"><?= $percent_time ?> %</b>
+                <b id="timebarLabel" class="x-large">...</b>
                 <div class="progress progress-sm active">
-                  <div class="progress-bar progress-bar-striped progress-negative" role="progressbar" aria-valuenow="<?= $percent_time ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $percent_time ?>%">
-                    <span class="sr-only"><?= $percent_time ?>% Alokasi waktu terpakai</span>
+                  <div id="timebar" class="progress-bar progress-bar-striped progress-negative" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="">
                   </div>
                   <!-- <div class="progress-bar" style="width: <?= $percent_input ?>%"></div> -->
                 </div>
                 <p><b>Alokasi Waktu</b> Terpakai</p>
               </div>
               <div class="icon">
-                <i class="fa fa-clock-o"></i>
+                <i class="fa fa-calendar-o"></i>
               </div>
             </div>
           </div>
@@ -68,7 +69,7 @@
             <!-- google map -->
             <div class="box box-success">
               <div class="box-header with-border">
-                <h3 class="box-title">Peta Progres Cacah</h3>
+                <h3 class="box-title">Peta Klaster Responden</h3>
               </div>
               <div class="box-body">
 
@@ -85,11 +86,21 @@
                 <p>Sisa Waktu</p>
                 
                 <h3 id="timer"></h3>
+                <hr/>
+
+                <p>
+                  Mulai:
+                  <br/><?= $start ?>
+                </p>
+                <p>
+                  Berakhir:
+                  <br/><?= $deadline ?>
+                </p>
               </div>
               <div class="icon">
                 <i class="fa fa-calendar-o"></i>
               </div>
-              <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
+              <!-- <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a> -->
             </div>
             
             <!-- pie chart status respon -->
@@ -123,7 +134,7 @@
               </div>
               <div class="box-body">
 
-                <canvas id="line_inputHarian"></canvas>
+                <canvas id="line_inputHarian" ></canvas>
               </div>
               <!-- <div class="box-footer"></div> -->
             </div>
@@ -136,7 +147,7 @@
               </div>
               <div class="box-body">
 
-                <canvas id="line_durasiCacah"></canvas>
+                <canvas id="line_durasiCacah" ></canvas>
               </div>
               <!-- <div class="box-footer"></div> -->
             </div>

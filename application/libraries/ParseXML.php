@@ -70,6 +70,16 @@ class ParseXML extends CI_Controller {
 		return $data;
 	}
 
+	public function getFormId($file, $tag = 'data'){
+
+		$xmlDoc = new DOMDocument();
+		$xmlDoc->load(base_url().'form/'.$file);
+
+		$node = $xmlDoc->getElementsByTagName($tag)->item(0);
+		$attrNode = $node->getAttributeNode('id');
+		return $attrNode->value;
+	}
+
 	// parsing file form XML odk to get variable names
 	private function getNamaVar($file, $tag = 'data'){
 
@@ -113,16 +123,6 @@ class ParseXML extends CI_Controller {
 				$namaVar[$childNode->nodeName] = $childNode->nodeName;
 			}
 		}
-	}
-
-	private function getFormId($file, $tag = 'data'){
-
-		$xmlDoc = new DOMDocument();
-		$xmlDoc->load(base_url().'form/'.$file);
-
-		$node = $xmlDoc->getElementsByTagName($tag)->item(0);
-		$attrNode = $node->getAttributeNode('id');
-		return $attrNode->value;
 	}
 
 	//menghapus array yang berisi kosong

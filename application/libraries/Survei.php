@@ -10,6 +10,7 @@ class Survei extends CI_Controller {
 	private $kues;
 	private $uuids;
 	private $dataSurvei;
+	private $now;
 
 	public function __construct() {
 
@@ -19,8 +20,11 @@ class Survei extends CI_Controller {
 		$this->ci->load->model('location_name');
 		$this->ci->load->library('parsexml');
 		$this->ci->load->library('getuuid');
+	}
 
-		$this->id_proj = $this->ci->session->userdata('id_proj');
+	public function setProj($id_proj){
+
+		$this->id_proj = $id_proj;
 		$this->setVars();
 	}
 
@@ -35,7 +39,50 @@ class Survei extends CI_Controller {
 				$this->kues['tag']
 				)
 			);
-		$this->dataSurvei = $this->setData();
+		$this->now = $this->now();
+	}
+
+	// set data survei dalam bentuk array assoc by uuid
+	public function setData($wil = ''){
+
+		$project = $this->project;
+		$kues = $this->kues;
+		$uuids = $this->uuids;
+		$server = $project['aggregate_url'];
+		$file = $kues['file'];
+		$tag = $kues['tag'];
+
+		$dataSurvei = $this->ci->parsexml->getInstance($server, $file, $tag, $uuids);
+		$dataSurvei = $this->modifBS($dataSurvei);
+		$dataSurvei = $this->sortDate($dataSurvei);
+
+		$key = '';
+
+		switch (strlen((string)$wil)) {
+
+			case '2':
+			$key = 'P101';
+			break;
+
+			case '4':
+			$key = 'P102';
+			break;
+
+			default:
+			$key = '';
+			break;
+		}
+
+		if ($key != '') {
+			// filter by wilayah
+			foreach ($dataSurvei as $i => $row) {
+				if ($row[$key] != (string)$wil) {
+					unset($dataSurvei[$i]);
+				}
+			}
+		}	
+
+		$this->dataSurvei = $dataSurvei;
 	}
 
 	public function getIdProj(){
@@ -66,23 +113,6 @@ class Survei extends CI_Controller {
 			$arr[$key]['P106'] = $arr[$key]['P104'].$arr[$key]['P106'];
 		}
 		return $arr;
-	}
-	
-	// set data survei dalam bentuk array assoc by uuid
-	private function setData(){
-
-		$project = $this->project;
-		$kues = $this->kues;
-		$uuids = $this->uuids;
-		$server = $project['aggregate_url'];
-		$file = $kues['file'];
-		$tag = $kues['tag'];
-
-		$dataSurvei = $this->ci->parsexml->getInstance($server, $file, $tag, $uuids);
-		$dataSurvei = $this->modifBS($dataSurvei);
-		$dataSurvei = $this->sortDate($dataSurvei);
-
-		return $dataSurvei;
 	}
 
 	public function getNama(){
@@ -161,7 +191,7 @@ class Survei extends CI_Controller {
 			$durByDay[$day] = round(array_sum($arr)/count($arr), 1);
 		}
 
-		$dateAlong = $this->getDateAlong($this->getStartDate(), $today);
+		$dateAlong = $this->getDateAlong($this->getStartDate(), $this->now);
 
 		$durByDay = $this->insertZeroDate($durByDay, $dateAlong);
 
@@ -184,7 +214,7 @@ class Survei extends CI_Controller {
 			else $submitTime[$today]++;
 		}
 
-		$dateAlong = $this->getDateAlong($this->getStartDate(), $today);
+		$dateAlong = $this->getDateAlong($this->getStartDate(), $this->now);
 
 		$submitTime = $this->insertZeroDate($submitTime, $dateAlong);
 
@@ -245,5 +275,13 @@ class Survei extends CI_Controller {
 		usort($arr, 'cmp');
 
 		return $arr;
+	}
+
+	private function now(){
+		$date = date_create();
+		date_timestamp_set($date, (time()+18000));
+		$now = date_format($date, 'Y-m-d H:i:s');
+
+		return $now;
 	}
 }

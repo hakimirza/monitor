@@ -18,11 +18,10 @@ class Coba extends MY_Controller {
 		
 		$this->load->library('survei');
 		$survei = new Survei();
-		$data = $survei->countByDay();
-		$data2 = $survei->avgDurByDay();
+		$survei->setProj(9);
+		$survei->setData(31);
 
+		$data = $survei->getData();
 		print_r($data);
-		print_r($data2);
-
 	}
 }

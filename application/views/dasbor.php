@@ -3,13 +3,14 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <?= $title ?>
-          <small><?= $nama_survei ?></small>
+          <?= $title.' '.$nama_survei ?>
+          <!-- &nbsp;&nbsp;<span class="label label-default"><i class="fa fa-map-o"></i>&nbsp;&nbsp;<?= $area ?></span> -->
         </h1>
-       <!--  <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-          <li class="active">Here</li>
+
+      <!--   <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-map-o"></i> <?= $area ?></a></li>
         </ol> -->
+
       </section>
 
       <!-- Main content -->
@@ -84,8 +85,7 @@
             <div class="small-box bg-yellow">
               <div class="inner">
                 <p>Sisa Waktu</p>
-                
-                <h3 id="timer"></h3>
+                <div id="timer"></div>
                 <hr/>
 
                 <p>

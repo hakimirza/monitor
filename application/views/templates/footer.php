@@ -1,11 +1,13 @@
 <!-- Main Footer -->
 <footer class="main-footer">
-  <!-- To the right -->
-  <div class="pull-right hidden-xs">
+  <div class="container">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
 
+    </div>
+    <!-- Default to the left -->
+    <strong>2017 &copy; </strong>Monitoring Survei
   </div>
-  <!-- Default to the left -->
-  <strong>2017 &copy; </strong>Monitoring Survei
 </footer>
 </div>
 <!-- ./wrapper -->
@@ -30,19 +32,26 @@ $(document).ajaxStart(function() {
 
 $(document).ajaxStop(function() {
   NProgress.done();
+
+  clickable_tr();
 });
 
 $(document).ready(function(){
+
+  clickable_tr();
+
+    // tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+  });
+
+var clickable_tr = function(){
 
   $('table tr[data-href]').click(function(){
       window.location = $(this).data('href'); //reload current page
       // window.open($(this).data('href')); //new tab directly
       return false;
     });
-
-    // tooltip
-    $('[data-toggle="tooltip"]').tooltip(); 
-  });
+}
 
 function startTime() {
   var today = new Date();

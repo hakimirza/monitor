@@ -49,11 +49,13 @@ class Progres extends MY_Controller {
 			'jenisWil' => $this->cekId($id)['jenis'],
 			'colJenis' => $this->cekId($id)['col'],
 			'namaWil' => $this->location_name->getNamaWil($id),
-			'parents' => $parents
+			'parents' => $parents,
+			'datatableId' => 'tabel-progres'
 			);
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('add_head/css_progres');
+		$this->load->view('add_head/css_leaflet');
+		$this->load->view('add_head/css_datatables');
 		$this->load->view('templates/nav_top');
 		$this->load->view('templates/nav_left');
 		$this->load->view('progres');

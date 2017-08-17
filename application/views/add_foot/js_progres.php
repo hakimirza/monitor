@@ -1,18 +1,3 @@
-<!-- Data Table -->
-<script>
-  $(function () {
-    $("#tabel-progres").DataTable();
-    // $('#example2').DataTable({
-    //   "paging": true,
-    //   "lengthChange": false,
-    //   "searching": false,
-    //   "ordering": true,
-    //   "info": true,
-    //   "autoWidth": false
-    // });
-});
-</script>
-
 <!-- leaflet -->
 <?php if(!empty($location)): ?>
     <script src="<?= base_url() ?>plugins/leaflet/leaflet.js"></script>
@@ -232,8 +217,5 @@ $( progneg ).each(function( i ) {
     $(this).addClass('progress-bar-danger')
 }
 });
-
-//coba
-
 
 </script>

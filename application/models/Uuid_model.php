@@ -1,4 +1,5 @@
 <?php
+// !!!!!!!!!!!!!!!!!!!!This file is so far replaced by libraries/GetUuid.php
 
 class Uuid_model extends CI_Model {
 

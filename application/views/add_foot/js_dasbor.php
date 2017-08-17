@@ -49,7 +49,7 @@
 
       $.ajax({
         type: 'GET',
-        url: '<?= base_url() ?>dasbor/ajaxChart/',
+        url: '<?= base_url() ?>dasbor/ajaxChart/<?= $id_proj ?>',
         datatype: 'json',
         success: function(result){
           result = JSON.parse(result);
@@ -95,13 +95,18 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("timer").innerHTML = `
+  <span class="big">` + days + `</span><span> hari</span>
+  <span class="big"> :` + hours + `</span><span> jam</span>
+  <span class="big"> :` + minutes + `</span><span> mnt</span>
+  <span class="big"> :` + seconds + `</span><span> dtk</span>
+  `;
+  // days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
   	clearInterval(x);
-  	document.getElementById("timer").innerHTML = "Waktu Habis";
+  	document.getElementById('timer').innerHTML = '<span class="big">Waktu Habis</span>';
   }
 }, 1000);
 

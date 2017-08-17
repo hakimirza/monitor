@@ -6,19 +6,12 @@ class MY_Controller extends CI_Controller {
     public function __construct(){
 
         parent::__construct();
-        //Initialization code that affects all controllers
+
+        //Initialization code that affects all controllers extended from this controller
         // dummyyyyyyyyyy ===========================
 		$id_project = 9;
-		$id_user = 51;
 		$this->session->set_userdata('id_proj', $id_project);
-		$this->session->set_userdata('id_user', $id_user);
 		// dummyyyyyyyyyy ===========================
-
-		// if($this->ci->session->userdata('nip') == '') {
-
-		// 	$this->ci->session->set_flashdata('Peringatan','Anda belum login');
-		// 	redirect(base_url('login'));
-		// }
 		$this->cek_login();
     }
 

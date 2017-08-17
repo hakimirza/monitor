@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 
 		if($this->session->userdata('email') != '') {
 
-			header('Location: '.base_url().'dasbor');
+			header('Location: '.base_url());
 		}
 		
 		// $this->load->library('form_validation');
@@ -41,16 +41,28 @@ class Login extends CI_Controller {
 
 		$this->load->model('user_model');
 
-		$query = $this->user_model->auth($data);
+		$query = $this->user_model->loginData($data);
 		if($query->num_rows() > 0) {
 
 			$row = $query->row();
-			$nama = $row->firstname.' '.$row->lastname;
+			$id_user = $row->id;
+			$nama =	$row->firstname.' '.$row->lastname;
 			$email = $row->email;
+			$img_url = base_url().'dist/img/';
+			$avatar = $row->image_link == '' ? $img_url.'default.png' : $img_url.$row->image_link;
+			$id_wil = array(
+				'pusat'	=>	$row->is_pusat,
+				'prov'	=>	$row->id_provinsi,
+				'kab'	=>	$row->id_kabupaten,
+				);
 
+			$this->session->set_userdata('id_user', $id_user);
 			$this->session->set_userdata('email', $email);
 			$this->session->set_userdata('nama', $nama);
-			redirect(base_url().'dasbor');
+			$this->session->set_userdata('avatar', $avatar);
+			$this->session->set_userdata('id_wil', $id_wil);
+
+			redirect(base_url());
 		}else{
 
 			$this->session->set_flashdata('galat','NIP atau password salah');

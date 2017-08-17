@@ -26,6 +26,11 @@ table thead tr th:hover {
 	background-color: #e6e6e6;
 }
 
+.big {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 /*toast*/
 #snackbar {
     visibility: hidden;

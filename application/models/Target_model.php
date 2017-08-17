@@ -2,7 +2,7 @@
 
 class Target_model extends CI_Model {
 
-	private $id_proj;
+	// private $id_proj;
 	private $project;
 	private $targetBS;
 	private $table;
@@ -11,16 +11,20 @@ class Target_model extends CI_Model {
 	public function __construct()
 	{
 		$this->load->database();
-		$this->load->model('project_model');
-		$this->setIdProject();
+		// $this->load->model('project_model');
 
 		parent::__construct();
 	}
 
-	private function setIdProject(){
+	public function setProj($project){
 
-		$this->id_proj = $this->session->userdata('id_proj');
-		$this->project = $this->project_model->getProject($this->id_proj);
+		$this->project = $project;
+		$this->setVars();
+	}
+
+	private function setVars(){
+
+		// $this->project = $this->project_model->getProject($this->id_proj);
 		$this->targetBS = $this->project['sample_target_bs'];
 		$this->table = $this->project['sampling_table'];
 		$this->columns = json_decode($this->project['loc_columns']);
@@ -64,7 +68,8 @@ class Target_model extends CI_Model {
 		return $count * $targetBS;					
 	}
 
-	// get zero input area
+	// get all area by certain locus column
+	// expected input array is array of locus without zero count
 	public function getRestRow($array){
 
 		$table = $this->table;

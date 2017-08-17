@@ -3,29 +3,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dasbor extends MY_Controller {
 
-	public function index($page = 'Dasbor')
+	public function index($id_proj = '')
 	{
 
-		$id_proj = $this->session->userdata('id_proj');
+		$this->cekParam($id_proj);
+
+		$page = 'Dasbor';
+		// $id_proj = $this->session->userdata('id_proj');
 		
 		$this->load->library('survei');
 		$this->load->model('map_model');
 		$this->load->model('target_model');
+		$this->load->model('location_name');
 
 		$survei = new Survei();
-		$map = new Map_model();
 		$target = new Target_model();
+		$map = new Map_model();
+		$locName = new Location_name();
 		
+		// initiate project id
+		$survei->setProj($id_proj);
+		$target->setProj($survei->getProject());
+		$map->setSurvei($survei);
+
+		// check user monitoring scope
+		$wil_filter = $this->wilFilter();
+		$area = $wil_filter != '' ? $locName->getNamaWil($wil_filter) : '';
+
+		// set and load response data
+		$survei->setData($wil_filter);
+
 		// name
 		$namaSurvei = $survei->getNama();
 
 		// map pins
-		$map->setSurvei($survei);
 		$location = $map->getAllPins();
 
 		// progres
 		$input = $survei->countData();
-		$target_input = $target->getTotalTarget();
+		$target_input = $target->getTarget($wil_filter);
 		$percent = ($input/$target_input) * 100;
 		$percent_input = round($percent , 1);
 
@@ -36,6 +52,8 @@ class Dasbor extends MY_Controller {
 
 		$data = array(
 			'title' => $page,
+			'area' => $area,
+			'id_proj' => $id_proj,
 			'nama_survei' => $namaSurvei,
 			'start' => $start_time,
 			'deadline' => $end_time,
@@ -55,12 +73,23 @@ class Dasbor extends MY_Controller {
 		$this->load->view('templates/closer');
 	}
 
+	private function cekParam($id_proj){
+		
+		$this->load->model('user_model');
+		$id_user = $this->session->userdata('id_user');
+		$is_exist = $this->user_model->isExist($id_user, $id_proj);
+
+		if (!$is_exist) {
+			redirect(base_url().'home/error');
+		}
+	}
+
 	private function getTimeProgres($start, $end){
 		
 		// unix standardized time format
 		$start_u = strtotime($start);
 		$end_u = strtotime($end);
-		$now = time();
+		$now = time()+18000;
 
 		// percent time elapsed
 		$percent = ($now - $start_u) / ($end_u - $start_u) * 100;
@@ -126,10 +155,13 @@ class Dasbor extends MY_Controller {
 		return array('date' => $dataDate, 'dur' => $dataDur);
 	}
 
-	public function ajaxChart(){
+	public function ajaxChart($id_proj){
 
 		$this->load->library('survei');
 		$survei = new Survei();
+		$survei->setProj($id_proj);
+		$wil_filter = $this->wilFilter();
+		$survei->setData($wil_filter);
 
 		$data = array(
 			'donatIzin' => $this->getIzin($survei),
@@ -147,6 +179,25 @@ class Dasbor extends MY_Controller {
 
 		// output format : 14th July
 		return date_format($date, 'jS F');
+	}
+
+	private function wilFilter(){
+
+		$wil_filter = '';
+		$wil = $this->session->userdata('id_wil');
+		if (!$wil['pusat']) {
+
+			if (!$wil['kab']) {
+
+				$wil_filter = $wil['prov'];
+			}
+			else{
+
+				$wil_filter = $wil['kab'];
+			}
+		}
+
+		return $wil_filter;
 	}
 
 }

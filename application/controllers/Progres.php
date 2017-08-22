@@ -49,7 +49,7 @@ class Progres extends MY_Controller {
 		$this->load->view('templates/closer');		
 	}
 
-public function data($id_proj, $id_wil = ''){
+	public function data($id_proj, $id_wil = ''){
 
 		$this->load->library('survei');
 		$this->load->model('map_model');
@@ -80,51 +80,77 @@ public function data($id_proj, $id_wil = ''){
 	}
 
 // mendapatkan wilayah di atasnya | breadcrumb di view
-	public function getParents($id){
+	public function getParents($id = ''){
 
+		$parents = array();
+
+		$this->load->library('survei');
 		$this->load->model('location_name');
+		$survei = new Survei();
 
 		$id = (string)$id;
 		$n = strlen($id);
 
-		$parents = array();
+		if ($n >= 0) {
+
+			$def = array(
+				'id' => '',
+				'jenis' => '',
+				'name' => 'INDONESIA',
+				'col' => $survei->cekId('')['col']
+				);
+			array_push($parents, $def);
+
+			if ($n == 0) {
+				echo json_encode($parents);
+				return;
+			}
+		}
 
 		if ($n >= 2) {
 
+			$sub = substr($id, 0, 2);
 			$prov = array(
-				'id' => substr($id, 0, 2),
-				'jenis' => 'Provinsi',
-				'name' => $this->location_name->getNamaWil(substr($id, 0, 2))
+				'id' => $sub,
+				'jenis' => 'PROVINSI',
+				'name' => $this->location_name->getNamaWil($sub),
+				'col' => $survei->cekId($sub)['col']
 				);
 			array_push($parents, $prov);
 		}
 
 		if($n >= 4){
 
+			$sub = substr($id, 0, 4);
 			$kab = array(
-				'id' => substr($id, 0, 4),
-				'jenis' => 'Kota/Kabupaten',
-				'name' => $this->location_name->getNamaWil(substr($id, 0, 4))
+				'id' => $sub,
+				'jenis' => 'KOTA/KABUPATEN',
+				'name' => $this->location_name->getNamaWil($sub),
+				'col' => $survei->cekId($sub)['col']
 				);
 			array_push($parents, $kab);
 		}
 
 		if($n >= 7){
 
+			$sub = substr($id, 0, 7);
 			$kec = array(
-				'id' => substr($id, 0, 7),
-				'jenis' => 'Kecamatan',
-				'name' => $this->location_name->getNamaWil(substr($id, 0, 7))
+				'id' => $sub,
+				'jenis' => 'KECAMATAN',
+				'name' => $this->location_name->getNamaWil($sub),
+				'col' => $survei->cekId($sub)['col']
 				);
 			array_push($parents, $kec);
 		}
 
 		if($n == 10){
 
+			$sub = substr($id, 0, 10);
 			$des = array(
-				'id' => substr($id, 0, 10),
-				'jenis' => 'Desa/Kelurahan',
-				'name' => $this->location_name->getNamaWil(substr($id, 0, 10))
+				'id' => $sub,
+				'jenis' => 'DESA/KELURAHAN',
+				'name' => $this->location_name->getNamaWil($sub),
+				'col' => $survei->cekId($sub)['col']
 				);
 			array_push($parents, $des);
 		}

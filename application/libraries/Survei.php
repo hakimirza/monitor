@@ -415,7 +415,7 @@ class Survei extends CI_Controller {
 	}
 
 // hitung jumlah row distinct by tag -> need function cekId() based on xml instances ODK
-	public function getCountDistinct($id_proj, $id, $data){
+	private function getCountDistinct($id_proj, $id, $data){
 
 		$target = $this->target;
 

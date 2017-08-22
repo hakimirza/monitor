@@ -9,13 +9,13 @@
           <small><?= $namaSurvei ?></small>
         </h1>
 
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" id="bread-place">
           <i class="fa fa-map-marker">&nbsp;&nbsp;</i>
           <li>
             <a href=#>
-              bretkram
+              ...
             </a>
-          </li> 
+          </li>
         </ol>
 
       </section>
@@ -31,7 +31,7 @@
           <div class="box-header">
             <h3 class="box-title">
               <i class="fa fa-table"></i>
-              Tabel Progres <span id="table-area"><?= ' '.$jenisWil.' '.$area ?></span>
+              Tabel Progres <span id="table-area"></span>
             </h3>
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -44,8 +44,8 @@
             <table id="tabel-progres" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>Nama <?= $colJenis ?></th>
+                  <th>No</th>
+                  <th id="col-jenis">...</th>
                   <th>Kode</th>
                   <th>Input</th>
                   <th>Target</th>

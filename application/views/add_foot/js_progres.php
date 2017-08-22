@@ -24,7 +24,8 @@ var mapboxAccessToken = 'pk.eyJ1IjoiaGFraW1pcnphIiwiYSI6ImNqNWNsaXZ6NTBiYnkyd3A4
           if (file[i]) {
 
             // clear initial geojson layer
-            geojson.removeFrom(map);
+            // geojson.removeFrom(map);
+            var tempFile = file[i];
 
             geojson = L.geoJson(file[i], {
               onEachFeature: onEachFeature,
@@ -46,9 +47,11 @@ var mapboxAccessToken = 'pk.eyJ1IjoiaGFraW1pcnphIiwiYSI6ImNqNWNsaXZ6NTBiYnkyd3A4
                   success: function(data) {
 
                     file[i] = data;
+                    var tempFile = file[i];
+
                     geojson = L.geoJson(file[i], {
-                      filter: filterID,
                       onEachFeature: onEachFeature,
+                      filter: filterID,
                       style: style
                   });
 
@@ -87,31 +90,32 @@ var mapboxAccessToken = 'pk.eyJ1IjoiaGFraW1pcnphIiwiYSI6ImNqNWNsaXZ6NTBiYnkyd3A4
     function filterID(feature, layer) { //return true akan menampilkan fitur pada map
         if (feature.properties) { //punya properti ? 
 
-            for (var i = 0; i < lokus.length; i++) {
+        for (var i = 0; i < lokus.length; i++) {
 
-               properti = n == 2 ? feature.properties.id2013 : 
-               n == 4 ? feature.properties.ID2014_2 :
-               n == 7 ? feature.properties.IDKEC :
-               feature.properties.IDSP2010;
+         properti = n == 2 ? feature.properties.id2013 : 
+         n == 4 ? feature.properties.ID2014_2 :
+         n == 7 ? feature.properties.IDKEC :
+         feature.properties.IDSP2010;
 
-               if (properti == lokus[i].id) {
+         if (properti == lokus[i].id) {
 
-                var obj = lokus[i];
-                feature.properties.show_on_map = true;
-                feature.properties.nama = obj.nama;
-                feature.properties.input = obj.count;
-                feature.properties.target = obj.target;
-                feature.properties.progres = Math.round(obj.count/obj.target*100);
-            }
+            var obj = lokus[i];
+            feature.properties.show_on_map = true;
+            feature.properties.nama = obj.nama;
+            feature.properties.input = obj.count;
+            feature.properties.target = obj.target;
+            feature.properties.progres = Math.round(obj.count/obj.target*100);
+            break;
         }
-        return feature.properties.show_on_map;
     }
-    return false;
+    return feature.properties.show_on_map;
+}
+return false;
 }
 
 function onEachFeature(feature, layer) {
 // tidak punya properti.show_on_map ?
-if (!feature.properties.show_on_map) {
+if (!feature.properties.show_on_map || feature.properties.show_on_map == true) {
     feature.properties.show_on_map = false; 
 }
 
@@ -227,7 +231,7 @@ legend.addTo(map);
 
 //  ====================================
 // get parents
-function get_parents(id){
+function get_parents(id = ''){
 
     $.ajax({
       type: 'GET',
@@ -238,16 +242,61 @@ function get_parents(id){
         var data = JSON.parse(result);
 
         breadcrumbs(data);
+        table_label(data);
     },
     error: function(){
-        console.log('There was a problem with mainLoader request.');
+        console.log('There was a problem with your parents ;)');
     }
 });
 }
 
 function breadcrumbs(data){
 
+    var ol = $('#bread-place');
+    ol.empty();
 
+    var $i = $('<i class="fa fa-map-marker">&nbsp;&nbsp;</i>');
+    $i.appendTo(ol);
+
+    $.each(data, function(i, item) {
+
+        var $li = $(`
+            <li>
+                <a href=# title="`+ item.id +`" >
+                  `+ item.name +`
+              </a>
+          </li>
+          `);
+        $li.appendTo(ol);
+    });
+
+    clickBread(); 
+}
+
+function table_label(data){
+
+    var i = data.length - 1;
+    var data = data[i];
+
+    var title = $('#table-area');
+    var col = $('#col-jenis');
+
+    title.empty();
+    title.append(data.jenis + ' <b>' + data.name + '</b>');
+    col.text(data.col);
+}
+
+function clickBread(){
+// click a crumb
+$('#bread-place').find('a').click( function(){
+
+    var id = $(this).attr('title');
+
+    geojson.removeFrom(map);
+    mainLoader(id);
+
+    idNow = id;
+});
 }
 
 //  ====================================
@@ -292,11 +341,9 @@ mainLoader();
 
 function mainLoader(wil = ''){
 
-    var param = wil === '' ? '' : wil;
-
     $.ajax({
       type: 'GET',
-      url: '<?= base_url() ?>progres/data/<?= $id_proj ?>/' + param,
+      url: '<?= base_url() ?>progres/data/<?= $id_proj ?>/' + wil,
       datatype: 'json',
       success: function(result){
 
@@ -308,6 +355,7 @@ function mainLoader(wil = ''){
         i = fileIndex(n);
 
         table_init(lokus);
+        get_parents(wil);
         map_init(i);
         colorPos();
     },
@@ -334,11 +382,13 @@ var colorPos = function(){
 });
 }
 
-// state of now selected locus
+// state of now-selected locus
 var idNow = '';
 
 $('#reload').click(function(){
-  mainLoader(idNow);
+
+    geojson.removeFrom(map);
+    mainLoader(idNow);
 });
 
 var clickRow = function(){
@@ -348,7 +398,6 @@ $('#tabel-progres tbody').find('tr').click( function(){
     var id = $(this).attr('id');
 
     geojson.removeFrom(map);
-    console.log('clicker***init');
     mainLoader(id);
 
     idNow = id;

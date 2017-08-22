@@ -24,11 +24,12 @@ class Map_model extends CI_Model {
 			array_push($location, $row['location']);
 		}
 		$location = json_encode($this->locsEncode($location));
-		$location = str_replace('"', "", $location);
+		// $location = str_replace('"', "", $location);
 
 		return $location;
 	}
 
+	// encode for leaflet markers -> [[lat1,lon1],[lat2,lon2],...]
 	private function locsEncode($arr){
 
 		$arrNew = array();
@@ -38,7 +39,7 @@ class Map_model extends CI_Model {
 			$parts = explode(" ", $row);
 			$lat = $parts[0];
 			$lon = $parts[1];
-			array_push($arrNew, array('lat' => (float)$lat, 'lng' => (float)$lon));
+			array_push($arrNew, array((float)$lat, (float)$lon));
 		}
 
 		return $arrNew;

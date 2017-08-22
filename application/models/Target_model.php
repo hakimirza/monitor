@@ -69,21 +69,17 @@ class Target_model extends CI_Model {
 	}
 
 	// get all area by certain locus column
-	// expected input array is array of locus without zero count
-	public function getRestRow($array){
+	// expected input length of 1st element of array of locus
+	public function getRestRow($n){
 
 		$table = $this->table;
 		$columns = $this->columns;
-
-		$n = strlen(
-			(string)
-			current($array));
 
 		$cols = '';
 
 		if ($n >= 2) {
 			
-			$cols .= ', '.$this->columns[0];			
+			$cols .= $this->columns[0];			
 		}
 		if ($n >= 4) {
 

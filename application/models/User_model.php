@@ -98,7 +98,7 @@ class User_model extends CI_Model {
 	// expected input $key => ['prov', 'kab']
 	public function idWil($id_user, $key){
 
-		$col = $key == 'prov' ? 'id_provinsi' : $key == 'kab' ? 'id_kabupaten' : true;
+		$col = $key == 'prov' ? 'id_provinsi' : ($key == 'kab' ? 'id_kabupaten' : true);
 
 		if($col) return false;
 

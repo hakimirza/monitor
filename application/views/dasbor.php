@@ -3,13 +3,9 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <?= $title.' '.$nama_survei ?>
-          <!-- &nbsp;&nbsp;<span class="label label-default"><i class="fa fa-map-o"></i>&nbsp;&nbsp;<?= $area ?></span> -->
+          <?= $title ?>
+          <small><?= $nama_survei ?></small>
         </h1>
-
-      <!--   <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-map-o"></i> <?= $area ?></a></li>
-        </ol> -->
 
       </section>
 
@@ -22,8 +18,8 @@
             <!-- count input -->
             <div class="small-box bg-green">
               <div class="inner">
-              <p>Input</p>
-                <h3><?= $count_input ?></h3>
+                <p>Input</p>
+                <h3 id="inputLabel">...</h3>
 
                 <p>Target: <b><?= $target_input ?></b></p>
 
@@ -37,10 +33,9 @@
             <div class="small-box bg-white">
               <div class="inner">
                 <p><b>Progres</b></p>
-                <h3><?= $percent_input ?> %</h3>
+                <h3 id="progresLabel">...</h3>
                 <div class="progress active">
-                  <div class="progress-bar progress-bar-striped progress-positive" role="progressbar" aria-valuenow="<?= $percent_input ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $percent_input ?>%">
-                    <span class="sr-only"><?= $percent_input ?>% Complete (success)</span>
+                  <div id="progresBar" class="progress-bar progress-bar-striped progress-positive" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: %">
                   </div>
                   <!-- <div class="progress-bar" style="width: <?= $percent_input ?>%"></div> -->
                 </div>
@@ -52,9 +47,9 @@
             <!-- alokasi waktu terpakai -->
             <div class="small-box bg-white">
               <div class="inner">
-                <b id="timebarLabel" class="x-large">...</b>
+                <b id="timeLabel" class="x-large">...</b>
                 <div class="progress progress-sm active">
-                  <div id="timebar" class="progress-bar progress-bar-striped progress-negative" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="">
+                  <div id="timeBar" class="progress-bar progress-bar-striped progress-negative" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="">
                   </div>
                   <!-- <div class="progress-bar" style="width: <?= $percent_input ?>%"></div> -->
                 </div>
@@ -70,9 +65,17 @@
             <!-- google map -->
             <div class="box box-success">
               <div class="box-header with-border">
-                <h3 class="box-title">Peta Klaster Responden</h3>
+                <h3 class="box-title">Peta Progres Input</h3>
+                <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" id="loadPins" title="Tampilkan posisi responden">
+                    <i class="fa fa-map-marker"></i>&nbsp;
+                    <i id="cekPin" class="fa fa-square-o"></i>
+                  </button>
+                </div>
               </div>
               <div class="box-body">
+
+                <!-- <div id="mapid"></div> -->
 
                 <div id="map_dasbor"></div>
               </div>

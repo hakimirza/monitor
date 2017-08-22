@@ -8,10 +8,7 @@ class MY_Controller extends CI_Controller {
         parent::__construct();
 
         //Initialization code that affects all controllers extended from this controller
-        // dummyyyyyyyyyy ===========================
-		$id_project = 9;
-		$this->session->set_userdata('id_proj', $id_project);
-		// dummyyyyyyyyyy ===========================
+        
 		$this->cek_login();
     }
 
@@ -23,6 +20,36 @@ class MY_Controller extends CI_Controller {
 			$this->session->set_flashdata('Peringatan','Anda belum login');
 			header('Location: '.base_url().'login');
 		}
+	}
+
+	public function cekParam($id_proj){
+		
+		$this->load->model('user_model');
+		$id_user = $this->session->userdata('id_user');
+		$is_exist = $this->user_model->isExist($id_user, $id_proj);
+
+		if (!$is_exist) {
+			redirect(base_url().'home/error');
+		}
+	}
+
+	public function wilFilter(){
+
+		$wil_filter = '';
+		$wil = $this->session->userdata('id_wil');
+		if (!$wil['pusat']) {
+
+			if (!$wil['kab']) {
+
+				$wil_filter = $wil['prov'];
+			}
+			else{
+
+				$wil_filter = $wil['kab'];
+			}
+		}
+
+		return $wil_filter;
 	}
 
 }

@@ -1,0 +1,294 @@
+# Review Fitur Sistem
+
+Sistem stiker listing digital ini menampilkan keterangan suatu bangunan fisik dalam bentuk stiker digital. Stiker digital ini menggunakan location-based augmented reality. Sistem ini dibangun menggunakan [Open Data Kit](https://github.com/opendatakit/collect) dan [PanicAr](https://github.com/doPanic/PanicAR-android). Data stiker digital berasal dari data instances yang diinputkan melalui ODK Collect. Pada sistem ini juga terdapat fitur panorama view untuk melihat keadaan sekitar wilayah. Panorama view ini menampilkan foto panorama dari suatu wilayah yang diambil sendiri oleh user. Fitur panorama view ini berguna ketika user ingin melihat keadaan wilayah disekeliling suatu bangunan fisik. Panorama view ini menampilkan gambar 360 derajat secara horizontal dari suatu wilayah tertentu. Berikut merupakan halaman utama dari  sistem stiker listing digital
+
+## Halaman Utama
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/1.png)   ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/10.png)   
+
+Pada halaman utama, sistem menampilkan camera view, dimana terdapat navigation drawer di sebelah kiri. Untuk camera view sendiri menampilkan stiker digital dari setiap bangunan fisik yang telah didata. Pada fitur  hasil listing ini menampilkan stiker digital dari setiap bangunan fisik yang telah didata. Data dari setiap stiker ini berasal dari instances yang diperoleh dari ODK Collect. Instances ini bertipe .xml, kemudian setiap instances ini diparsing sehingga mendapatkan informasi yang dibutuhkan. Pada stiker digital tersebut ditampilkan foto dari bangunan, jarak pengguna ke bangunan tersebut, dan empat informasi dari bangunan fisik (informasi yang ditampilkan dapat diatur sendiri oleh user).
+Pada fitur hasil listing ini terdapat float button, yang berisi tiga menu yaitu atur stiker, atur jarak, dan pilih kuesioner Menu atur stiker digunakan untuk merubah keterangan atau informasi apa yang ingin ditampilkan pada stiker digital, sedangkan menu atur jarak digunakan untuk mengatur radius jangkauan stiker digital yang akan dimunculkan pada layar, kemudian menu pilih kuesioner digunakan untuk memilih kuesioner apa yang hendak dipakai. Masing-masing menu ini ditampilkan pada gambar dibawah ini
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/2.png)  ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/11.png)  ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/13.png)
+
+Ketika stiker digital diklik, maka sistem akan menampilkan dialog detail foto dari bangunan tersebut. Pada dialog detail foto tersebut, terdapat dua menu yaitu lihat wilayah dan buka peta. Untuk menu lihat wilayah akan menampilkan foto panorama terdekat dari bangunan tersebut, hal ini bertujuan agar user dapat mellihat keadaan wilayah sekitar dari bangunan tersebut. Sedangkan pada menu buka peta, akan menampilkan letak bangunan dan posisi user pada peta.
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/3.png)   ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/6.png)    ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/12.png)
+
+## Fitur pada Navigation Drawer
+Pada navigation drawer ini terdiri atas lima fitur utama yaitu hasil listing, hasil listing pada peta, hasil sampel, input panorama, dan lihat panorama.
+
+### 1. Hasil listing
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/7.jpg)
+
+Pada menu ini menampilkan foto bangunan dari setiap bangunan yang telah dicacah dalam bentuk gridview.
+
+### 2. Hasil listing pada peta
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/12.png)
+
+Pada fitur Hasil Listing pada Peta menampilkan setiap bangunan fisik yang telah didata dalam peta dan titik lokasi pengambilan foto panorama. Untuk bangunan dilambangkan dengan marker merah, sedangkan marker biru menunjukan tempat diambilnya foto panorama.
+
+### 3. Hasil sampel
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/14.png)
+
+Fitur ini digunakan ketika akan mencari bangunan fisik yang terpilih menjadi sampel. Pada layar hanya akan ditampilkan stiker dari bangunan fisik yang terpilih menjadi sampel. Untuk membedakan dengan data hasil listing, pada stiker digital sampel ini diberi warna hijau pada bagian atasnya. Pada fitur hasil sampel ini juga terdapat tiga menu yaitu atur stiker, atur jarak, dan pilih kuesioner. Fungsi dari ketiga menu ini sama seperti pada halaman utama.
+
+
+### 4. Input panorama
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/4.png)    ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/card.jpg)
+
+Fitur ini digunakan ketika user akan mengambil foto panorama pada suatu tempat. Pertama-tama user perlu mengatur lokasi dimana akan mengambil foto panorama. Pengaturan lokasi ini bertujuan untuk mendapatkan nilai latitude dan longitude. Setelah lokasi diatur, sistem akan mengambil foto panorama dengan bantuan aplikasi [Google Cardboard](https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo&hl=in). Pengambilan foto panorama dilakukan dengan cara melakukan foto dengan berputar 360 derajat secara horizontal, sehingga foto panorama yang dihasilkan dapat memperlihatkan keadaan sekitar disuatu titik wilayah. Foto panorama tersebut akan disimpan pada directory DCIM/CardboardCamera.
+
+### 5. Lihat panorama
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/5.png)    ![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/6.png)
+
+Fitur ini akan menampilkan lokasi dari setiap foto panorama pada peta. Pada fitur ini juga terdapat tiga menu yaitu sync data, upload, dan jelajah. Menu sync data digunakan untuk mendownload foto panorama dari server. Foto panorama yang ada diserver dapat didownload menurut blok sensus. Menu upload digunakan untuk mengupload foto panorama yang sudah diambil oleh user. Sedangkan menu jelajah, yaitu akan menampilkan setiap foto panorama yang ada dalam suatu blok sensus secara berurutan, hal ini berguna ketika user akan melakukan penelusuran wilayah (cikal bakal BPS streetview).
+
+# Instalasi
+
+## Instalasi Aplikasi
+
+Untuk menjalankan sistem aplikasi ini spesifikasi smartphone yang memenuhi adalah sebagai berikut
+
+* Minimum OS Kitkat (SDK 19)
+* Memiliki sensor accelometer dan gyroscope
+* Memiliki koneksi internet (koneksi internet digunakan untuk mendownload kuesioner, download dan upload foto panorama)
+* Pada smartphone android tersebut terdapat aplikasi [Google Cardboard](https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo&hl=in)
+
+## Instalasi Kode
+
+Pada sistem ini terdiri atas dua buah jenis kode yaitu kode android (java dan xml) yang bertugas untuk membuat aplikasi user dan kode php (menggunakan framework restserver CodeIgniter) yang digunakan untuk API.
+
+### Instalasi kode android
+* Download project android kemudian ekstrak atau bisa juga dengan melakukan git clone
+* Buka android studio versi 2.3.3
+* Pastikan ada koneksi internet
+* Pada android studio, pilih menu file, kemudian new, pilih Import Project, lalu pilih directory dari file project yang sudah diextract tadi
+* Pilih setting.gradle, lalu klik OK
+* Tunggu proses sinkronisasi project hingga selesai. Pada proses sinkronasasi ini akan mendownload beberapa konfigurasi dan library yang dibutuhkan aplikasi, sehingga pastikan terdapat koneksi internet
+* Setelah selesai, kode siap digunakan (edit atau build).
+
+### Instalasi kode api
+* Download project api kemudian ekstrak atau bisa juga dengan melakukan git clone
+* Konfigurai database, edit file database.php pada directory application/config/database.php. Sesuaikan username, password, dan nama database
+```
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
+	'database' => '',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+```
+# Pengembangan
+
+Pada sistem stiker listing digital ini menggunakan open source Open Data Kit dan library PanicAr. Untuk file java yang berhubungan dengan PanicAr dan file lain diluar kode Open Data Kita terdapat pada directory augmentedreality telihat seperti pada gambar di bawah ini. Hal tersebut memudahkan proses pengembangan ketika terdapat update pada Open Data Kit, sehingga pengembang selanjutnya cukup memindah melakukan konfigurasi dibawah ini
+
+### Folder augmentedreality
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/peng1.png)
+
+Semua class java yang berfungsi untuk agmented reality terdapat pada folder augmentedreality. Sehingga 
+
+### Layout ar_
+
+![Hasil Sampel](http://septiawanajipradana.000webhostapp.com/skripsi_api/assets/readme/peng3.png)
+
+Semua layout yang dipakai pada sistem ini berawalan huruf ar_.
+
+### Konfigurasi build.gradle
+Pada file build.gradle, library tambahan diluar library yang digunakan pada ODK Collect ditampilkan pada gambar dibawah ini
+```
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    compile 'com.nightonke:boommenu:2.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.vr:sdk-audio:1.10.0'
+    compile 'com.google.vr:sdk-base:1.10.0'
+    compile 'com.google.vr:sdk-common:1.10.0'
+    compile 'com.google.vr:sdk-commonwidget:1.10.0'
+    compile 'com.google.vr:sdk-panowidget:1.10.0'
+    compile 'com.google.vr:sdk-videowidget:1.10.0'
+    compile 'net.gotev:uploadservice:2.1'
+    compile 'com.github.apl-devs:appintro:v4.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+```
+
+### Konfigurasi AdnroidManifest.xml
+Pada file AndroidManifest.xml ditambahkan kode yang berhubungan dengan augmented reality pada ODK
+```
+#!java
+
+     <activity android:name=".activities.ListFormForDownload"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity
+            android:name=".augmentedreality.scan.ARLandscapeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Landscape-only AR"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.scan.ARPortraitActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Portrait-only AR"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.scan.ARAutoOrientingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Auto-orienting AR"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.landingpage.LandingPageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.ui.MainMenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.panorama.PanoramaActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.scan.BangunanSensusOnMaps"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.panorama.SetLocationGetPanorama"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.panorama.PanoramaOnMaps"
+            android:label="Peta Panorama"
+            android:screenOrientation="portrait"
+            android:theme="@style/Widget.AppCompat.Toolbar" />
+        <activity
+            android:name=".augmentedreality.HalamanUtamaAplikasi"
+            android:label="Halaman Panorama"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.panorama.PanoramaStreetView"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".augmentedreality.ui.AllBangunanOnMaps"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <service
+            android:name=".augmentedreality.formisian.FetchAddressIntentService"
+            android:exported="false" />
+```
+
+### Ubah Collect.java
+
+Merubah extends yang semula menjadi Activity menjadi extends PARApplication
+
+```
+#!java
+
+    public class Collect extends PARApplication {
+        .....
+    }
+```
+
+### Ubah InstanceUploadActivity.java
+
+Tambahkan code tersebut pada  class InstanceUploadActivity, potongan kode tersebut berfungsi untuk mengupload keterangan instance pada database server
+
+```
+#!java
+
+   public void getParameter (StringBuilder as ,String[] ids){
+        JSONObject js = new JSONObject();
+        String [] proj = new String[2];
+        HashMap<String,String> parameter = new HashMap<>();
+
+        proj[0]=InstanceColumns.UUID;
+        proj[1]=InstanceColumns.JR_FORM_ID;
+        Cursor results = null;
+        try {
+            results = getContentResolver().query(InstanceColumns.CONTENT_URI,
+                    proj, as.toString(), ids, null);
+
+           
+            if (results.getCount() > 0) {
+                results.moveToPosition(-1);
+                while (results.moveToNext()) {
+                    if(results.getString(results.getColumnIndex(InstanceColumns.UUID))!=null
+                            &&!results.getString(results.getColumnIndex(InstanceColumns.UUID)).equals("")){
+                        parameter.put(UUID,results.getString(results.getColumnIndex(InstanceColumns.UUID)));
+                    }
+                    parameter.put(ID_FORM,results.getString(results.getColumnIndex(InstanceColumns.JR_FORM_ID)));
+                    parameter.put(ID_USER,"471");
+                    parameter.put(ID_TEAM,"55");
+                    parameter.put(ID_PROJECT,"11");
+                    parameter.put(ID_BLOK_SENSUS,"22");
+                }
+                js.put("data",parameter);
+            }
+            else{
+                Log.d("UploadErrorDanIns ", "tidak ada result");
+            }
+        }catch (Exception ex){
+            Log.d("Json_error",""+ex);
+        }
+        finally {
+            if ( results != null ) {
+                results.close();
+            }
+        }
+        sendData(parameter);
+    }
+
+    public void sendData(final HashMap<String,String> parameter){
+        SessionManager sessionManager = new SessionManager(getApplicationContext());
+        StringRequest send = new StringRequest(Request.Method.POST, sessionManager.getUrl()+AlamatServer.INSTANCE+AlamatServer.INSERT, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try{
+                    JSONObject jsonObject = new JSONObject(response);
+                    jsonObject.getString("status");
+                }catch (Exception r){
+                    Log.d("upload_uuid_eror",r.toString());
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> param = parameter;
+                return param;
+            }
+        };
+        Collect.getInstance2().addToRequestQueue(send);
+    }
+```
+
+
+Have fun!

@@ -11,6 +11,7 @@ class Survei extends CI_Controller {
 	private $uuids;
 	private $dataSurvei;
 	private $now;
+	private $target;
 
 	public function __construct() {
 
@@ -18,6 +19,7 @@ class Survei extends CI_Controller {
 		$this->ci->load->model('project_model');
 		$this->ci->load->model('uuid_model');
 		$this->ci->load->model('location_name');
+		$this->ci->load->model('target_model');
 		$this->ci->load->library('parsexml');
 		$this->ci->load->library('getuuid');
 	}
@@ -40,6 +42,8 @@ class Survei extends CI_Controller {
 				)
 			);
 		$this->now = $this->now();
+		$this->target = new Target_model();
+		$this->target->setProj($this->getProject());
 	}
 
 	// set data survei dalam bentuk array assoc by uuid
@@ -66,6 +70,18 @@ class Survei extends CI_Controller {
 
 			case '4':
 			$key = 'P102';
+			break;
+
+			case '7':
+			$key = 'P103';
+			break;
+
+			case '10':
+			$key = 'P104';
+			break;
+
+			case '14':
+			$key = 'P106';
 			break;
 
 			default:
@@ -138,6 +154,11 @@ class Survei extends CI_Controller {
 	public function countData(){
 
 		return count($this->getData());
+	}
+
+	public function countAllData(){
+
+		return count($this->getUuid());
 	}	
 
 	public function getDataIzin(){
@@ -191,7 +212,10 @@ class Survei extends CI_Controller {
 			$durByDay[$day] = round(array_sum($arr)/count($arr), 1);
 		}
 
-		$dateAlong = $this->getDateAlong($this->getStartDate(), $this->now);
+		$finish = strtotime($this->now()) < strtotime($this->getEndDate()) ? 
+		$this->now() : $this->getEndDate();
+
+		$dateAlong = $this->getDateAlong($this->getStartDate(), $finish);
 
 		$durByDay = $this->insertZeroDate($durByDay, $dateAlong);
 
@@ -214,7 +238,10 @@ class Survei extends CI_Controller {
 			else $submitTime[$today]++;
 		}
 
-		$dateAlong = $this->getDateAlong($this->getStartDate(), $this->now);
+		$finish = strtotime($this->now()) < strtotime($this->getEndDate()) ? 
+		$this->now() : $this->getEndDate();
+
+		$dateAlong = $this->getDateAlong($this->getStartDate(), $finish);
 
 		$submitTime = $this->insertZeroDate($submitTime, $dateAlong);
 
@@ -222,6 +249,64 @@ class Survei extends CI_Controller {
 
 		// expected output array pf date=>inputCount
 		return $submitTime;
+	}
+
+	public function getIzin(){
+		
+		$data = $this->getDataIzin();
+
+		return $data;
+	}
+
+	public function splitCount(){
+		
+		$data = $this->countByDay();
+
+		foreach ($data as $key => $value) {
+			$newKey = $this->dateMonth($key);
+			$data[$newKey] = $value;
+			unset($data[$key]);
+		}
+
+		$dataDate = array();
+		$dataCount = array();
+
+		foreach ($data as $key => $value) {
+			array_push($dataDate, $key);
+			array_push($dataCount, $value);
+		}
+
+		return array('date' => $dataDate, 'count' => $dataCount);
+	}
+
+	public function splitAvgDur(){
+
+		$data = $this->avgDurByDay();
+
+		foreach ($data as $key => $value) {
+			$newKey = $this->dateMonth($key);
+			$data[$newKey] = $value;
+			unset($data[$key]);
+		}
+
+		$dataDate = array();
+		$dataDur = array();
+
+		foreach ($data as $key => $value) {
+			array_push($dataDate, $key);
+			array_push($dataDur, $value);
+		}
+
+		return array('date' => $dataDate, 'dur' => $dataDur);
+	}
+
+		// input format suggestion : '2017-07-14'
+	private function dateMonth($date){ 
+
+		$date = date_create($date);
+
+		// output format : 14th July
+		return date_format($date, 'jS F');
 	}
 
 		// difference 2 datetimes in minutes
@@ -268,8 +353,8 @@ class Survei extends CI_Controller {
 			function cmp($a, $b){
 				$a = strtotime($a['today']);
 				$b = strtotime($b['today']);
-				return ($a == $b) ? 0 : 
-				($a < $b) ? -1 : 1;
+				return $a == $b ? 0 : 
+				($a < $b ? -1 : 1);
 			}
 		}
 		usort($arr, 'cmp');
@@ -283,5 +368,160 @@ class Survei extends CI_Controller {
 		$now = date_format($date, 'Y-m-d H:i:s');
 
 		return $now;
+	}
+
+	// get list of progres under certain area id
+	public function cekId($id){
+
+		$n = strlen($id);
+
+		switch ($n) {
+
+			case '2':
+			return array(
+				'tag'=>'P102',
+				'jenis'=>'Provinsi',
+				'col' => 'Kabupaten/Kota'
+				);
+
+			case '4':
+			return array(
+				'tag'=>'P103',
+				'jenis'=>'Kota/Kabupaten',
+				'col' => 'Kecamatan'
+				);
+
+			case '7':
+			return array(
+				'tag'=>'P104',
+				'jenis'=>'Kecamatan',
+				'col' => 'Kelurahan/Desa'
+				);
+
+			case '10':
+			return array(
+				'tag'=>'P106',
+				'jenis'=>'Kelurahan/Desa',
+				'col' => 'Blok Sensus'
+				);
+
+			default:
+			return array(
+				'tag'=>'P101',
+				'jenis'=>'<b>INDONESIA</b>',
+				'col'=>'Provinsi'
+				);
+		}
+	}
+
+// hitung jumlah row distinct by tag -> need function cekId() based on xml instances ODK
+	public function getCountDistinct($id_proj, $id, $data){
+
+		$target = $this->target;
+
+		$id = (string)$id;
+		$n = strlen((string)$id);
+		$tag = $this->cekId($id)['tag'];
+
+		// default vars for the empty $data
+		$count = array();
+		$l = $n == 2 ? 4 : ($n == 4 ? 7 : ($n == 7 ? 10 : ($n == 10 ? 14 : 0)));
+
+		if (count($data) != 0) {
+
+			$var = array();
+			foreach ($data as $row) {
+
+				array_push($var, $row[$tag]);
+			}
+
+			$count = array_count_values($var);
+
+		// get zero input area
+		// array of location which has input > 0 only (extracted from odk)
+			$exist = array();
+			foreach ($count as $key => $val) {
+
+				array_push($exist, $key);
+			}
+
+			$l = strlen((string)current($exist));
+		}
+
+		$restRow = $target->getRestRow($l);
+
+		$arrAllWil = array();
+		foreach ($restRow as $arr) {
+
+			$key = '';
+			$i = 1;
+			foreach ($arr as $cod) {
+
+				if ($i == 2) {
+
+					$cod = str_pad($cod, 2, "0", STR_PAD_LEFT); //fixing kode kota 2 digit
+				}else if ($i == 3) {
+					
+					$cod = str_pad($cod, 3, "0", STR_PAD_LEFT); //kode kecamatan 3 digit
+				}else if ($i == 4) {
+					
+					$cod = str_pad($cod, 3, "0", STR_PAD_LEFT); //kode desa 3 digit
+				}
+
+				$key .= $cod;
+				$i++;
+			}
+
+			// default input count for every locus
+			$arrAllWil[$key] = 0;
+		}
+
+		//extract key outersection of 2 arrays and join with previous given array
+		$count = $count + array_diff_key($arrAllWil, $count);
+
+		if ($id != '') {
+
+			$arrNew = array();
+			foreach ($count as $key => $val) {
+
+				$key = (string)$key;
+				$keyCut = substr($key, 0, $n);
+				if ($keyCut == $id) {
+
+					$arrNew[$key] = $val;
+				}
+			}
+
+			return $arrNew;
+		}
+		else return $count; 
+	}
+
+// insert 'count' variable each area id
+	public function objectify($id){
+
+		$id_proj = $this->getIdProj();
+		$data = $this->getData();
+
+		$count = $this->getCountDistinct($id_proj, $id, $data);
+
+		$target = $this->target;
+
+		$arrChild = array();
+
+		foreach ($count as $kode => $val) {
+
+			$countObj = array(
+				'id' => $kode,
+				'nama' => $this->ci->location_name->getNamaWil($kode),
+				'count' => $val,
+				'target' => $target->getTarget($kode)
+				);
+
+			// $arrChild[$kode] = $countObj;
+			array_push($arrChild, $countObj);
+		}
+
+		return $arrChild;
 	}
 }

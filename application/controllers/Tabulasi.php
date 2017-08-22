@@ -3,19 +3,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Tabulasi extends MY_Controller {
 
-	public function index(){
+	public function index($id_proj = ''){
+
+		$this->cekParam($id_proj);
 
 		$page = 'Tabulasi Data';
+
 		$this->load->library('survei');
-		$id_proj = $this->session->userdata('id_proj');
+		$this->load->model('location_name');
 
 		$survei = new Survei();
+		$locName = new Location_name();
+		
+		// initiate project id
+		$survei->setProj($id_proj);
+
+		// check user monitoring scope
+		$wil_filter = $this->wilFilter();
+		$area = $wil_filter != '' ? $locName->getNamaWil($wil_filter) : 'Nasional';
 
 		$namaSurvei = $survei->getNama();
 
 		$data = array(
 			'title' => $page,
-			'namaSurvei' => $namaSurvei
+			'id_proj' => $id_proj,
+			'namaSurvei' => $namaSurvei,
+			'area' => $this->location_name->getNamaWil($wil_filter)
 			);
 
 		$this->load->view('templates/header', $data);
@@ -29,12 +42,16 @@ class Tabulasi extends MY_Controller {
 		$this->load->view('templates/closer');		
 	}
 
-	public function dataJson(){
+	public function dataJson($id_proj){
 
 		$this->load->library('survei');
 
 		$survei = new Survei();
-		// $survei->setIdProj($id_proj);
+		$survei->setProj($id_proj);
+
+		$wil_filter = $this->wilFilter();
+		$survei->setData($wil_filter);
+
 		$data = $survei->getData();
 
 		$data = $this->splitRuta($data);
@@ -42,14 +59,13 @@ class Tabulasi extends MY_Controller {
 		echo json_encode($data);
 	}
 
-	public function saveConfig(){
+	public function saveConfig($id_project){
 
 		if ($this->session->userdata('id_user')) {
 
 			$this->load->model('tabulasi_model');
 
 			$id_user = $this->session->userdata('id_user');
-			$id_project = $this->session->userdata('id_proj');
 
 			$config = $this->input->post('config');
 			$name = $this->input->post('name');
@@ -71,11 +87,10 @@ class Tabulasi extends MY_Controller {
 		}
 	}
 
-	public function loadConfig(){
+	public function loadConfig($id_project){
 
 			$this->load->model('tabulasi_model');
 			$id_user = $this->session->userdata('id_user');
-			$id_project = $this->session->userdata('id_proj');
 
 			$data = array(
 				'id_user' => $id_user,

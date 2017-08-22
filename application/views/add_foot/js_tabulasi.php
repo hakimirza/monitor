@@ -18,7 +18,7 @@ var getData = function(){
 
     $.ajax({
         type: 'GET',
-        url: '<?= base_url() ?>tabulasi/dataJson/',
+        url: '<?= base_url() ?>tabulasi/dataJson/<?= $id_proj ?>',
         dataType: 'json',
         success: function(result) {
 
@@ -98,7 +98,7 @@ var saveTable = function(){
 
     $.ajax({
       type: 'POST',
-      url: '<?= base_url() ?>tabulasi/saveConfig/',
+      url: '<?= base_url() ?>tabulasi/saveConfig/<?= $id_proj ?>',
       data: {config : latest, name : name},
       dataType: 'text',
       success: function(text) {
@@ -137,7 +137,7 @@ var loadConfig = function(){
 
     $.ajax({
       type: 'GET',
-      url: '<?= base_url() ?>tabulasi/loadConfig/',
+      url: '<?= base_url() ?>tabulasi/loadConfig/<?= $id_proj ?>',
       dataType: 'json',
       success: function(result) {
 

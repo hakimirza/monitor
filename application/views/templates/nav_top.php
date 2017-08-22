@@ -49,12 +49,19 @@ desired effect
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
 
-            <!-- clock -->
+            <?php if($area != ''): ?>
+              <li>
+                <a href="#">
+                  <b><i class="fa fa-map-o"></i>&nbsp;&nbsp;<?= $area ?></b>
+                </a>
+              </li>
+            <?php endif; ?>
             <li>
-              <a href="#">
-              <b><i class="fa fa-map-o"></i>&nbsp;&nbsp;<?= $area ?></b>
+              <a id="reload" href="#" title="Refresh">
+                <b><i class="fa fa-refresh"></i></b>
               </a>
             </li>
+            <!-- clock -->
             <li>
               <a href="#" data-toggle="control-sidebar" onclick="sidebarSwitch('date')" "><span id="clock"></span></a>
             </li>

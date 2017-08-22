@@ -5,8 +5,15 @@ class Home extends MY_Controller {
 
 	public function index($page = 'Home'){
 
+		$this->load->model('location_name');
+		$locName = new Location_name();
+		$wil_filter = $this->wilFilter();
+		$area = $wil_filter != '' ? $locName->getNamaWil($wil_filter) : 'Nasional';
+
 		$data = array(
 			'title' => $page,
+			'prefix' => '| Daerah Monitoring : ',
+			'area' => $area,
 			'datatableId' => 'tabel-survei-list'
 			);
 
@@ -40,15 +47,23 @@ class Home extends MY_Controller {
 			$project = $survei->getProject();
 			$target->setProj($project);
 
-			$input = $survei->countData();
+			$input = $survei->countAllData();
 			$target_input = $target->getTotalTarget();
-			$percent = ($input/$target_input) * 100;
+			$progres = round(($input/$target_input* 100), 1);
+
+			// check user monitoring scope
+			$wil_filter = $this->wilFilter();
+			$survei->setData($wil_filter);
+			$input = $survei->countData();
+			$target_input = $target->getTarget($wil_filter);
+			$progres_wil = round(($input/$target_input* 100), 1);
 
 			$arr['id'] = $project['id'];
 			$arr['name'] = $project['name'];
 			$arr['status'] = strtotime($project['end_date'])>(time()+18000) ? 'Aktif' : 'Selesai';
 			$arr['color'] = $arr['status'] == 'Aktif' ? 'success' : 'danger';
-			$arr['progres'] = round($percent, 1);
+			$arr['progres'] = $progres;
+			$arr['progresWil'] = $progres_wil;
 			$data[] = $arr;
 		}
 
@@ -56,7 +71,12 @@ class Home extends MY_Controller {
 	}
 
 	public function error(){
-		echo '<b>404</b> Halaman tidak ditemukan. Kembali ke <a href="'.base_url().'">Home</a>';
+
+		$data = array(
+			'heading'	=>	'Galat 404',
+			'message'	=>	'Halaman tidak ditemukan. Kembali ke <a href="'.base_url().'">Halaman Utama</a>'
+			);
+		$this->load->view('errors/html/error_404', $data);
 	}
 
 }

@@ -1,7 +1,7 @@
 // PIE CHART
 // STATUS KUESIONER
 var ctx = document.getElementById('pie_statusKues').getContext('2d');
-var chart = new Chart(ctx, {
+var donat = new Chart(ctx, {
   type: 'doughnut',
   data: {
     datasets: [{
@@ -36,7 +36,7 @@ var chart = new Chart(ctx, {
 // PROGRES HARIAN
 var ctx2 = document.getElementById('line_inputHarian').getContext('2d');
 $('#line_inputHarian').attr('height', 100);
-var myLineChart = new Chart(ctx2, {
+var line1 = new Chart(ctx2, {
   type: 'line',
   data: {
     datasets: [{
@@ -73,7 +73,7 @@ var myLineChart = new Chart(ctx2, {
 
 var ctx3 = document.getElementById('line_durasiCacah').getContext('2d');
 $('#line_durasiCacah').attr('height', 100);
-var myLineChart = new Chart(ctx3, {
+var line2 = new Chart(ctx3, {
   type: 'line',
   data: {
     datasets: [{

@@ -15,13 +15,26 @@ class Coba extends MY_Controller {
 		// 	'json' => $input_data
 		// 	);
 		// $this->load->view('blank', $data);
+		$id_proj = 9;
+		$id = 3171080001;
+		$id = 3172060001;
 		
 		$this->load->library('survei');
-		$survei = new Survei();
-		$survei->setProj(9);
-		$survei->setData(31);
+		$this->load->model('map_model');
 
+		$survei = new Survei();
+		$survei->setProj($id_proj);
+		$survei->setData($id);
 		$data = $survei->getData();
-		print_r($data);
+
+		$res = $survei->getCountDistinct($id_proj, $id, $data);
+
+		// $map = new Map_model();
+		// $map->setSurvei($survei);
+
+		// $pins = $map->getAllPins();
+
+		// $data = $pins;
+		print_r($res);
 	}
 }

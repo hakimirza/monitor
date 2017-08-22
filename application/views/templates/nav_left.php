@@ -36,10 +36,10 @@ $avatar = $this->session->userdata('avatar');
       <ul class="sidebar-menu">
         <li class="header">MENU</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="<?= base_url().'dasbor' ?>"><i class="fa fa-dashboard"></i> <span>Dasbor</span></a></li>
-        <li><a href="<?= base_url().'progres' ?>"><i class="fa fa-sort-amount-desc"></i> <span>Progres</span></a></li>
+        <li class="active"><a href="<?= base_url().'dasbor/'.$id_proj ?>"><i class="fa fa-dashboard"></i> <span>Dasbor</span></a></li>
+        <li><a href="<?= base_url().'progres/'.$id_proj ?>"><i class="fa fa-sort-amount-desc"></i> <span>Detail Progres</span></a></li>
         <!-- <li><a href="#"><i class="fa fa-group"></i> <span>Petugas</span></a></li> -->
-        <li><a href="<?= base_url().'tabulasi' ?>"><i class="fa fa-table"></i> <span>Tabulasi</span></a></li>
+        <li><a href="<?= base_url().'tabulasi/'.$id_proj ?>"><i class="fa fa-table"></i> <span>Tabulasi</span></a></li>
         <!-- <li class="treeview">
           <a href="#"><i class="fa fa- fa-pie-chart"></i> <span>Analisis</span>
             <span class="pull-right-container">

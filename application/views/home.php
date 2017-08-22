@@ -6,7 +6,7 @@
           <h1>
             Selamat Datang <?= $this->session->userdata('nama') ?>
             <br>
-            <small>Pilih survei untuk dimonitoring</small>
+            <small>Pilih survei untuk dimonitoring <?= $prefix ?><b><?= $area ?></b></small>
           </h1>
        <!--  <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -35,7 +35,9 @@
                       <th>No.</th>
                       <th>Nama Survei</th>
                       <th>Status</th>
-                      <th>Progres</th>
+                      <th>Progres Nasional</th>
+                      <th>Progres Daerah&nbsp;&nbsp;</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>

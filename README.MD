@@ -45,7 +45,7 @@ Instalasi di sini adalah untuk keperluan pengembangan modul monitoring ini saja.
 - Tekan tombol `Connect`, lalu isikan `url` pada dialog yang muncul dengan `https://capi55-007.appspot.com`, tekan tombol `Connect` pada dialog. Seperti pada gambar berikut :
 ![briefcase](https://git.stis.ac.id/hakimirza/monitor/uploads/113dd1ed7ed812b1d7750d268f1ba0df/briefcase.PNG)
 
-- Pilih **SUSENAS 16** dengan mencentang pada _checkbox_ , lalu tekan tombol `Pull` dan tunggu proses *pulling* hingga *SUCCESS*
+- Pilih **SUSENAS 16** dengan mencentang pada _checkbox_ , lalu tekan tombol `Pull` dan tunggu proses hingga *SUCCESS*
 ![briefcase2](https://git.stis.ac.id/hakimirza/monitor/uploads/2e4634152d6161f3ceed5a86e2edc840/briefcase2.PNG)
 
 - Setelah data berhasil di-pull, lakukan push ke server ODK Aggregate lokal. 

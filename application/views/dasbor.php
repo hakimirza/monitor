@@ -27,7 +27,7 @@
               <div class="icon">
                 <i class="fa fa-file-text-o"></i>
               </div>
-              <a href="<?= base_url().'progres' ?>" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url().'progres/'.$id_proj ?>" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
             </div>
             <!-- progres input -->
             <div class="small-box bg-white">

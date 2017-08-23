@@ -30,6 +30,7 @@ class Progres extends MY_Controller {
 			'title' => $page,
 			'id_proj' => $id_proj,
 			'namaSurvei' => $namaSurvei,
+			'wil' => $wil_filter,
 			'area' => $this->location_name->getNamaWil($wil_filter),
 			'jenisWil' => $survei->cekId($wil_filter)['jenis'],
 			'colJenis' => $survei->cekId($wil_filter)['col'],
@@ -63,17 +64,15 @@ class Progres extends MY_Controller {
 		$survei->setData($wil_filter);
 		$map->setSurvei($survei);
 
-		// map
+		// data
 		$forTable = $survei->objectify($wil_filter);
-
+		$input = $survei->countData();
 		$pins = $map->getAllPins();
 
 		$data = array(
 			'forTable' => $forTable,
 			'pins' => $pins,
-			// 'donatIzin' => $survei->getIzin(),
-			// 'lineInput' => $survei->splitCount(),
-			// 'lineDur'	=> $survei->splitAvgDur()
+			'input' => $input
 			);
 
 		echo json_encode($data);
@@ -91,7 +90,7 @@ class Progres extends MY_Controller {
 		$id = (string)$id;
 		$n = strlen($id);
 
-		if ($n >= 0) {
+		if ($this->wilFilter() == '') {
 
 			$def = array(
 				'id' => '',

@@ -71,6 +71,12 @@
           <div class="box-header">
             <h3 class="box-title">
               <i class="fa fa-map-o"></i> Peta Progres Input
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-box-tool" id="loadPins" title="Tampilkan posisi responden">
+                <i class="fa fa-map-marker"></i>&nbsp;
+                <i id="cekPin" class="fa fa-square-o"></i>&nbsp;
+                (<span></span> Responden)
+              </button>
             </h3>
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -80,7 +86,7 @@
 
           </div>
           <!-- box-header -->
-          <div class="box-body">
+          <div id="box-map" class="box-body">
 
             <div id="mapid"></div>
           </div>

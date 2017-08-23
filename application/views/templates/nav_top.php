@@ -56,11 +56,13 @@ desired effect
                 </a>
               </li>
             <?php endif; ?>
+            <?php if($title != 'Tabulasi Data'): ?>
             <li>
               <a id="reload" href="#" title="Refresh">
                 <b><i class="fa fa-refresh"></i></b>
               </a>
             </li>
+            <?php endif; ?>
             <!-- clock -->
             <li>
               <a href="#" data-toggle="control-sidebar" onclick="sidebarSwitch('date')" "><span id="clock"></span></a>

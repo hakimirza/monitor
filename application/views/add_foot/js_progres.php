@@ -63,10 +63,19 @@ var mapboxAccessToken = 'pk.eyJ1IjoiaGFraW1pcnphIiwiYSI6ImNqNWNsaXZ6NTBiYnkyd3A4
             },
             error: function() {
 
+                failed();
                 console.log('There was a problem with Map request.');
             }
         });
             }
+        }
+
+        var jeniscol='';
+        function failed(){
+
+            $('#box-map').attr({'style' : 'display:none;'});
+            toastUp('<i class="icon fa fa-warning"></i> Peta '+ jeniscol +' tidak tersedia');
+            // $('#minmap button').val('TSV Export').trigger('click');
         }
 
         function fileUrl(n){
@@ -90,27 +99,27 @@ var mapboxAccessToken = 'pk.eyJ1IjoiaGFraW1pcnphIiwiYSI6ImNqNWNsaXZ6NTBiYnkyd3A4
     function filterID(feature, layer) { //return true akan menampilkan fitur pada map
         if (feature.properties) { //punya properti ? 
 
-        for (var i = 0; i < lokus.length; i++) {
+            for (var i = 0; i < lokus.length; i++) {
 
-         properti = n == 2 ? feature.properties.id2013 : 
-         n == 4 ? feature.properties.ID2014_2 :
-         n == 7 ? feature.properties.IDKEC :
-         feature.properties.IDSP2010;
+             properti = n == 2 ? feature.properties.id2013 : 
+             n == 4 ? feature.properties.ID2014_2 :
+             n == 7 ? feature.properties.IDKEC :
+             feature.properties.IDSP2010;
 
-         if (properti == lokus[i].id) {
+             if (properti == lokus[i].id) {
 
-            var obj = lokus[i];
-            feature.properties.show_on_map = true;
-            feature.properties.nama = obj.nama;
-            feature.properties.input = obj.count;
-            feature.properties.target = obj.target;
-            feature.properties.progres = Math.round(obj.count/obj.target*100);
-            break;
+                var obj = lokus[i];
+                feature.properties.show_on_map = true;
+                feature.properties.nama = obj.nama;
+                feature.properties.input = obj.count;
+                feature.properties.target = obj.target;
+                feature.properties.progres = Math.round(obj.count/obj.target*100);
+                break;
+            }
         }
+        return feature.properties.show_on_map;
     }
-    return feature.properties.show_on_map;
-}
-return false;
+    return false;
 }
 
 function onEachFeature(feature, layer) {
@@ -230,6 +239,49 @@ legend.onAdd = function (map) {
 legend.addTo(map);
 
 //  ====================================
+// map markers
+var pins;
+var markers = new Array();
+
+$('#loadPins').click(function(){
+
+  var but = $('#loadPins');
+  var cek = $('#cekPin');
+
+  if (markers.length != 0) {
+
+    but.attr({'title' : 'Tampilkan posisi responden'});
+    cek.attr({'class' : 'fa fa-square-o'});
+
+    for(var i = 0; i < markers.length; i++){
+      markers[i].removeFrom(map);
+  }
+  markers = new Array();
+}
+else{
+
+    but.attr({'title' : 'Sembunyikan posisi responden'});
+    cek.attr({'class' : 'fa fa-check-square-o'});
+
+    addMarker(pins);
+}
+});
+
+function addMarker(pins){
+
+  for(var i = 0; i < pins.length; i++){
+
+      var marker = L.marker(pins[i]).addTo(map);
+
+      marker.on('click', function(e){
+        map.setView(e.latlng, 13);
+    });
+
+      markers[i] = marker;
+  }
+}
+
+//  ====================================
 // get parents
 function get_parents(id = ''){
 
@@ -243,6 +295,7 @@ function get_parents(id = ''){
 
         breadcrumbs(data);
         table_label(data);
+        jeniscol = data[data.length - 1].col;
     },
     error: function(){
         console.log('There was a problem with your parents ;)');
@@ -337,7 +390,8 @@ function table_init(data){
 
 // main loader
 
-mainLoader();
+// default
+mainLoader(<?= $wil ?>);
 
 function mainLoader(wil = ''){
 
@@ -350,7 +404,7 @@ function mainLoader(wil = ''){
         var data = JSON.parse(result);
 
         lokus = data.forTable;
-        var pins = JSON.parse(data.pins);
+        pins = JSON.parse(data.pins);
         n = lokus[0].id.toString().length;
         i = fileIndex(n);
 
@@ -358,6 +412,8 @@ function mainLoader(wil = ''){
         get_parents(wil);
         map_init(i);
         colorPos();
+
+        $('#loadPins span').text(data.input);
     },
     error: function(){
         console.log('There was a problem with mainLoader request.');

@@ -105,8 +105,8 @@
         <div class="modal-body">
 
           <div class="form-group" id="guoblok">
-            <label>Judul tabulasi</label>
-            <input class="form-control input-lg" type="text" placeholder="Nama layout tabulasi" id="namaTabulasi" autofocus="">
+            <label>Simpan dengan</label>
+            <input class="form-control input-lg" type="text" placeholder="Judul tabel" id="namaTabulasi" autofocus="">
           </div>
         </div>
 

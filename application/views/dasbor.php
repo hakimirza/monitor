@@ -68,6 +68,7 @@
                 <h3 class="box-title">Peta Progres Input</h3>
                 <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" id="loadPins" title="Tampilkan posisi responden">
+                    <span></span> Responden&nbsp;&nbsp;
                     <i class="fa fa-map-marker"></i>&nbsp;
                     <i id="cekPin" class="fa fa-square-o"></i>
                   </button>

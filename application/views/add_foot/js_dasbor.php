@@ -345,6 +345,7 @@ function isMarkerInsidePolygon(marker, poly) {
           'aria-valuenow': data.percent_input, 
           'style': 'width: ' + data.percent_input + '%'
         });
+        $('#loadPins span').text(data.input);
         lokus = data.forTable;
         pins = JSON.parse(data.pins);
         n = lokus[0].id.toString().length;

@@ -89,8 +89,9 @@ class Progres extends MY_Controller {
 
 		$id = (string)$id;
 		$n = strlen($id);
+		$wilFilter = $this->wilFilter();
 
-		if ($this->wilFilter() == '') {
+		if ($wilFilter == '') {
 
 			$def = array(
 				'id' => '',
@@ -106,7 +107,7 @@ class Progres extends MY_Controller {
 			}
 		}
 
-		if ($n >= 2) {
+		if ($n >= 2 && strlen($wilFilter) <= 2) {
 
 			$sub = substr($id, 0, 2);
 			$prov = array(

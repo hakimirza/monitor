@@ -14,9 +14,11 @@ Pastikan semua aplikasi di atas sudah terinstal sebelum melanjutkan ke tahap ber
 
 ## Instalasi ##
 Instalasi di sini adalah untuk keperluan pengembangan modul monitoring ini saja. Perihal instalasi sistem CAPI-STIS secara keseluruhan, akan datang menyusul.
+
 ### 1. Download/Clone ###
 - Download atau lakukan clone dari GIT STIS. Pada [link ini](https://git.stis.ac.id/hakimirza/monitor).
 - Buat sebuah folder untuk tempat source code project di dalam *../xampp/htdocs/* , lalu ekstrak hasil download/clone ke dalam folder tersebut
+
 ### 2. Inisiasi Database ###
 - Ekstrak file `monitor.rar` ke dalam folder *../xampp/mysql/data/*
 - Pada folder project, buka file `database.php` di dalam folder *application/config/*
@@ -32,6 +34,7 @@ Instalasi di sini adalah untuk keperluan pengembangan modul monitoring ini saja.
     	'database' => 'monitor',
 	...
     ```
+    
 ### 3. Persiapan Data Uji Coba ###
 #### Upload Form Kuesioner ####
 - Jalankan server **Tomcat** (hasil rangkaian instalasi ODK Aggregate), dan buka ```localhost:8080/ODKAggregate/``` pada browser

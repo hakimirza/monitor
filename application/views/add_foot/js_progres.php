@@ -138,11 +138,17 @@ layer.on({
 
 function getColor(p) {
 
-    return p > 80  ? '#1a9641' :
-    p > 60   ? '#a6d96a' :
-    p > 40   ? '#ffffbf' :
-    p > 20   ? '#fdae61' :
-    '#d7191c';
+    return p > 90  ? '#006837' : 
+    p > 80  ? '#1a9850' :
+    p > 70  ? '#66bd63' :
+    p > 60  ? '#a6d96a' :
+    p > 50  ? '#d9ef8b' :
+    p > 40  ? '#ffffbf' :
+    p > 30  ? '#fee08b' :
+    p > 20  ? '#fdae61' :
+    p > 10  ? '#f46d43' :
+    p > 0   ? '#d73027' :
+    '#a50026';
 }
 
 // colorize polygon by certain value
@@ -222,9 +228,10 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'mapinfo legend'),
-    grades = [0, 20, 40, 60, 80],
+    grades = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
     labels = [];
 
+    div.innerHTML += '<i style="background:' + getColor(0) + '"></i> ' + '0<br>';
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
 
@@ -412,6 +419,8 @@ function mainLoader(wil = ''){
         get_parents(wil);
         map_init(i);
         colorPos();
+
+        idNow = wil;
 
         $('#loadPins span').text(data.input);
     },

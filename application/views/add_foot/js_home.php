@@ -14,7 +14,7 @@ $.ajax({
 		
 		$.each(result, function(i, item) {
 
-			var $tr = $('<tr title="Tampilkan Dasbor ' + item.name + '">').append(
+			var $tr = $('<tr>').append(
 				$('<td>').text(i+1),
 				$('<td>').text(item.name),
 				$('<td>').append(`
@@ -35,9 +35,10 @@ $.ajax({
 					<button type="button" class="btn btn-block btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						&nbsp;&nbsp;<i class="fa fa-ellipsis-v"></i>&nbsp;&nbsp;</button>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="<?= base_url() ?>dasbor/`+ item.id +`">Dasbor</a></li>
-							<li><a href="<?= base_url() ?>progres/`+ item.id +`">Detail Progres</a></li>
-							<li><a href="<?= base_url() ?>tabulasi/`+ item.id +`">Tabulasi</a></li>
+							<li><a href="<?= base_url() ?>dasbor/`+ item.id +`"><i class="fa fa-dashboard"></i> Dasbor</a></li>
+							<li><a href="<?= base_url() ?>progres/`+ item.id +`"><i class="fa fa-sort-amount-desc"></i> Detail Progres</a></li>
+							<li><a href="<?= base_url() ?>petugas/`+ item.id +`"><i class="fa fa-group"></i> Petugas Cacah</a></li>
+							<li><a href="<?= base_url() ?>tabulasi/`+ item.id +`"><i class="fa fa-table"></i> Tabulasi</a></li>
 						</ul>
 					</div>`)
 				); 

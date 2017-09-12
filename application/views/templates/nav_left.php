@@ -38,6 +38,7 @@ $avatar = $this->session->userdata('avatar');
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="<?= base_url().'dasbor/'.$id_proj ?>"><i class="fa fa-dashboard"></i> <span>Dasbor</span></a></li>
         <li><a href="<?= base_url().'progres/'.$id_proj ?>"><i class="fa fa-sort-amount-desc"></i> <span>Detail Progres</span></a></li>
+        <li><a href="<?= base_url().'petugas/'.$id_proj ?>"><i class="fa fa-group"></i> <span>Petugas Cacah</span></a></li>
         <!-- <li><a href="#"><i class="fa fa-group"></i> <span>Petugas</span></a></li> -->
         <li><a href="<?= base_url().'tabulasi/'.$id_proj ?>"><i class="fa fa-table"></i> <span>Tabulasi</span></a></li>
         <!-- <li class="treeview">

@@ -1,0 +1,3174 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>SURNILKEB</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="static_instance-des_kel-109">
+            <value>PONDOK BAMBU</value>
+          </text>
+          <text id="static_instance-kecs-39">
+            <value>PADEMANGAN</value>
+          </text>
+          <text id="static_instance-jenis_kel-1">
+            <value>Perempuan</value>
+          </text>
+          <text id="static_instance-des_kel-41">
+            <value>GUNUNG</value>
+          </text>
+          <text id="static_instance-kecs-41">
+            <value>KOJA</value>
+          </text>
+          <text id="static_instance-hasil_pencacahan-2">
+            <value>Tidak ada ART/responden yg dapat memebri jawaban sampai akhir masa pencacahan</value>
+          </text>
+          <text id="static_instance-des_kel-245">
+            <value>SUNTER JAYA</value>
+          </text>
+          <text id="static_instance-kecs-11">
+            <value>SETIA BUDI</value>
+          </text>
+          <text id="static_instance-des_kel-241">
+            <value>PADEMANGAN BARAT</value>
+          </text>
+          <text id="static_instance-jenis_kel-0">
+            <value>Laki-laki</value>
+          </text>
+          <text id="static_instance-des_kel-99">
+            <value>CILILITAN</value>
+          </text>
+          <text id="static_instance-des_kel-44">
+            <value>SENAYAN</value>
+          </text>
+          <text id="static_instance-des_kel-262">
+            <value>MARUNDA</value>
+          </text>
+          <text id="static_instance-des_kel-7">
+            <value>SRENGSENG SAWAH</value>
+          </text>
+          <text id="static_instance-des_kel-230">
+            <value>CENGKARENG BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-194">
+            <value>SLIPI</value>
+          </text>
+          <text id="static_instance-kecs-1">
+            <value>KEPULAUAN SERIBU UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-152">
+            <value>SENEN</value>
+          </text>
+          <text id="static_instance-des_kel-125">
+            <value>JATINEGARA KAUM</value>
+          </text>
+          <text id="static_instance-kecs-20">
+            <value>PULO GADUNG</value>
+          </text>
+          <text id="static_instance-des_kel-4">
+            <value>PULAU KELAPA</value>
+          </text>
+          <text id="static_instance-des_kel-70">
+            <value>SETIA BUDI</value>
+          </text>
+          <text id="static_instance-des_kel-25">
+            <value>PESANGGRAHAN</value>
+          </text>
+          <text id="static_instance-des_kel-202">
+            <value>GROGOL</value>
+          </text>
+          <text id="static_instance-des_kel-83">
+            <value>MUNJUL</value>
+          </text>
+          <text id="static_instance-des_kel-242">
+            <value>PADEMANGAN TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-162">
+            <value>CEMPAKA BARU</value>
+          </text>
+          <text id="static_instance-des_kel-150">
+            <value>KRAMAT</value>
+          </text>
+          <text id="static_instance-kecs-22">
+            <value>TANAH ABANG</value>
+          </text>
+          <text id="static_instance-des_kel-193">
+            <value>PALMERAH</value>
+          </text>
+          <text id="static_instance-des_kel-213">
+            <value>JEMBATAN LIMA</value>
+          </text>
+          <text id="static_instance-bulan-2">
+            <value>Maret</value>
+          </text>
+          <text id="static_instance-des_kel-120">
+            <value>CAKUNG TIMUR</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-4">
+            <value>Menantu</value>
+          </text>
+          <text id="static_instance-des_kel-257">
+            <value>KELAPA GADING BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-52">
+            <value>DUREN TIGA</value>
+          </text>
+          <text id="static_instance-des_kel-171">
+            <value>KARTINI</value>
+          </text>
+          <text id="static_instance-des_kel-146">
+            <value>GONDANGDIA</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-5">
+            <value>Cucu</value>
+          </text>
+          <text id="static_instance-des_kel-69">
+            <value>GUNTUR</value>
+          </text>
+          <text id="static_instance-bulan-7">
+            <value>Agustus</value>
+          </text>
+          <text id="static_instance-des_kel-141">
+            <value>KEBON KACANG</value>
+          </text>
+          <text id="static_instance-des_kel-31">
+            <value>KEBAYORAN LAMA UTARA</value>
+          </text>
+          <text id="static_instance-kecs-30">
+            <value>KEMBANGAN</value>
+          </text>
+          <text id="static_instance-des_kel-15">
+            <value>PASAR MINGGU</value>
+          </text>
+          <text id="static_instance-des_kel-142">
+            <value>KAMPUNG BALI</value>
+          </text>
+          <text id="static_instance-kecs-19">
+            <value>CAKUNG</value>
+          </text>
+          <text id="static_instance-des_kel-207">
+            <value>DURI SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-11">
+            <value>TANJUNG BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-149">
+            <value>PASEBAN</value>
+          </text>
+          <text id="static_instance-des_kel-12">
+            <value>CILANDAK TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-185">
+            <value>KEMBANGAN UTARA</value>
+          </text>
+          <text id="static_instance-agama-0">
+            <value>ISLAM</value>
+          </text>
+          <text id="static_instance-kecs-17">
+            <value>JATINEGARA</value>
+          </text>
+          <text id="static_instance-des_kel-112">
+            <value>PONDOK KOPI</value>
+          </text>
+          <text id="static_instance-bulan-5">
+            <value>Juni</value>
+          </text>
+          <text id="static_instance-des_kel-124">
+            <value>CIPINANG</value>
+          </text>
+          <text id="static_instance-kibar-1">
+            <value>Sebagian besar</value>
+          </text>
+          <text id="static_instance-des_kel-238">
+            <value>PEJAGALAN</value>
+          </text>
+          <text id="static_instance-des_kel-98">
+            <value>KRAMAT JATI</value>
+          </text>
+          <text id="static_instance-bulan-9">
+            <value>Oktober</value>
+          </text>
+          <text id="static_instance-des_kel-92">
+            <value>HALIM PERDANA KUSUMAH</value>
+          </text>
+          <text id="static_instance-des_kel-190">
+            <value>DURI KEPA</value>
+          </text>
+          <text id="static_instance-des_kel-183">
+            <value>MERUYA UTARA</value>
+          </text>
+          <text id="static_instance-kecs-12">
+            <value>PASAR REBO</value>
+          </text>
+          <text id="static_instance-des_kel-46">
+            <value>PELA MAMPANG</value>
+          </text>
+          <text id="static_instance-des_kel-9">
+            <value>JAGAKARSA</value>
+          </text>
+          <text id="static_instance-des_kel-212">
+            <value>ANGKE</value>
+          </text>
+          <text id="static_instance-bulan-4">
+            <value>Mei</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-0">
+            <value>Kepala Rumah Tangga</value>
+          </text>
+          <text id="static_instance-des_kel-156">
+            <value>TANAH TINGGI</value>
+          </text>
+          <text id="static_instance-des_kel-204">
+            <value>WIJAYA KESUMA</value>
+          </text>
+          <text id="static_instance-des_kel-227">
+            <value>KEDAUNG KALI ANGKE</value>
+          </text>
+          <text id="static_instance-des_kel-38">
+            <value>PETOGOGAN</value>
+          </text>
+          <text id="static_instance-des_kel-72">
+            <value>KALISARI</value>
+          </text>
+          <text id="static_instance-des_kel-50">
+            <value>KALIBATA</value>
+          </text>
+          <text id="static_instance-des_kel-198">
+            <value>JATI PULO</value>
+          </text>
+          <text id="static_instance-kecs-16">
+            <value>KRAMAT JATI</value>
+          </text>
+          <text id="static_instance-des_kel-14">
+            <value>KEBAGUSAN</value>
+          </text>
+          <text id="static_instance-des_kel-122">
+            <value>RAWA TERATE</value>
+          </text>
+          <text id="static_instance-des_kel-235">
+            <value>KAMAL</value>
+          </text>
+          <text id="static_instance-bulan-0">
+            <value>Januari</value>
+          </text>
+          <text id="static_instance-des_kel-106">
+            <value>RAWA BUNGA</value>
+          </text>
+          <text id="static_instance-des_kel-135">
+            <value>UTAN KAYU UTARA</value>
+          </text>
+          <text id="static_instance-bulan-11">
+            <value>Desember</value>
+          </text>
+          <text id="static_instance-des_kel-82">
+            <value>CILANGKAP</value>
+          </text>
+          <text id="static_instance-des_kel-195">
+            <value>KEMANGGISAN</value>
+          </text>
+          <text id="static_instance-des_kel-1">
+            <value>PULAU PARI</value>
+          </text>
+          <text id="static_instance-bulan-10">
+            <value>November</value>
+          </text>
+          <text id="static_instance-des_kel-223">
+            <value>GLODOK</value>
+          </text>
+          <text id="static_instance-kecs-15">
+            <value>MAKASAR</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-3">
+            <value>Anak angkat</value>
+          </text>
+          <text id="static_instance-des_kel-132">
+            <value>PISANGAN BARU</value>
+          </text>
+          <text id="static_instance-status_perkawinan-0">
+            <value>Belum kawin</value>
+          </text>
+          <text id="static_instance-des_kel-116">
+            <value>JATINEGARA</value>
+          </text>
+          <text id="static_instance-des_kel-184">
+            <value>KEMBANGAN SELATAN</value>
+          </text>
+          <text id="static_instance-kabs-4">
+            <value>KOTA JAKARTA BARAT</value>
+          </text>
+          <text id="static_instance-status_perkawinan-1">
+            <value>Kawin</value>
+          </text>
+          <text id="static_instance-des_kel-258">
+            <value>KELAPA GADING TIMUR</value>
+          </text>
+          <text id="static_instance-kecs-36">
+            <value>CENGKARENG</value>
+          </text>
+          <text id="static_instance-des_kel-30">
+            <value>KEBAYORAN LAMA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-187">
+            <value>SUKABUMI UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-107">
+            <value>BALI MESTER</value>
+          </text>
+          <text id="static_instance-des_kel-0">
+            <value>PULAU TIDUNG</value>
+          </text>
+          <text id="static_instance-des_kel-75">
+            <value>GEDONG</value>
+          </text>
+          <text id="static_instance-kecs-28">
+            <value>SAWAH BESAR</value>
+          </text>
+          <text id="static_instance-des_kel-111">
+            <value>PONDOK KELAPA</value>
+          </text>
+          <text id="static_instance-des_kel-237">
+            <value>KAPUK MUARA</value>
+          </text>
+          <text id="static_instance-des_kel-90">
+            <value>MAKASAR</value>
+          </text>
+          <text id="static_instance-des_kel-67">
+            <value>MENTENG ATAS</value>
+          </text>
+          <text id="static_instance-des_kel-232">
+            <value>KALIDERES</value>
+          </text>
+          <text id="static_instance-des_kel-211">
+            <value>JEMBATAN BESI</value>
+          </text>
+          <text id="static_instance-des_kel-103">
+            <value>CIPINANG BESAR SELATAN</value>
+          </text>
+          <text id="static_instance-kecs-3">
+            <value>PASAR MINGGU</value>
+          </text>
+          <text id="static_instance-musy-0">
+            <value>Sangat sering</value>
+          </text>
+          <text id="static_instance-des_kel-244">
+            <value>SUNTER AGUNG</value>
+          </text>
+          <text id="static_instance-des_kel-205">
+            <value>JELAMBAR BARU</value>
+          </text>
+          <text id="static_instance-des_kel-91">
+            <value>KEBON PALA</value>
+          </text>
+          <text id="static_instance-des_kel-73">
+            <value>BARU</value>
+          </text>
+          <text id="static_instance-des_kel-200">
+            <value>TANJUNG DUREN SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-153">
+            <value>BUNGUR</value>
+          </text>
+          <text id="static_instance-des_kel-143">
+            <value>MENTENG</value>
+          </text>
+          <text id="static_instance-des_kel-196">
+            <value>KOTA BAMBU UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-13">
+            <value>RAGUNAN</value>
+          </text>
+          <text id="static_instance-des_kel-56">
+            <value>MENTENG DALAM</value>
+          </text>
+          <text id="static_instance-des_kel-18">
+            <value>PEJATEN TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-65">
+            <value>KARET KUNINGAN</value>
+          </text>
+          <text id="static_instance-des_kel-180">
+            <value>JOGLO</value>
+          </text>
+          <text id="static_instance-des_kel-179">
+            <value>DURI PULO</value>
+          </text>
+          <text id="static_instance-des_kel-126">
+            <value>JATI</value>
+          </text>
+          <text id="static_instance-kecs-32">
+            <value>PALMERAH</value>
+          </text>
+          <text id="static_instance-kabs-0">
+            <value>KABUPATEN KEPULAUAN SERIBU</value>
+          </text>
+          <text id="static_instance-des_kel-49">
+            <value>KUNINGAN BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-260">
+            <value>SUKA PURA</value>
+          </text>
+          <text id="static_instance-des_kel-119">
+            <value>UJUNG MENTENG</value>
+          </text>
+          <text id="static_instance-des_kel-97">
+            <value>DUKUH</value>
+          </text>
+          <text id="static_instance-des_kel-197">
+            <value>KOTA BAMBU SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-133">
+            <value>KAYU MANIS</value>
+          </text>
+          <text id="static_instance-kecs-0">
+            <value>KEPULAUAN SERIBU SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-51">
+            <value>RAWAJATI</value>
+          </text>
+          <text id="static_instance-izin-2">
+            <value>Tidak bersedia</value>
+          </text>
+          <text id="static_instance-des_kel-5">
+            <value>PULAU HARAPAN</value>
+          </text>
+          <text id="static_instance-des_kel-250">
+            <value>TANJUNG PRIUK</value>
+          </text>
+          <text id="static_instance-des_kel-255">
+            <value>RAWABADAK UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-158">
+            <value>RAWA SARI</value>
+          </text>
+          <text id="static_instance-des_kel-53">
+            <value>PANCORAN</value>
+          </text>
+          <text id="static_instance-des_kel-177">
+            <value>KEBON KELAPA</value>
+          </text>
+          <text id="static_instance-des_kel-192">
+            <value>KEDOYA UTARA</value>
+          </text>
+          <text id="static_instance-kecs-8">
+            <value>MAMPANG PRAPATAN</value>
+          </text>
+          <text id="static_instance-des_kel-248">
+            <value>SUNGAI BAMBU</value>
+          </text>
+          <text id="static_instance-des_kel-263">
+            <value>CILINCING</value>
+          </text>
+          <text id="static_instance-des_kel-266">
+            <value>KALI BARU</value>
+          </text>
+          <text id="static_instance-des_kel-159">
+            <value>CEMPAKA PUTIH TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-234">
+            <value>TEGAL ALUR</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-8">
+            <value>Lainnya (famili lain)</value>
+          </text>
+          <text id="static_instance-des_kel-32">
+            <value>CIPULIR</value>
+          </text>
+          <text id="static_instance-des_kel-254">
+            <value>LAGOA</value>
+          </text>
+          <text id="static_instance-des_kel-155">
+            <value>KAMPUNG RAWA</value>
+          </text>
+          <text id="static_instance-kecs-6">
+            <value>KEBAYORAN LAMA</value>
+          </text>
+          <text id="static_instance-desa_kota-1">
+            <value>Perdesaan</value>
+          </text>
+          <text id="static_instance-kabs-3">
+            <value>KOTA JAKARTA PUSAT</value>
+          </text>
+          <text id="static_instance-des_kel-68">
+            <value>PASAR MANGGIS</value>
+          </text>
+          <text id="static_instance-des_kel-19">
+            <value>LEBAK BULUS</value>
+          </text>
+          <text id="static_instance-des_kel-34">
+            <value>GROGOL UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-253">
+            <value>TUGU UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-115">
+            <value>KLENDER</value>
+          </text>
+          <text id="static_instance-des_kel-96">
+            <value>KAMPUNG TENGAH</value>
+          </text>
+          <text id="static_instance-des_kel-167">
+            <value>KEMAYORAN</value>
+          </text>
+          <text id="static_instance-kecs-18">
+            <value>DUREN SAWIT</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-7">
+            <value>Pembantu/sopir</value>
+          </text>
+          <text id="static_instance-hasil_pencacahan-4">
+            <value>Rumah tangga pindah/bangunan sensus sudah tidak ada</value>
+          </text>
+          <text id="static_instance-des_kel-123">
+            <value>PISANGAN TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-89">
+            <value>PINANG RANTI</value>
+          </text>
+          <text id="static_instance-des_kel-47">
+            <value>TEGAL PARANG</value>
+          </text>
+          <text id="static_instance-des_kel-64">
+            <value>KUNINGAN TIMUR</value>
+          </text>
+          <text id="static_instance-kibar-3">
+            <value>Sedikit</value>
+          </text>
+          <text id="static_instance-des_kel-108">
+            <value>KAMPUNG MELAYU</value>
+          </text>
+          <text id="static_instance-des_kel-110">
+            <value>DUREN SAWIT</value>
+          </text>
+          <text id="static_instance-des_kel-136">
+            <value>GELORA</value>
+          </text>
+          <text id="static_instance-des_kel-131">
+            <value>PAL MERIEM</value>
+          </text>
+          <text id="static_instance-des_kel-160">
+            <value>CEMPAKA PUTIH BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-166">
+            <value>KEBON KOSONG</value>
+          </text>
+          <text id="static_instance-des_kel-164">
+            <value>SERDANG</value>
+          </text>
+          <text id="static_instance-des_kel-130">
+            <value>KEBON MANGGIS</value>
+          </text>
+          <text id="static_instance-des_kel-215">
+            <value>ROA MALAKA</value>
+          </text>
+          <text id="static_instance-des_kel-247">
+            <value>WARAKAS</value>
+          </text>
+          <text id="static_instance-des_kel-199">
+            <value>TANJUNG DUREN UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-219">
+            <value>TAMAN SARI</value>
+          </text>
+          <text id="static_instance-izin-1">
+            <value>Bersedia dengan perjanjian di lain waktu</value>
+          </text>
+          <text id="static_instance-des_kel-100">
+            <value>CAWANG</value>
+          </text>
+          <text id="static_instance-des_kel-42">
+            <value>SELONG</value>
+          </text>
+          <text id="static_instance-des_kel-161">
+            <value>HARAPAN MULYA</value>
+          </text>
+          <text id="static_instance-des_kel-191">
+            <value>KEDOYA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-3">
+            <value>PULAU PANGGANG</value>
+          </text>
+          <text id="static_instance-des_kel-173">
+            <value>MANGGA DUA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-79">
+            <value>SUSUKAN</value>
+          </text>
+          <text id="static_instance-des_kel-20">
+            <value>PONDOK LABU</value>
+          </text>
+          <text id="static_instance-agama-5">
+            <value>KONG HU CHU</value>
+          </text>
+          <text id="static_instance-kecs-35">
+            <value>TAMAN SARI</value>
+          </text>
+          <text id="static_instance-des_kel-66">
+            <value>KARET</value>
+          </text>
+          <text id="static_instance-des_kel-61">
+            <value>MANGGARAI SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-249">
+            <value>KEBON BAWANG</value>
+          </text>
+          <text id="static_instance-des_kel-165">
+            <value>UTAN PANJANG</value>
+          </text>
+          <text id="static_instance-des_kel-134">
+            <value>UTAN KAYU SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-2">
+            <value>PULAU UNTUNG JAWA</value>
+          </text>
+          <text id="static_instance-des_kel-26">
+            <value>ULUJAMI</value>
+          </text>
+          <text id="static_instance-des_kel-36">
+            <value>CIPETE UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-43">
+            <value>RAWA BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-154">
+            <value>JOHAR BARU</value>
+          </text>
+          <text id="static_instance-des_kel-127">
+            <value>RAWAMANGUN</value>
+          </text>
+          <text id="static_instance-kibar-0">
+            <value>Hampir semua</value>
+          </text>
+          <text id="static_instance-hasil_pencacahan-3">
+            <value>Responden menolak</value>
+          </text>
+          <text id="static_instance-des_kel-85">
+            <value>SETU</value>
+          </text>
+          <text id="static_instance-desa_kota-0">
+            <value>Perkotaan</value>
+          </text>
+          <text id="static_instance-des_kel-203">
+            <value>JELAMBAR</value>
+          </text>
+          <text id="static_instance-kecs-23">
+            <value>MENTENG</value>
+          </text>
+          <text id="static_instance-kabs-2">
+            <value>KOTA JAKARTA TIMUR</value>
+          </text>
+          <text id="static_instance-kecs-34">
+            <value>TAMBORA</value>
+          </text>
+          <text id="static_instance-des_kel-45">
+            <value>BANGKA</value>
+          </text>
+          <text id="static_instance-des_kel-114">
+            <value>MALAKA SARI</value>
+          </text>
+          <text id="static_instance-des_kel-28">
+            <value>PETUKANGAN UTARA</value>
+          </text>
+          <text id="static_instance-kecs-40">
+            <value>TANJUNG PRIOK</value>
+          </text>
+          <text id="static_instance-des_kel-48">
+            <value>MAMPANG PRAPATAN</value>
+          </text>
+          <text id="static_instance-des_kel-139">
+            <value>KEBON MELATI</value>
+          </text>
+          <text id="static_instance-musy-3">
+            <value>Tak Pernah</value>
+          </text>
+          <text id="static_instance-des_kel-55">
+            <value>CIKOKO</value>
+          </text>
+          <text id="static_instance-bulan-8">
+            <value>September</value>
+          </text>
+          <text id="static_instance-kecs-29">
+            <value>GAMBIR</value>
+          </text>
+          <text id="static_instance-bulan-6">
+            <value>Juli</value>
+          </text>
+          <text id="static_instance-musy-1">
+            <value>Sering</value>
+          </text>
+          <text id="static_instance-des_kel-77">
+            <value>KELAPA DUA WETAN</value>
+          </text>
+          <text id="static_instance-des_kel-35">
+            <value>GANDARIA UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-21">
+            <value>CILANDAK BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-57">
+            <value>TEBET BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-137">
+            <value>BENDUNGAN HILIR</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-2">
+            <value>Anak kandung/anak tiri</value>
+          </text>
+          <text id="static_instance-des_kel-246">
+            <value>PAPANGO</value>
+          </text>
+          <text id="static_instance-des_kel-169">
+            <value>PASAR BARU</value>
+          </text>
+          <text id="static_instance-des_kel-94">
+            <value>BALE KAMBANG</value>
+          </text>
+          <text id="static_instance-des_kel-175">
+            <value>PETOJO SELATAN</value>
+          </text>
+          <text id="static_instance-musy-2">
+            <value>Jarang</value>
+          </text>
+          <text id="static_instance-des_kel-63">
+            <value>KARET SEMANGGI</value>
+          </text>
+          <text id="static_instance-des_kel-217">
+            <value>KRUKUT</value>
+          </text>
+          <text id="static_instance-des_kel-118">
+            <value>PULO GEBANG</value>
+          </text>
+          <text id="static_instance-des_kel-37">
+            <value>PULO</value>
+          </text>
+          <text id="static_instance-kecs-33">
+            <value>GROGOL PETAMBURAN</value>
+          </text>
+          <text id="static_instance-kecs-25">
+            <value>JOHAR BARU</value>
+          </text>
+          <text id="static_instance-des_kel-186">
+            <value>SUKABUMI SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-261">
+            <value>ROROTAN</value>
+          </text>
+          <text id="static_instance-des_kel-239">
+            <value>PENJARINGAN</value>
+          </text>
+          <text id="static_instance-des_kel-40">
+            <value>KRAMAT PELA</value>
+          </text>
+          <text id="static_instance-des_kel-201">
+            <value>TOMANG</value>
+          </text>
+          <text id="static_instance-kecs-27">
+            <value>KEMAYORAN</value>
+          </text>
+          <text id="static_instance-agama-4">
+            <value>BUDHA</value>
+          </text>
+          <text id="static_instance-kecs-9">
+            <value>PANCORAN</value>
+          </text>
+          <text id="static_instance-des_kel-95">
+            <value>BATU AMPAR</value>
+          </text>
+          <text id="static_instance-des_kel-78">
+            <value>CIRACAS</value>
+          </text>
+          <text id="static_instance-des_kel-209">
+            <value>DURI UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-60">
+            <value>BUKIT DURI</value>
+          </text>
+          <text id="static_instance-des_kel-59">
+            <value>KEBON BARU</value>
+          </text>
+          <text id="static_instance-des_kel-80">
+            <value>RAMBUTAN</value>
+          </text>
+          <text id="static_instance-des_kel-138">
+            <value>KARET TENGSIN</value>
+          </text>
+          <text id="static_instance-des_kel-168">
+            <value>GUNUNG SAHARI SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-93">
+            <value>CIPINANG MELAYU</value>
+          </text>
+          <text id="static_instance-des_kel-208">
+            <value>TANAH SEREAL</value>
+          </text>
+          <text id="static_instance-des_kel-129">
+            <value>PULO GADUNG</value>
+          </text>
+          <text id="static_instance-des_kel-221">
+            <value>MANGGA BESAR</value>
+          </text>
+          <text id="static_instance-des_kel-84">
+            <value>CIPAYUNG</value>
+          </text>
+          <text id="static_instance-kecs-13">
+            <value>CIRACAS</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-6">
+            <value>Orangtua/mertua</value>
+          </text>
+          <text id="static_instance-des_kel-206">
+            <value>KALIANYAR</value>
+          </text>
+          <text id="static_instance-des_kel-178">
+            <value>PETOJO UTARA</value>
+          </text>
+          <text id="static_instance-kecs-5">
+            <value>PESANGGRAHAN</value>
+          </text>
+          <text id="static_instance-des_kel-23">
+            <value>CIPETE SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-121">
+            <value>CAKUNG BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-10">
+            <value>LENTENG AGUNG</value>
+          </text>
+          <text id="static_instance-des_kel-76">
+            <value>CIBUBUR</value>
+          </text>
+          <text id="static_instance-des_kel-16">
+            <value>JATI PADANG</value>
+          </text>
+          <text id="static_instance-des_kel-33">
+            <value>GROGOL SELATAN</value>
+          </text>
+          <text id="static_instance-agama-3">
+            <value>HINDU</value>
+          </text>
+          <text id="static_instance-kecs-7">
+            <value>KEBAYORAN BARU</value>
+          </text>
+          <text id="static_instance-kibar-2">
+            <value>Sebagian kecil</value>
+          </text>
+          <text id="static_instance-des_kel-214">
+            <value>TAMBORA</value>
+          </text>
+          <text id="static_instance-des_kel-17">
+            <value>PEJATEN BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-176">
+            <value>GAMBIR</value>
+          </text>
+          <text id="static_instance-des_kel-22">
+            <value>GANDARIA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-252">
+            <value>TUGU SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-265">
+            <value>SEMPER BARAT</value>
+          </text>
+          <text id="static_instance-des_kel-39">
+            <value>MELAWAI</value>
+          </text>
+          <text id="static_instance-des_kel-140">
+            <value>PETAMBURAN</value>
+          </text>
+          <text id="static_instance-des_kel-236">
+            <value>KAMAL MUARA</value>
+          </text>
+          <text id="static_instance-des_kel-147">
+            <value>KEBON SIRIH</value>
+          </text>
+          <text id="static_instance-des_kel-54">
+            <value>PENGADEGAN</value>
+          </text>
+          <text id="static_instance-des_kel-163">
+            <value>SUMUR BATU</value>
+          </text>
+          <text id="static_instance-des_kel-86">
+            <value>BAMBU APUS</value>
+          </text>
+          <text id="static_instance-des_kel-27">
+            <value>PETUKANGAN SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-240">
+            <value>PLUIT</value>
+          </text>
+          <text id="static_instance-agama-1">
+            <value>KRISTEN</value>
+          </text>
+          <text id="static_instance-des_kel-144">
+            <value>PEGANGSAAN</value>
+          </text>
+          <text id="static_instance-izin-0">
+            <value>Ya bersedia</value>
+          </text>
+          <text id="static_instance-hasil_pencacahan-0">
+            <value>Terisi lengkap</value>
+          </text>
+          <text id="static_instance-des_kel-224">
+            <value>PINANGSIA</value>
+          </text>
+          <text id="static_instance-des_kel-181">
+            <value>SRENGSENG</value>
+          </text>
+          <text id="static_instance-des_kel-113">
+            <value>MALAKA JAYA</value>
+          </text>
+          <text id="static_instance-kecs-31">
+            <value>KEBON JERUK</value>
+          </text>
+          <text id="static_instance-des_kel-172">
+            <value>KARANG ANYAR</value>
+          </text>
+          <text id="static_instance-des_kel-62">
+            <value>MANGGARAI</value>
+          </text>
+          <text id="static_instance-des_kel-104">
+            <value>CIPINANG MUARA</value>
+          </text>
+          <text id="static_instance-des_kel-6">
+            <value>CIPEDAK</value>
+          </text>
+          <text id="static_instance-des_kel-220">
+            <value>TANGKI</value>
+          </text>
+          <text id="static_instance-des_kel-225">
+            <value>DURI KOSAMBI</value>
+          </text>
+          <text id="static_instance-des_kel-87">
+            <value>CEGER</value>
+          </text>
+          <text id="static_instance-des_kel-222">
+            <value>KEAGUNGAN</value>
+          </text>
+          <text id="static_instance-des_kel-151">
+            <value>KWITANG</value>
+          </text>
+          <text id="static_instance-des_kel-256">
+            <value>KOJA</value>
+          </text>
+          <text id="static_instance-hub_dg_krt-1">
+            <value>Istri/Suami</value>
+          </text>
+          <text id="static_instance-des_kel-58">
+            <value>TEBET TIMUR</value>
+          </text>
+          <text id="static_instance-des_kel-264">
+            <value>SEMPER TIMUR</value>
+          </text>
+          <text id="static_instance-status_perkawinan-2">
+            <value>Cerai hidup</value>
+          </text>
+          <text id="static_instance-des_kel-170">
+            <value>GUNUNG SAHARI UTARA</value>
+          </text>
+          <text id="static_instance-kecs-26">
+            <value>CEMPAKA PUTIH</value>
+          </text>
+          <text id="static_instance-kecs-24">
+            <value>SENEN</value>
+          </text>
+          <text id="static_instance-kabs-1">
+            <value>KOTA JAKARTA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-74">
+            <value>CIJANTUNG</value>
+          </text>
+          <text id="static_instance-des_kel-148">
+            <value>KENARI</value>
+          </text>
+          <text id="static_instance-des_kel-229">
+            <value>CENGKARENG TIMUR</value>
+          </text>
+          <text id="static_instance-kecs-37">
+            <value>KALI DERES</value>
+          </text>
+          <text id="static_instance-provs-0">
+            <value>DKI JAKARTA</value>
+          </text>
+          <text id="static_instance-des_kel-174">
+            <value>CIDENG</value>
+          </text>
+          <text id="static_instance-kecs-2">
+            <value>JAGAKARSA</value>
+          </text>
+          <text id="static_instance-des_kel-216">
+            <value>PEKOJAN</value>
+          </text>
+          <text id="static_instance-des_kel-228">
+            <value>KAPUK</value>
+          </text>
+          <text id="static_instance-des_kel-88">
+            <value>LUBANG BUAYA</value>
+          </text>
+          <text id="static_instance-agama-2">
+            <value>KATHOLIK</value>
+          </text>
+          <text id="static_instance-des_kel-81">
+            <value>PONDOK RANGGON</value>
+          </text>
+          <text id="static_instance-hasil_pencacahan-1">
+            <value>Terisi tidak lengkap</value>
+          </text>
+          <text id="static_instance-kecs-4">
+            <value>CILANDAK</value>
+          </text>
+          <text id="static_instance-des_kel-128">
+            <value>KAYU PUTIH</value>
+          </text>
+          <text id="static_instance-kecs-38">
+            <value>PENJARINGAN</value>
+          </text>
+          <text id="static_instance-des_kel-188">
+            <value>KELAPA DUA</value>
+          </text>
+          <text id="static_instance-des_kel-157">
+            <value>GALUR</value>
+          </text>
+          <text id="static_instance-des_kel-8">
+            <value>CIGANJUR</value>
+          </text>
+          <text id="static_instance-des_kel-251">
+            <value>RAWABADAK SELATAN</value>
+          </text>
+          <text id="static_instance-kecs-21">
+            <value>MATRAMAN</value>
+          </text>
+          <text id="static_instance-bulan-1">
+            <value>Februari</value>
+          </text>
+          <text id="static_instance-kecs-43">
+            <value>CILINCING</value>
+          </text>
+          <text id="static_instance-des_kel-117">
+            <value>PENGGILINGAN</value>
+          </text>
+          <text id="static_instance-des_kel-226">
+            <value>RAWA BUAYA</value>
+          </text>
+          <text id="static_instance-des_kel-218">
+            <value>MAPHAR</value>
+          </text>
+          <text id="static_instance-status_perkawinan-3">
+            <value>Cerai mati</value>
+          </text>
+          <text id="static_instance-kecs-10">
+            <value>TEBET</value>
+          </text>
+          <text id="static_instance-des_kel-24">
+            <value>BINTARO</value>
+          </text>
+          <text id="static_instance-des_kel-102">
+            <value>CIPINANG CEMPEDAK</value>
+          </text>
+          <text id="static_instance-kabs-5">
+            <value>KOTA JAKARTA UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-71">
+            <value>PEKAYON</value>
+          </text>
+          <text id="static_instance-des_kel-101">
+            <value>BIDARA CINA</value>
+          </text>
+          <text id="static_instance-kecs-14">
+            <value>CIPAYUNG</value>
+          </text>
+          <text id="static_instance-des_kel-105">
+            <value>CIPINANG BESAR UTARA</value>
+          </text>
+          <text id="static_instance-des_kel-182">
+            <value>MERUYA SELATAN</value>
+          </text>
+          <text id="static_instance-des_kel-210">
+            <value>KRENDANG</value>
+          </text>
+          <text id="static_instance-des_kel-189">
+            <value>KEBON JERUK</value>
+          </text>
+          <text id="static_instance-des_kel-259">
+            <value>PEGANGSAAN DUA</value>
+          </text>
+          <text id="static_instance-des_kel-243">
+            <value>ANCOL</value>
+          </text>
+          <text id="static_instance-des_kel-231">
+            <value>SEMANAN</value>
+          </text>
+          <text id="static_instance-des_kel-145">
+            <value>CIKINI</value>
+          </text>
+          <text id="static_instance-des_kel-29">
+            <value>PONDOK PINANG</value>
+          </text>
+          <text id="static_instance-des_kel-233">
+            <value>PEGADUNGAN</value>
+          </text>
+          <text id="static_instance-kecs-42">
+            <value>KELAPA GADING</value>
+          </text>
+          <text id="static_instance-bulan-3">
+            <value>April</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <coba id="surnilkeb">
+          <blok1>
+            <P101/>
+            <P102/>
+            <P103/>
+            <P104/>
+            <P105/>
+            <location/>
+            <blok1_group1>
+              <P106/>
+              <P107/>
+              <P108/>
+              <P109/>
+              <P110/>
+            </blok1_group1>
+          </blok1>
+          <izin/>
+          <P301/>
+          <P304/>
+          <P305/>
+          <metadata>
+            <start/>
+            <end/>
+            <today/>
+            <note_start/>
+            <note_end/>
+          </metadata>
+          <meta>
+            <instanceID/>
+          </meta>
+        </coba>
+      </instance>
+      <instance id="bulan">
+        <root>
+          <item>
+            <itextId>static_instance-bulan-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-4</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-5</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-6</itextId>
+            <name>7</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-7</itextId>
+            <name>8</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-8</itextId>
+            <name>9</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-9</itextId>
+            <name>10</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-10</itextId>
+            <name>11</name>
+          </item>
+          <item>
+            <itextId>static_instance-bulan-11</itextId>
+            <name>12</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="kabs">
+        <root>
+          <item>
+            <itextId>static_instance-kabs-0</itextId>
+            <name>3101</name>
+            <prov>31</prov>
+          </item>
+          <item>
+            <itextId>static_instance-kabs-1</itextId>
+            <name>3171</name>
+            <prov>31</prov>
+          </item>
+          <item>
+            <itextId>static_instance-kabs-2</itextId>
+            <name>3172</name>
+            <prov>31</prov>
+          </item>
+          <item>
+            <itextId>static_instance-kabs-3</itextId>
+            <name>3173</name>
+            <prov>31</prov>
+          </item>
+          <item>
+            <itextId>static_instance-kabs-4</itextId>
+            <name>3174</name>
+            <prov>31</prov>
+          </item>
+          <item>
+            <itextId>static_instance-kabs-5</itextId>
+            <name>3175</name>
+            <prov>31</prov>
+          </item>
+        </root>
+      </instance>
+      <instance id="hasil_pencacahan">
+        <root>
+          <item>
+            <itextId>static_instance-hasil_pencacahan-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-hasil_pencacahan-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-hasil_pencacahan-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-hasil_pencacahan-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-hasil_pencacahan-4</itextId>
+            <name>5</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="provs">
+        <root>
+          <item>
+            <itextId>static_instance-provs-0</itextId>
+            <name>31</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="desa_kota">
+        <root>
+          <item>
+            <itextId>static_instance-desa_kota-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-desa_kota-1</itextId>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="des_kel">
+        <root>
+          <item>
+            <itextId>static_instance-des_kel-0</itextId>
+            <name>3101010001</name>
+            <kec>3101010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-1</itextId>
+            <name>3101010002</name>
+            <kec>3101010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-2</itextId>
+            <name>3101010003</name>
+            <kec>3101010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-3</itextId>
+            <name>3101020001</name>
+            <kec>3101020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-4</itextId>
+            <name>3101020002</name>
+            <kec>3101020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-5</itextId>
+            <name>3101020003</name>
+            <kec>3101020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-6</itextId>
+            <name>3171010001</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-7</itextId>
+            <name>3171010002</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-8</itextId>
+            <name>3171010003</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-9</itextId>
+            <name>3171010004</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-10</itextId>
+            <name>3171010005</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-11</itextId>
+            <name>3171010006</name>
+            <kec>3171010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-12</itextId>
+            <name>3171020001</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-13</itextId>
+            <name>3171020002</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-14</itextId>
+            <name>3171020003</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-15</itextId>
+            <name>3171020004</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-16</itextId>
+            <name>3171020005</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-17</itextId>
+            <name>3171020006</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-18</itextId>
+            <name>3171020007</name>
+            <kec>3171020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-19</itextId>
+            <name>3171030001</name>
+            <kec>3171030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-20</itextId>
+            <name>3171030002</name>
+            <kec>3171030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-21</itextId>
+            <name>3171030003</name>
+            <kec>3171030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-22</itextId>
+            <name>3171030004</name>
+            <kec>3171030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-23</itextId>
+            <name>3171030005</name>
+            <kec>3171030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-24</itextId>
+            <name>3171040001</name>
+            <kec>3171040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-25</itextId>
+            <name>3171040002</name>
+            <kec>3171040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-26</itextId>
+            <name>3171040003</name>
+            <kec>3171040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-27</itextId>
+            <name>3171040004</name>
+            <kec>3171040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-28</itextId>
+            <name>3171040005</name>
+            <kec>3171040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-29</itextId>
+            <name>3171050001</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-30</itextId>
+            <name>3171050002</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-31</itextId>
+            <name>3171050003</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-32</itextId>
+            <name>3171050004</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-33</itextId>
+            <name>3171050005</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-34</itextId>
+            <name>3171050006</name>
+            <kec>3171050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-35</itextId>
+            <name>3171060001</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-36</itextId>
+            <name>3171060002</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-37</itextId>
+            <name>3171060003</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-38</itextId>
+            <name>3171060004</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-39</itextId>
+            <name>3171060005</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-40</itextId>
+            <name>3171060006</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-41</itextId>
+            <name>3171060007</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-42</itextId>
+            <name>3171060008</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-43</itextId>
+            <name>3171060009</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-44</itextId>
+            <name>3171060010</name>
+            <kec>3171060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-45</itextId>
+            <name>3171070001</name>
+            <kec>3171070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-46</itextId>
+            <name>3171070002</name>
+            <kec>3171070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-47</itextId>
+            <name>3171070003</name>
+            <kec>3171070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-48</itextId>
+            <name>3171070004</name>
+            <kec>3171070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-49</itextId>
+            <name>3171070005</name>
+            <kec>3171070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-50</itextId>
+            <name>3171080001</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-51</itextId>
+            <name>3171080002</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-52</itextId>
+            <name>3171080003</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-53</itextId>
+            <name>3171080004</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-54</itextId>
+            <name>3171080005</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-55</itextId>
+            <name>3171080006</name>
+            <kec>3171080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-56</itextId>
+            <name>3171090001</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-57</itextId>
+            <name>3171090002</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-58</itextId>
+            <name>3171090003</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-59</itextId>
+            <name>3171090004</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-60</itextId>
+            <name>3171090005</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-61</itextId>
+            <name>3171090006</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-62</itextId>
+            <name>3171090007</name>
+            <kec>3171090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-63</itextId>
+            <name>3171100001</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-64</itextId>
+            <name>3171100002</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-65</itextId>
+            <name>3171100003</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-66</itextId>
+            <name>3171100004</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-67</itextId>
+            <name>3171100005</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-68</itextId>
+            <name>3171100006</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-69</itextId>
+            <name>3171100007</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-70</itextId>
+            <name>3171100008</name>
+            <kec>3171100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-71</itextId>
+            <name>3172010001</name>
+            <kec>3172010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-72</itextId>
+            <name>3172010002</name>
+            <kec>3172010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-73</itextId>
+            <name>3172010003</name>
+            <kec>3172010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-74</itextId>
+            <name>3172010004</name>
+            <kec>3172010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-75</itextId>
+            <name>3172010005</name>
+            <kec>3172010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-76</itextId>
+            <name>3172020001</name>
+            <kec>3172020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-77</itextId>
+            <name>3172020002</name>
+            <kec>3172020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-78</itextId>
+            <name>3172020003</name>
+            <kec>3172020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-79</itextId>
+            <name>3172020004</name>
+            <kec>3172020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-80</itextId>
+            <name>3172020005</name>
+            <kec>3172020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-81</itextId>
+            <name>3172030001</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-82</itextId>
+            <name>3172030002</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-83</itextId>
+            <name>3172030003</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-84</itextId>
+            <name>3172030004</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-85</itextId>
+            <name>3172030005</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-86</itextId>
+            <name>3172030006</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-87</itextId>
+            <name>3172030007</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-88</itextId>
+            <name>3172030008</name>
+            <kec>3172030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-89</itextId>
+            <name>3172040001</name>
+            <kec>3172040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-90</itextId>
+            <name>3172040002</name>
+            <kec>3172040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-91</itextId>
+            <name>3172040003</name>
+            <kec>3172040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-92</itextId>
+            <name>3172040004</name>
+            <kec>3172040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-93</itextId>
+            <name>3172040005</name>
+            <kec>3172040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-94</itextId>
+            <name>3172050001</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-95</itextId>
+            <name>3172050002</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-96</itextId>
+            <name>3172050003</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-97</itextId>
+            <name>3172050004</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-98</itextId>
+            <name>3172050005</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-99</itextId>
+            <name>3172050006</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-100</itextId>
+            <name>3172050007</name>
+            <kec>3172050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-101</itextId>
+            <name>3172060001</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-102</itextId>
+            <name>3172060002</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-103</itextId>
+            <name>3172060003</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-104</itextId>
+            <name>3172060004</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-105</itextId>
+            <name>3172060005</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-106</itextId>
+            <name>3172060006</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-107</itextId>
+            <name>3172060007</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-108</itextId>
+            <name>3172060008</name>
+            <kec>3172060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-109</itextId>
+            <name>3172070001</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-110</itextId>
+            <name>3172070002</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-111</itextId>
+            <name>3172070003</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-112</itextId>
+            <name>3172070004</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-113</itextId>
+            <name>3172070005</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-114</itextId>
+            <name>3172070006</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-115</itextId>
+            <name>3172070007</name>
+            <kec>3172070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-116</itextId>
+            <name>3172080001</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-117</itextId>
+            <name>3172080002</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-118</itextId>
+            <name>3172080003</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-119</itextId>
+            <name>3172080004</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-120</itextId>
+            <name>3172080005</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-121</itextId>
+            <name>3172080006</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-122</itextId>
+            <name>3172080007</name>
+            <kec>3172080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-123</itextId>
+            <name>3172090001</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-124</itextId>
+            <name>3172090002</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-125</itextId>
+            <name>3172090003</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-126</itextId>
+            <name>3172090004</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-127</itextId>
+            <name>3172090005</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-128</itextId>
+            <name>3172090006</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-129</itextId>
+            <name>3172090007</name>
+            <kec>3172090</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-130</itextId>
+            <name>3172100001</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-131</itextId>
+            <name>3172100002</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-132</itextId>
+            <name>3172100003</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-133</itextId>
+            <name>3172100004</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-134</itextId>
+            <name>3172100005</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-135</itextId>
+            <name>3172100006</name>
+            <kec>3172100</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-136</itextId>
+            <name>3173010001</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-137</itextId>
+            <name>3173010002</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-138</itextId>
+            <name>3173010003</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-139</itextId>
+            <name>3173010004</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-140</itextId>
+            <name>3173010005</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-141</itextId>
+            <name>3173010006</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-142</itextId>
+            <name>3173010007</name>
+            <kec>3173010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-143</itextId>
+            <name>3173020001</name>
+            <kec>3173020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-144</itextId>
+            <name>3173020002</name>
+            <kec>3173020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-145</itextId>
+            <name>3173020003</name>
+            <kec>3173020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-146</itextId>
+            <name>3173020004</name>
+            <kec>3173020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-147</itextId>
+            <name>3173020005</name>
+            <kec>3173020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-148</itextId>
+            <name>3173030001</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-149</itextId>
+            <name>3173030002</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-150</itextId>
+            <name>3173030003</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-151</itextId>
+            <name>3173030004</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-152</itextId>
+            <name>3173030005</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-153</itextId>
+            <name>3173030006</name>
+            <kec>3173030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-154</itextId>
+            <name>3173040001</name>
+            <kec>3173040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-155</itextId>
+            <name>3173040002</name>
+            <kec>3173040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-156</itextId>
+            <name>3173040003</name>
+            <kec>3173040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-157</itextId>
+            <name>3173040004</name>
+            <kec>3173040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-158</itextId>
+            <name>3173050001</name>
+            <kec>3173050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-159</itextId>
+            <name>3173050002</name>
+            <kec>3173050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-160</itextId>
+            <name>3173050003</name>
+            <kec>3173050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-161</itextId>
+            <name>3173060001</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-162</itextId>
+            <name>3173060002</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-163</itextId>
+            <name>3173060003</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-164</itextId>
+            <name>3173060004</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-165</itextId>
+            <name>3173060005</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-166</itextId>
+            <name>3173060006</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-167</itextId>
+            <name>3173060007</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-168</itextId>
+            <name>3173060008</name>
+            <kec>3173060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-169</itextId>
+            <name>3173070001</name>
+            <kec>3173070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-170</itextId>
+            <name>3173070002</name>
+            <kec>3173070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-171</itextId>
+            <name>3173070003</name>
+            <kec>3173070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-172</itextId>
+            <name>3173070004</name>
+            <kec>3173070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-173</itextId>
+            <name>3173070005</name>
+            <kec>3173070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-174</itextId>
+            <name>3173080001</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-175</itextId>
+            <name>3173080002</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-176</itextId>
+            <name>3173080003</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-177</itextId>
+            <name>3173080004</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-178</itextId>
+            <name>3173080005</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-179</itextId>
+            <name>3173080006</name>
+            <kec>3173080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-180</itextId>
+            <name>3174010001</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-181</itextId>
+            <name>3174010002</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-182</itextId>
+            <name>3174010003</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-183</itextId>
+            <name>3174010004</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-184</itextId>
+            <name>3174010005</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-185</itextId>
+            <name>3174010006</name>
+            <kec>3174010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-186</itextId>
+            <name>3174020001</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-187</itextId>
+            <name>3174020002</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-188</itextId>
+            <name>3174020003</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-189</itextId>
+            <name>3174020004</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-190</itextId>
+            <name>3174020005</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-191</itextId>
+            <name>3174020006</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-192</itextId>
+            <name>3174020007</name>
+            <kec>3174020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-193</itextId>
+            <name>3174030001</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-194</itextId>
+            <name>3174030002</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-195</itextId>
+            <name>3174030003</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-196</itextId>
+            <name>3174030004</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-197</itextId>
+            <name>3174030005</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-198</itextId>
+            <name>3174030006</name>
+            <kec>3174030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-199</itextId>
+            <name>3174040001</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-200</itextId>
+            <name>3174040002</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-201</itextId>
+            <name>3174040003</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-202</itextId>
+            <name>3174040004</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-203</itextId>
+            <name>3174040005</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-204</itextId>
+            <name>3174040006</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-205</itextId>
+            <name>3174040007</name>
+            <kec>3174040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-206</itextId>
+            <name>3174050001</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-207</itextId>
+            <name>3174050002</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-208</itextId>
+            <name>3174050003</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-209</itextId>
+            <name>3174050004</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-210</itextId>
+            <name>3174050005</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-211</itextId>
+            <name>3174050006</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-212</itextId>
+            <name>3174050007</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-213</itextId>
+            <name>3174050008</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-214</itextId>
+            <name>3174050009</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-215</itextId>
+            <name>3174050010</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-216</itextId>
+            <name>3174050011</name>
+            <kec>3174050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-217</itextId>
+            <name>3174060001</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-218</itextId>
+            <name>3174060002</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-219</itextId>
+            <name>3174060003</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-220</itextId>
+            <name>3174060004</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-221</itextId>
+            <name>3174060005</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-222</itextId>
+            <name>3174060006</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-223</itextId>
+            <name>3174060007</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-224</itextId>
+            <name>3174060008</name>
+            <kec>3174060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-225</itextId>
+            <name>3174070001</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-226</itextId>
+            <name>3174070002</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-227</itextId>
+            <name>3174070003</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-228</itextId>
+            <name>3174070004</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-229</itextId>
+            <name>3174070005</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-230</itextId>
+            <name>3174070006</name>
+            <kec>3174070</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-231</itextId>
+            <name>3174080001</name>
+            <kec>3174080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-232</itextId>
+            <name>3174080002</name>
+            <kec>3174080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-233</itextId>
+            <name>3174080003</name>
+            <kec>3174080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-234</itextId>
+            <name>3174080004</name>
+            <kec>3174080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-235</itextId>
+            <name>3174080005</name>
+            <kec>3174080</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-236</itextId>
+            <name>3175010001</name>
+            <kec>3175010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-237</itextId>
+            <name>3175010002</name>
+            <kec>3175010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-238</itextId>
+            <name>3175010003</name>
+            <kec>3175010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-239</itextId>
+            <name>3175010004</name>
+            <kec>3175010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-240</itextId>
+            <name>3175010005</name>
+            <kec>3175010</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-241</itextId>
+            <name>3175020001</name>
+            <kec>3175020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-242</itextId>
+            <name>3175020002</name>
+            <kec>3175020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-243</itextId>
+            <name>3175020003</name>
+            <kec>3175020</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-244</itextId>
+            <name>3175030001</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-245</itextId>
+            <name>3175030002</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-246</itextId>
+            <name>3175030003</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-247</itextId>
+            <name>3175030004</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-248</itextId>
+            <name>3175030005</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-249</itextId>
+            <name>3175030006</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-250</itextId>
+            <name>3175030007</name>
+            <kec>3175030</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-251</itextId>
+            <name>3175040001</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-252</itextId>
+            <name>3175040002</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-253</itextId>
+            <name>3175040003</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-254</itextId>
+            <name>3175040004</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-255</itextId>
+            <name>3175040005</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-256</itextId>
+            <name>3175040006</name>
+            <kec>3175040</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-257</itextId>
+            <name>3175050001</name>
+            <kec>3175050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-258</itextId>
+            <name>3175050002</name>
+            <kec>3175050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-259</itextId>
+            <name>3175050003</name>
+            <kec>3175050</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-260</itextId>
+            <name>3175060001</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-261</itextId>
+            <name>3175060002</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-262</itextId>
+            <name>3175060003</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-263</itextId>
+            <name>3175060004</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-264</itextId>
+            <name>3175060005</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-265</itextId>
+            <name>3175060006</name>
+            <kec>3175060</kec>
+          </item>
+          <item>
+            <itextId>static_instance-des_kel-266</itextId>
+            <name>3175060007</name>
+            <kec>3175060</kec>
+          </item>
+        </root>
+      </instance>
+      <instance id="izin">
+        <root>
+          <item>
+            <itextId>static_instance-izin-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-izin-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-izin-2</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="kecs">
+        <root>
+          <item>
+            <itextId>static_instance-kecs-0</itextId>
+            <name>3101010</name>
+            <kab>3101</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-1</itextId>
+            <name>3101020</name>
+            <kab>3101</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-2</itextId>
+            <name>3171010</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-3</itextId>
+            <name>3171020</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-4</itextId>
+            <name>3171030</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-5</itextId>
+            <name>3171040</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-6</itextId>
+            <name>3171050</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-7</itextId>
+            <name>3171060</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-8</itextId>
+            <name>3171070</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-9</itextId>
+            <name>3171080</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-10</itextId>
+            <name>3171090</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-11</itextId>
+            <name>3171100</name>
+            <kab>3171</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-12</itextId>
+            <name>3172010</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-13</itextId>
+            <name>3172020</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-14</itextId>
+            <name>3172030</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-15</itextId>
+            <name>3172040</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-16</itextId>
+            <name>3172050</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-17</itextId>
+            <name>3172060</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-18</itextId>
+            <name>3172070</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-19</itextId>
+            <name>3172080</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-20</itextId>
+            <name>3172090</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-21</itextId>
+            <name>3172100</name>
+            <kab>3172</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-22</itextId>
+            <name>3173010</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-23</itextId>
+            <name>3173020</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-24</itextId>
+            <name>3173030</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-25</itextId>
+            <name>3173040</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-26</itextId>
+            <name>3173050</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-27</itextId>
+            <name>3173060</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-28</itextId>
+            <name>3173070</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-29</itextId>
+            <name>3173080</name>
+            <kab>3173</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-30</itextId>
+            <name>3174010</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-31</itextId>
+            <name>3174020</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-32</itextId>
+            <name>3174030</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-33</itextId>
+            <name>3174040</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-34</itextId>
+            <name>3174050</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-35</itextId>
+            <name>3174060</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-36</itextId>
+            <name>3174070</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-37</itextId>
+            <name>3174080</name>
+            <kab>3174</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-38</itextId>
+            <name>3175010</name>
+            <kab>3175</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-39</itextId>
+            <name>3175020</name>
+            <kab>3175</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-40</itextId>
+            <name>3175030</name>
+            <kab>3175</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-41</itextId>
+            <name>3175040</name>
+            <kab>3175</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-42</itextId>
+            <name>3175050</name>
+            <kab>3175</kab>
+          </item>
+          <item>
+            <itextId>static_instance-kecs-43</itextId>
+            <name>3175060</name>
+            <kab>3175</kab>
+          </item>
+        </root>
+      </instance>
+      <instance id="agama">
+        <root>
+          <item>
+            <itextId>static_instance-agama-0</itextId>
+            <name>islam</name>
+          </item>
+          <item>
+            <itextId>static_instance-agama-1</itextId>
+            <name>kristen</name>
+          </item>
+          <item>
+            <itextId>static_instance-agama-2</itextId>
+            <name>katholik</name>
+          </item>
+          <item>
+            <itextId>static_instance-agama-3</itextId>
+            <name>hindu</name>
+          </item>
+          <item>
+            <itextId>static_instance-agama-4</itextId>
+            <name>budha</name>
+          </item>
+          <item>
+            <itextId>static_instance-agama-5</itextId>
+            <name>konghucu</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="musy">
+        <root>
+          <item>
+            <itextId>static_instance-musy-0</itextId>
+            <name>&gt;10</name>
+          </item>
+          <item>
+            <itextId>static_instance-musy-1</itextId>
+            <name>3sd10</name>
+          </item>
+          <item>
+            <itextId>static_instance-musy-2</itextId>
+            <name>1sd1</name>
+          </item>
+          <item>
+            <itextId>static_instance-musy-3</itextId>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="hub_dg_krt">
+        <root>
+          <item>
+            <itextId>static_instance-hub_dg_krt-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-4</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-5</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-6</itextId>
+            <name>7</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-7</itextId>
+            <name>8</name>
+          </item>
+          <item>
+            <itextId>static_instance-hub_dg_krt-8</itextId>
+            <name>9</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="jenis_kel">
+        <root>
+          <item>
+            <itextId>static_instance-jenis_kel-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-jenis_kel-1</itextId>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="kibar">
+        <root>
+          <item>
+            <itextId>static_instance-kibar-0</itextId>
+            <name>&gt;75%</name>
+          </item>
+          <item>
+            <itextId>static_instance-kibar-1</itextId>
+            <name>50-75%</name>
+          </item>
+          <item>
+            <itextId>static_instance-kibar-2</itextId>
+            <name>25-49%</name>
+          </item>
+          <item>
+            <itextId>static_instance-kibar-3</itextId>
+            <name>&lt;25%</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="status_perkawinan">
+        <root>
+          <item>
+            <itextId>static_instance-status_perkawinan-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-status_perkawinan-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-status_perkawinan-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-status_perkawinan-3</itextId>
+            <name>4</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/coba/blok1/P101" required="true()" type="select1"/>
+      <bind nodeset="/coba/blok1/P102" required="true()" type="select1"/>
+      <bind nodeset="/coba/blok1/P103" required="true()" type="select1"/>
+      <bind nodeset="/coba/blok1/P104" required="true()" type="select1"/>
+      <bind nodeset="/coba/blok1/P105" required="true()" type="select1"/>
+      <bind nodeset="/coba/blok1/location" required="true()" type="geopoint"/>
+      <bind nodeset="/coba/blok1/blok1_group1/P106" required="true()" type="string"/>
+      <bind nodeset="/coba/blok1/blok1_group1/P107" required="true()" type="string"/>
+      <bind nodeset="/coba/blok1/blok1_group1/P108" required="true()" type="int"/>
+      <bind nodeset="/coba/blok1/blok1_group1/P109" required="true()" type="string"/>
+      <bind nodeset="/coba/blok1/blok1_group1/P110" type="string"/>
+      <bind nodeset="/coba/izin" required="true()" type="select1"/>
+      <bind nodeset="/coba/P301" required="true()" type="select1"/>
+      <bind nodeset="/coba/P304" required="true()" type="select1"/>
+      <bind nodeset="/coba/P305" type="select1"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/coba/metadata/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/coba/metadata/end" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/coba/metadata/today" type="date"/>
+      <bind nodeset="/coba/metadata/note_start" readonly="true()" type="string"/>
+      <bind nodeset="/coba/metadata/note_end" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/coba/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/coba/blok1">
+      <label>Blok I</label>
+      <select1 appearance="minimal" ref="/coba/blok1/P101">
+        <label>Provinsi</label>
+        <item>
+          <label>DKI JAKARTA</label>
+          <value>31</value>
+        </item>
+      </select1>
+      <select1 appearance="minimal" ref="/coba/blok1/P102">
+        <label>Kabupaten</label>
+        <itemset nodeset="instance('kabs')/root/item[prov= /coba/blok1/P101 ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="minimal" ref="/coba/blok1/P103">
+        <label>Kecamatan</label>
+        <itemset nodeset="instance('kecs')/root/item[kab= /coba/blok1/P102 ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="minimal" ref="/coba/blok1/P104">
+        <label>Desa/Kelurahan</label>
+        <itemset nodeset="instance('des_kel')/root/item[kec= /coba/blok1/P103 ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/coba/blok1/P105">
+        <label>Klasifikasi Desa/Kelurahan</label>
+        <item>
+          <label>Perkotaan</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Perdesaan</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/coba/blok1/location" appearance="placement-map">
+        <label>Tandai lokasi responden di peta</label>
+      </input>
+      <group appearance="field-list" ref="/coba/blok1/blok1_group1">
+        <label>Blok I</label>
+        <input ref="/coba/blok1/blok1_group1/P106">
+          <label>Nomor blok sensus</label>
+        </input>
+        <input appearance="numbers" ref="/coba/blok1/blok1_group1/P107">
+          <label>Nomor kode sampel</label>
+        </input>
+        <input appearance="w2" ref="/coba/blok1/blok1_group1/P108">
+          <label>Nomor urut sampel rumah tangga</label>
+        </input>
+        <input ref="/coba/blok1/blok1_group1/P109">
+          <label>Nama kepala rumah tangga</label>
+        </input>
+        <input ref="/coba/blok1/blok1_group1/P110">
+          <label>Alamat(nama jalan/gang,RT/RW/dusun)</label>
+        </input>
+      </group>
+    </group>
+    <select1 appearance="minimal" ref="/coba/izin">
+      <label>Ketersediaan responden</label>
+      <item>
+        <label>Ya bersedia</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>Bersedia dengan perjanjian di lain waktu</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Tidak bersedia</label>
+        <value>3</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/coba/P301">
+      <label>Agama Mayoritas Sekitar</label>
+      <item>
+        <label>ISLAM</label>
+        <value>islam</value>
+      </item>
+      <item>
+        <label>KRISTEN</label>
+        <value>kristen</value>
+      </item>
+      <item>
+        <label>KATHOLIK</label>
+        <value>katholik</value>
+      </item>
+      <item>
+        <label>HINDU</label>
+        <value>hindu</value>
+      </item>
+      <item>
+        <label>BUDHA</label>
+        <value>budha</value>
+      </item>
+      <item>
+        <label>KONG HU CHU</label>
+        <value>konghucu</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/coba/P304">
+      <label>Jumlah warga mengibarkan</label>
+      <item>
+        <label>Hampir semua</label>
+        <value>&gt;75%</value>
+      </item>
+      <item>
+        <label>Sebagian besar</label>
+        <value>50-75%</value>
+      </item>
+      <item>
+        <label>Sebagian kecil</label>
+        <value>25-49%</value>
+      </item>
+      <item>
+        <label>Sedikit</label>
+        <value>&lt;25%</value>
+      </item>
+    </select1>
+    <select1 ref="/coba/P305">
+      <label>Intensitas musyawarah 1 th terakhir</label>
+      <item>
+        <label>Sangat sering</label>
+        <value>&gt;10</value>
+      </item>
+      <item>
+        <label>Sering</label>
+        <value>3sd10</value>
+      </item>
+      <item>
+        <label>Jarang</label>
+        <value>1sd1</value>
+      </item>
+      <item>
+        <label>Tak Pernah</label>
+        <value>0</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/coba/metadata">
+      <label>metadata</label>
+      <input appearance="display" ref="/coba/metadata/note_start">
+        <label>Start : <output value=" /coba/metadata/start "/></label></input>
+      <input appearance="display" ref="/coba/metadata/note_end">
+        <label>End : <output value=" /coba/metadata/end "/></label></input>
+    </group>
+  </h:body>
+</h:html>

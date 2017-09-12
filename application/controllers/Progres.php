@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Progres extends MY_Controller {
 
-	public function index($id_proj = '')
+	public function index($id_proj = '', $wil_filter = '')
 	{
 
 		$this->cekParam($id_proj);
@@ -20,8 +20,10 @@ class Progres extends MY_Controller {
 		$survei->setProj($id_proj);
 
 		// check user monitoring scope
-		$wil_filter = $this->wilFilter();
-		$area = $wil_filter != '' ? $locName->getNamaWil($wil_filter) : 'Nasional';
+		if ($wil_filter == '') {
+
+			$wil_filter = $this->wilFilter();
+		}
 
 		// name
 		$namaSurvei = $survei->getNama();
@@ -31,9 +33,7 @@ class Progres extends MY_Controller {
 			'id_proj' => $id_proj,
 			'namaSurvei' => $namaSurvei,
 			'wil' => $wil_filter,
-			'area' => $this->location_name->getNamaWil($wil_filter),
-			'jenisWil' => $survei->cekId($wil_filter)['jenis'],
-			'colJenis' => $survei->cekId($wil_filter)['col'],
+			'area' => $this->location_name->getNamaWil($this->wilFilter()),
 			'datatableId' => 'tabel-progres'
 			);
 

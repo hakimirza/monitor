@@ -50,6 +50,7 @@ class Home extends MY_Controller {
 			$input = $survei->countAllData();
 			$target_input = $target->getTotalTarget();
 			$progres = round(($input/$target_input* 100), 1);
+			$progres = $progres > 100 ? 100 : $progres;
 
 			// check user monitoring scope
 			$wil_filter = $this->wilFilter();
@@ -57,6 +58,7 @@ class Home extends MY_Controller {
 			$input = $survei->countData();
 			$target_input = $target->getTarget($wil_filter);
 			$progres_wil = round(($input/$target_input* 100), 1);
+			$progres_wil = $progres_wil > 100 ? 100 : $progres_wil;
 
 			$arr['id'] = $project['id'];
 			$arr['name'] = $project['name'];

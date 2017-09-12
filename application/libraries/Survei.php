@@ -5,7 +5,7 @@ class Survei extends CI_Controller {
 
 	// SET SUPER GLOBAL
 	var $ci = NULL;	
-	private $id_proj; //for testing only
+	private $id_proj;
 	private $project;
 	private $kues;
 	private $uuids;

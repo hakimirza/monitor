@@ -55,5 +55,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['dasbor/(:num)'] = 'dasbor/index/$1';
 $route['progres/(:num)'] = 'progres/index/$1';
+$route['progres/(:num)/(:num)'] = 'progres/index/$1/$2';
+$route['petugas/(:num)'] = 'petugas/index/$1';
 $route['tabulasi/(:num)'] = 'tabulasi/index/$1';
 $route['logout'] = 'login/logout';

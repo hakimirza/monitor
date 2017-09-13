@@ -54,7 +54,7 @@ class Tabulasi extends MY_Controller {
 
 		$data = $survei->getData();
 
-		$data = $this->splitRuta($data);
+		$data = $survei->splitRuta($data);
 
 		echo json_encode($data);
 	}
@@ -102,93 +102,4 @@ class Tabulasi extends MY_Controller {
 			// $result = str_replace('"',"'",$result);
 			echo $result;
 	}
-
-	private function splitRuta($data){
-
-		$group = array();
-		$indiv = array();
-		$arrKey = array();
-
-		foreach ($data as $uuid => $row) {
-
-			$arrTemp = array();
-			
-			// insert array to $group
-			foreach ($row as $tag => $value) {
-
-				if (!is_array($value)) {
-
-					// $group[$uuid][$tag] = $value;
-					$arrTemp[$tag] = $value;
-				}
-				else{
-
-					$arrKey[$tag] = $tag;
-				}
-			}
-
-			array_push($group, $arrTemp);
-			
-			// get roster length
-			$n = 0;
-			foreach ($row as $value) {
-
-				if (is_array($value)) {
-
-					$n = count($value);
-					break;
-				}
-			}
-
-			// insert array to $indiv
-			if ($n > 0) {
-
-				for ($i=0; $i < $n ; $i++) { 
-
-					$arrTemp = array();
-
-					foreach ($row as $tag => $value) {
-
-						if (!is_array($value)) {
-
-							// $indiv[$uuid][$tag] = $value;
-							$arrTemp[$tag] = $value;
-						}
-						else{
-
-							// $indiv[$uuid][$tag] = $value[$i];
-							$arrTemp[$tag] = $value[$i];
-						}
-					}
-
-					array_push($indiv, $arrTemp);
-				}
-			}
-			else{
-
-				$arrTemp = array();
-
-				foreach ($row as $tag => $value) {
-
-					$arrTemp[$tag] = $value;
-				}
-
-				array_push($indiv, $arrTemp);
-			}
-		}
-
-		// $group fitting
-		foreach ($group as $i => $row) {
-			
-			$group[$i] = array_diff_key($group[$i], $arrKey);
-		}
-
-		$result['group'] = $group;
-		$result['indiv'] = $indiv;
-
-		// will contain 2 arrays each for individuals data and households data
-		return $result;
-	} 
-	// splitRuta
-
 }

@@ -60,15 +60,60 @@ class Petugas extends MY_Controller {
 		echo json_encode($data);
 	}
 
-	public function dataXtra($id_proj, $id_pcl, $wil = ''){
+	// web service chart
+	public function dataXtra($id_proj, $id_pcl, $type, $wil = ''){
 
 		$this->load->library('PCL');
 
 		$pcl = new PCL();
 		$pcl->setProj($id_proj, $wil);
 
-		$data = $pcl->pclChart($id_pcl, $wil);
+		if ($type == 'chart') {
+
+			$data = $pcl->pclChart($id_pcl, $wil);
+		}
+		else if($type == 'loc'){
+
+			$data = $pcl->getPclLoc($id_pcl);
+		}
 
 		echo json_encode($data);
 	}
+
+	public function lihat_data($id_proj, $wil, $idpcl, $type = ''){
+
+		$this->load->library('survei');
+		$this->load->model('petugas_model');
+
+		$survei = new Survei();
+		$survei->setProj($id_proj);
+
+		$survei->setData($wil);
+
+		$data = $survei->getData();
+		$data = $survei->splitRuta($data);
+
+		$data = $type == 'individu' ? $data['indiv'] : $data['group'];
+		$tipe = $type == 'individu' ? 'Individu' : 'Grup'; 
+		$alt = $type == 'individu' ? 'grup' : 'individu'; 
+
+		$namaSurvei = $survei->getNama();
+		$namapcl = $this->petugas_model->getAName($idpcl);
+
+		$var = array(
+			'title' => 'Lihat Data',
+			'type' => $tipe,
+			'alt' => $alt,
+			'id_proj' => $id_proj,
+			'wil' => $wil,
+			'idpcl' => $idpcl,
+			'namapcl' => $namapcl,
+			'namaSurvei' => $namaSurvei,
+			'data' => $data
+			);			
+
+		$this->load->view('templates/header', $var);
+		$this->load->view('rawdata', $var);
+	}
+
 }

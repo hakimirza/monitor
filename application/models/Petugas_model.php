@@ -21,7 +21,7 @@ class Petugas_model extends CI_Model {
 		$this->db->join('team_target tt', 'tu.id_team = tt.id_team');
 		$this->db->where('t.id_project', $id_proj);
 		$this->db->where('tu.is_kortim', 0);
-		$this->db->group_by("u.id");
+		$this->db->group_by('u.id');
 		$query = $this->db->get();
 
 		return $query;
@@ -36,6 +36,33 @@ class Petugas_model extends CI_Model {
 		$query = $this->db->get();
 
 		return $query;
+	}
+
+	// insert survei object
+	public function getPclLoc($id, $survei){
+
+		$project = $survei->getProject();
+		$table = $project['sampling_table'];
+
+		$this->db->select('tb.id_pcl, z.idprovinsi AS idprov, z.idkabupaten AS idkab, z.idkecamatan AS idkec, z.iddesa AS iddes, z.nobloksensus AS bs');
+		$this->db->from('team_bloksensus tb, '.$table.' z');
+		$this->db->where('tb.id_pcl', $id);
+		$this->db->where('tb.id_bloksensus = z.skit_id');
+		$query = $this->db->get();
+
+		return $query;
+	}
+
+	public function getAName($id){
+
+		$this->db->select('firstname, lastname');
+		$this->db->from('user u');
+		$this->db->where('u.id',$id);
+		$query = $this->db->get();
+		$result = $query->row_array();
+		$name = $result['firstname'].' '.$result['lastname'];
+
+		return $name;
 	}
 
 }

@@ -149,4 +149,48 @@ class PCL extends CI_Controller {
 			return false;
 		}
 	}
+
+	public function getPclLoc($id){
+
+		$survei = $this->survei;
+		$target = $survei->getTarget();
+		$this->ci->load->model('location_name');
+		$loc = $this->ci->location_name;
+
+		$query = $this->ci->petugas_model->getPclLoc($id, $survei);
+		$result = $query->result_array();
+		$data = array();
+
+		foreach ($result as $row) {
+
+			$idprov = $row['idprov'];
+			$idkab = str_pad($row['idkab'], 2, "0", STR_PAD_LEFT);
+			$idkec = str_pad($row['idkec'], 3, "0", STR_PAD_LEFT);
+			$iddes = str_pad($row['iddes'], 3, "0", STR_PAD_LEFT);
+
+			$idkab = $idprov.$idkab;
+			$idkec = $idkab.$idkec;
+			$iddes = $idkec.$iddes;
+			$bs = $iddes.$row['bs'];
+
+			$r = array(
+				'id' => $row['id_pcl'],
+				'idprov' => $idprov,
+				'idkab' => $idkab,
+				'idkec' => $idkec,
+				'iddes' => $iddes,
+				'idbs' => $bs,
+				'prov' => $loc->getNamaWil($idprov),
+				'kab' => $loc->getNamaWil($idkab),
+				'kec' => $loc->getNamaWil($idkec),
+				'des' => $loc->getNamaWil($iddes),
+				'bs' => $row['bs'],
+				'target' => $target->getTarget($bs)
+				);
+
+			array_push($data, $r);
+		}
+
+		return $data;
+	}
 }

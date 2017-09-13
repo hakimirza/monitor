@@ -2,7 +2,8 @@
 
     var id_proj = '<?= $id_proj ?>';
 // state of now-selected locus
-var idNow = '';
+var idNow = '<?= $wil ?>';
+var uriProg = '<?= base_url() ?>progres/'+ id_proj +'/';
 
 //  ====================================
 // get parents
@@ -52,8 +53,8 @@ function table_init(data, wil){
         var progres = item.input/item.target*100;
         progres = Math.round(progres * 100)/100;
 
-        var urlProv = '<?= base_url() ?>progres/'+ id_proj +'/' + item.idprov;
-        var urlKab = '<?= base_url() ?>progres/'+ id_proj +'/' + item.idkab;
+        var urlProv = uriProg + item.idprov;
+        var urlKab = uriProg + item.idkab;
 
         var $tr = $('<tr id="'+ item.id +'">').append(
             $('<td>').text(i+1),
@@ -71,7 +72,7 @@ function table_init(data, wil){
                 </div>`),
             $('<td>').append(`
                 <button class="btn btn-default" type="button">
-                 <i class="icon fa fa-line-chart"></i>
+                 <i class="icon fa fa-caret-down"></i>
              </button>
              `)
             );
@@ -84,14 +85,7 @@ function table_init(data, wil){
 colorPos();
 
 // removing redundant cols
-if (wil.length >= 2) {
-
-    $( ".colwil1" ).remove();
-} 
-if (wil.length == 4 ){
-
-    $( ".colwil2" ).remove();
-}
+colRemover();
 
 // init datatable
 var table = $('#tabel-petugas').DataTable({
@@ -105,15 +99,30 @@ $.each(data, function(i, item) {
         // extra info
         var tr = $('#'+item.id);
         var row = table.row( tr );
-        var content = item.input != 0 ? placeXtra(item.id) : 'Petugas belum mengirim kuesioner';
+        var content1 = placeLoc(item.id);
+        var content2 = item.input != 0 ? placeXtra(item.id) : '<span class="badge bg-yellow"><i class="icon fa fa-warning"></i></span> Petugas belum mengirim kuesioner';
         
-        row.child(content);
+        row.child(content1 + content2);
+
     });
 
 tableListener(table);
 
 }
 // end table_init
+
+function colRemover(){
+
+    // removing redundant cols
+    if (String(idNow).length >= 2) {
+
+        $( ".colwil1" ).remove();
+    } 
+    if (String(idNow).length == 4 ){
+
+        $( ".colwil2" ).remove();
+    }
+}
 
 function tableListener(table){
 
@@ -130,7 +139,8 @@ function tableListener(table){
         }
         else {
             // Open this row
-            xtra(id);
+            chart(id);
+            beban(id);
             row.child.show();
             // tr.addClass('shown');
         }
@@ -145,13 +155,13 @@ function tableListener(table){
     var line1 = new Array();
     var line2 = new Array();
 
-    function xtra (id) {
+    function chart(id) {
 
         var currentReq = null;
 
         currentReq = $.ajax({
           type: 'GET',
-          url: '<?= base_url() ?>petugas/dataXtra/'+ id_proj + '/' + id + '/' + idNow,
+          url: '<?= base_url() ?>petugas/dataXtra/'+ id_proj + '/' + id + '/' + 'chart' + '/' + idNow,
           datatype: 'json',
           success: function(result){
 
@@ -182,6 +192,50 @@ function tableListener(table){
 });
     }
 
+    function beban(id){
+
+        currentReq = $.ajax({
+          type: 'GET',
+          url: '<?= base_url() ?>petugas/dataXtra/'+ id_proj + '/' + id + '/' + 'loc' + '/' + idNow,
+          datatype: 'json',
+          success: function(result){
+
+            var data = JSON.parse(result);
+            fillBeban(data);
+            colRemover();
+
+        },
+        error: function(){
+            console.log('There was a problem with beban request.');
+        }
+    });
+    }
+
+    function fillBeban(data){
+
+        $.each(data, function(i, item) {
+
+            var urlProv = uriProg + item.idprov;
+            var urlKab = uriProg + item.idkab;
+            var urlKec = uriProg + item.idkec;
+            var urlDes = uriProg + item.iddes;
+
+            var $tr = $('<tr id="'+ item.id +'">').append(
+                $('<td>').text(i+1),
+                $('<td class="colwil1">').append('<a href="'+ urlProv +'" title = "'+ item.idprov +'">' + item.prov + '</a>'),
+                $('<td class="colwil2">').append('<a href="'+ urlKab +'" title = "'+ item.idkab +'">' + item.kab + '</a>'),
+                $('<td>').append('<a href="'+ urlKec +'" title = "'+ item.idkec +'">' + item.kec + '</a>'),
+                $('<td>').append('<a href="'+ urlDes +'" title = "'+ item.iddes +'">' + item.des + '</a>'),
+                $('<td>').text(item.bs),
+                $('<td>').text(item.target),
+                $('<td>').append('<a href="<?= base_url() ?>petugas/lihat_data/'+ id_proj +'/'+ item.idbs +'/'+ item.id +'" title="Lihat data"><i class="icon fa fa-eye"></i></a>')
+                );
+
+            $('#beban_'+item.id).empty();
+            $tr.appendTo('#beban_'+item.id);
+        });
+    }
+
     function replaceData(chart, label, data) {
 
         if (label !== '') chart.data.labels = label;
@@ -192,31 +246,60 @@ function tableListener(table){
         console.log('chart updated');
     }
 
-    function placeXtra (id){
+    function placeLoc(id){
 
         return `
         <div class="row">
-          <div class="col-lg-4 col-xs-4">
-            <div class="box box-success">
-              <div class="box-header with-border">
-                <h3 class="box-title">Input Harian</h3>
-            </div>
-            <div class="box-body">
-
-                <canvas id="line_input`+ id +`" ></canvas>
+            <div class="col-lg-8 col-xs-8">
+                <h5><i class="icon fa fa-map-pin"></i> Beban cacah</h5>
+                <div class="row">
+                  <div class="col-md-12">
+                    <table class="table table-condensed">
+                        <thead>
+                            <th>No</th>
+                            <th class="colwil1">Provinsi</th>
+                            <th class="colwil2">Kabupaten</th>
+                            <th>Kecamatan</th>
+                            <th>Desa</th>
+                            <th>Blok Sensus</th>
+                            <th>Target</th>
+                            <th></th>
+                        </thead>
+                        <tbody id="beban_`+ id +`">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-4 col-xs-4">
-        <div class="box box-warning">
+    </div><hr>
+    `;
+}
+
+function placeXtra(id){
+
+    return `
+    <div class="row">
+      <div class="col-lg-4 col-xs-4">
+        <div class="box box-success">
           <div class="box-header with-border">
-            <h3 class="box-title">Rata-Rata Durasi Wawancara Harian(menit)</h3>
+            <h3 class="box-title">Input Harian</h3>
         </div>
         <div class="box-body">
 
-            <canvas id="line_durasi`+ id +`" ></canvas>
+            <canvas id="line_input`+ id +`" ></canvas>
         </div>
     </div>
+</div>
+<div class="col-lg-4 col-xs-4">
+    <div class="box box-warning">
+      <div class="box-header with-border">
+        <h3 class="box-title">Rata-Rata Durasi Wawancara Harian(menit)</h3>
+    </div>
+    <div class="box-body">
+
+        <canvas id="line_durasi`+ id +`" ></canvas>
+    </div>
+</div>
 </div>
 <div class="col-lg-3 col-xs-3">
     <div class="box box-default">

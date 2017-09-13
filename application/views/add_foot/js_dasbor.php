@@ -319,7 +319,6 @@ function isMarkerInsidePolygon(marker, poly) {
           },
           complete: function() {
 
-            // $('#line_inputHarian, #line_durasiCacah').empty();
             if(typeof donat !== 'undefined'){
 
               replaceData(donat, '', dataIzin);

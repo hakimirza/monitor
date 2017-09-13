@@ -30,6 +30,11 @@ class Survei extends CI_Controller {
 		$this->setVars();
 	}
 
+	public function setUuid($uuid){
+
+		$this->uuids = $uuid;
+	}
+
 	private function setVars(){
 
 		$this->project = $this->ci->project_model->getProject($this->id_proj);

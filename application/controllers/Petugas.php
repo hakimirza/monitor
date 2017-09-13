@@ -48,14 +48,26 @@ class Petugas extends MY_Controller {
 		$this->load->view('templates/closer');		
 	}
 
-	public function data($id_proj, $id_wil = ''){
+	public function data($id_proj, $wil = ''){
 
 		$this->load->library('PCL');
 
 		$pcl = new PCL();
-		$pcl->setProj($id_proj, $id_wil);
+		$pcl->setProj($id_proj, $wil);
 
 		$data = $pcl->getPcl();
+
+		echo json_encode($data);
+	}
+
+	public function dataXtra($id_proj, $id_pcl, $wil = ''){
+
+		$this->load->library('PCL');
+
+		$pcl = new PCL();
+		$pcl->setProj($id_proj, $wil);
+
+		$data = $pcl->pclChart($id_pcl, $wil);
 
 		echo json_encode($data);
 	}

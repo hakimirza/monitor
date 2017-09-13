@@ -7,11 +7,14 @@ class PCL extends CI_Controller {
 	var $ci = NULL;
 	private $id_proj;
 	private $pcl;
+	private $pclIdOnly;
+	private $survei;
 
 	public function __construct() {
 
 		$this->ci =& get_instance();
 		$this->ci->load->model('petugas_model');
+		$this->ci->load->library('Survei');
 	}
 
 	public function getPcl(){
@@ -22,7 +25,41 @@ class PCL extends CI_Controller {
 	public function setProj($id_proj, $wil = ''){
 
 		$this->id_proj = $id_proj;
+
+		$this->survei = new Survei();
+		$this->survei->setProj($id_proj);
+
 		$this->setPcl($wil);
+	}
+
+	public function getUuidPclArray(){
+
+		$ids = $this->pclIdOnly;
+		$idUuid = array();
+
+		foreach ($ids as $id) {
+
+			$arr = $this->getUuidAPcl($id);
+			$idUuid[$id] = $arr;
+		}
+
+		return $idUuid;
+	}
+
+	private function getUuidAPcl($id){
+
+		$proj = $this->id_proj;
+
+		$arr = array();			
+		$query = $this->ci->petugas_model->getUuidPcl($id, $proj);
+		$result = $query->result_array();
+
+		foreach ($result as $row) {
+
+			array_push($arr, $row['uuid']);
+		}
+
+		return $arr;
 	}
 
 	private function setPcl($wil = ''){
@@ -34,6 +71,7 @@ class PCL extends CI_Controller {
 		$data = array();
 
 		foreach ($query->result_array() as $row) {
+			
 			$r = array(
 				'id' => $row['id'],
 				'name' => ucwords($row['firstname'].' '.$row['lastname']),
@@ -45,23 +83,38 @@ class PCL extends CI_Controller {
 				'tim' => $row['team_name'],
 				'input' => intval($row['input']),
 				'target' => intval($row['target_pcl'])
- 				);
+				);
+
 			array_push($data, $r);
 		}
 
-		$this->pcl = $data;
+		$pcls = $data;
 
 		if ($wil != '') {
 
-			$this->pcl = $this->filterPcl($wil);
+			$pcls = $this->filterPcl($pcls, $wil);
 		}
+
+		$this->pcl = $pcls;
+		$this->setPclIdOnly($pcls);
+	}
+
+	private function setPclIdOnly($pcls){
+
+		$ids = array();
+
+		foreach ($pcls as $pcl) {
+
+			array_push($ids, $pcl['id']);
+		}
+
+		$this->pclIdOnly = $ids;
 	}
 
 	// filter pcl by id wilayah
-	private function filterPcl($wil){
+	private function filterPcl($pcls, $wil){
 
 		$pclNew = array();
-		$pcls = $this->pcl;
 
 		foreach ($pcls as $pcl) {
 
@@ -74,9 +127,26 @@ class PCL extends CI_Controller {
 		return $pclNew;
 	}
 
-	private function pclPerform(){
+	public function pclChart($id, $wil){
+		
+		$uu = $this->getUuidAPcl($id);
 
-		$pcl = $this->pcl;
+		$survei = $this->survei;
 
+		if (count($uu) > 0) {
+
+				$survei->setUuid($uu);
+				$survei->setData($wil);
+
+				$arr['donatIzin'] = $survei->getIzin();
+				$arr['lineInput'] = $survei->splitCount();
+				$arr['lineDur'] = $survei->splitAvgDur();
+				
+				return $arr;
+		}
+		else {
+
+			return false;
+		}
 	}
 }

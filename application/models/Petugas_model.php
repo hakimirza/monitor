@@ -27,6 +27,17 @@ class Petugas_model extends CI_Model {
 		return $query;
 	}
 
+	public function getUuidPcl($pcl, $id_proj){
+
+		$this->db->select('uuid_aggregate AS uuid');
+		$this->db->from('data_publish');
+		$this->db->where('id_user', $pcl);
+		$this->db->where('id_project', $id_proj);
+		$query = $this->db->get();
+
+		return $query;
+	}
+
 }
 
 ?>

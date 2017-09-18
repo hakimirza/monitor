@@ -69,7 +69,7 @@ Files GeoJSON berikut dibutuhkan untuk menampilkan poligon pada peta:
 -- Detail Progres
 -- Petugas Cacah
 -- Tabulasi
-- Untuk panduan _end user_ dan informasi lebih lanjut, silakan lihat pada [wiki](https://git.stis.ac.id/hakimirza/monitor/wikis)
+- Untuk panduan _end user_ dan informasi lebih lanjut, silakan lihat pada **[WIKI](https://git.stis.ac.id/hakimirza/monitor/wikis)**
 
 ## Dibangun dengan ##
 - [PHP 5.6.15](http://php.net/manual/en/intro-whatis.php)
@@ -78,5 +78,5 @@ Files GeoJSON berikut dibutuhkan untuk menampilkan poligon pada peta:
 - [Leaflet](http://leafletjs.com/)
 - [PivotTable.js](https://pivottable.js.org/examples/)
 
-## Presentasi ##
+***
 - [Download](https://drive.google.com/file/d/0Bw48i1lVhgKedzIySmJveFhSYXM/view?usp=sharing) presentasi program

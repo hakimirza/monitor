@@ -56,12 +56,18 @@ Pilih  tab `Push` -> `Connect` -> pada dialog yang muncul isi `URL` dengan url O
 Kemudian pilih form **SUSENAS 16** yang sudah diupload sebelumnya -> tekan `Push`
 ![briefcase3](https://git.stis.ac.id/hakimirza/monitor/uploads/d25d65fc91b4c267a2b61a1f07f0eebd/briefcase3.PNG)
 
+### Download GeoJSON ###
+Files GeoJSON berikut dibutuhkan untuk menampilkan poligon pada peta:
+- Unduh files [di sini](https://drive.google.com/drive/folders/0Bw48i1lVhgKeaWExR3VQNEhydDg?usp=sharing)
+- Tempatkan semua files tersebut pada folder ```dist/map/``` **tanpa** mengubah nama files
+
 ## Menjalankan Aplikasi ##
 - Aktifkan Server **Tomcat** (hasil rangkaian instalasi ODK Aggregate), pastikan halaman ```localhost:8080/ODKAggregate/``` pada browser menampilkan halaman utama ODK Aggregate.
 - Buka url project monitoring anda, misal `localhost/monitor` pada browser.
-- Aplikasi memiliki tiga fitur utama yakni : 
+- Aplikasi memiliki empat fitur utama yakni : 
 -- Dasbor
 -- Detail Progres
+-- Petugas Cacah
 -- Tabulasi
 - Untuk panduan _end user_ dan informasi lebih lanjut, silakan lihat pada [wiki](https://git.stis.ac.id/hakimirza/monitor/wikis)
 
@@ -71,3 +77,6 @@ Kemudian pilih form **SUSENAS 16** yang sudah diupload sebelumnya -> tekan `Push
 - [Bootstrap](https://getbootstrap.com/)
 - [Leaflet](http://leafletjs.com/)
 - [PivotTable.js](https://pivottable.js.org/examples/)
+
+## Presentasi ##
+- [Download](https://drive.google.com/file/d/0Bw48i1lVhgKedzIySmJveFhSYXM/view?usp=sharing) presentasi program

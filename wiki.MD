@@ -23,24 +23,24 @@ Pada tabel, di samping kolom `Nama Survei`, setiap baris berisi:
 Informasi lain pada halaman **Home** adalah berupa nama pengguna yang sedang login serta daerah monitoringnya. Pada bagian kanan atas terdapat jam dan avatar pengguna yang bisa diklik untuk menampilkan tombol Log out.
 
 ![home](https://git.stis.ac.id/hakimirza/monitor/uploads/e11736ba490e1247a1fd5aab42de2882/home.PNG)
-Untuk melakukan navigasi ke halaman berikutnya, diawali dengan melakukan klik pada tombol di kolom terakhir salah satu baris pada tabel. Terdapat tiga halaman yang bisa dipilih, yakni : **Dasbor**, **Detail Progres**, dan **Tabulasi**
+Untuk melakukan navigasi ke halaman berikutnya, diawali dengan melakukan klik pada tombol di kolom terakhir salah satu baris pada tabel. Terdapat empat halaman yang bisa dipilih, yakni : **Dasbor**, **Detail Progres**, **Petugas Cacah** dan **Tabulasi**
 
-![homeNav](https://git.stis.ac.id/hakimirza/monitor/uploads/13297e3deaf1a030b6898524f31bdb89/homeNav.PNG)
+![homeNav](https://git.stis.ac.id/hakimirza/monitor/uploads/e20552d74cea24911bca76302c8a60bf/homeNav.PNG)
 
 ## Dasbor ##
 Halaman **Dasbor** berfungsi untuk menampilkan informasi umum mengenai survei yang berlangsung di daerah monitoring pengguna, di antara lain :
 - Input dan target pencacahan
-- Presentase progres input
-- Presentase alokasi waktu yang terpakai hingga saat itu
+- Persentase progres input
+- Persentase alokasi waktu yang terpakai hingga saat itu
 - *Countdown* hingga deadline pencacahan
 - Pie chart Ketersediaan Responden (Berhasil dicacah, tidak dapat ditemui, menolak)
 - Peta progres input dan *checkbox* untuk menampilkan posisi responden di peta
 
 ![dasborup](https://git.stis.ac.id/hakimirza/monitor/uploads/4374a82570c91ea33f55d8cd516f9b20/dasborup.png)
 
-Di bagian bawah dasbor terdapat dua *line chart* :
-- Line chart kuesioner masuk per hari
-- Line chart rata-rata durasi wawancara antar responden per hari (menit)
+Di bagian bawah dasbor terdapat dua *line charts* :
+- *Line chart* kuesioner masuk per hari
+- *Line chart* rata-rata durasi wawancara antar responden per hari (menit)
 
 ![dasbordown](https://git.stis.ac.id/hakimirza/monitor/uploads/e39d44931947d9ab606117095c0f870e/dasbordown.png)
 
@@ -66,6 +66,15 @@ Berikut ini adalah *alert* yang muncul jika data peta tidak tersedia atau gagal 
 
 ![progresErr](https://git.stis.ac.id/hakimirza/monitor/uploads/4c35814ccececa18cf53cf8d6a8001ad/progresErr.png)
 
+
+## Petugas Cacah ##
+Halaman Petugas Cacah berfungsi untuk keperluan monitoring progres dan performa pencacahan oleh petugas atau pencacah. Konten utama halaman ini merupakan tabel daftar pencacah yang sesuai dengan lokasi monitoring dari pengguna yang telah log in. Pengguna dapat menampilkan detail tambahan di setiap baris. Detail tambahan tersebut berisi daftar blok sensus beban cacah, line chart jumlah input harian, line chart rata-rata harian durasi pencacahan per responden, dan persentase ketersediaan responden.
+
+![pclmon](https://git.stis.ac.id/hakimirza/monitor/uploads/2abc8bce2ad6278c79600941e9704a8a/pcl.PNG)
+
+Pada daftar blok sensus beban cacah, terdapat tautan di setiap barisnya. Tautan tersebut mengarah ke halaman untuk menampilkan data respon lengkap yang telah masuk pada blok sensus tersebut. Berikut tampilan halaman untuk melihat data respon:
+
+![rawdata](https://git.stis.ac.id/hakimirza/monitor/uploads/07db62572782b88a55aa0d3b45b465e6/rawdata.PNG)
 
 ## Tabulasi ##
 Halaman **Tabulasi** berfungsi untuk melakukan tabulasi data pencacahan secara real-time. Tujuan utama adalah untuk mendeteksi kewajaran data yang masuk melalui variabel-variabel tertentu pada kuesioner, sesuai dengan preferensi pengguna. Tabulasi dilakukan dengan *drag and drop* variabel ke field baris atau kolom yang disediakan.

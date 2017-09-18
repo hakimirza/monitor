@@ -28,5 +28,9 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-workspace
 *.sublime-project
 
+#exclude everything
 dist/map/*
 user_guide/*
+
+#exception rule
+!dist/map/.gitkeep

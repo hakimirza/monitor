@@ -77,6 +77,3 @@ Files GeoJSON berikut dibutuhkan untuk menampilkan poligon pada peta:
 - [Bootstrap](https://getbootstrap.com/)
 - [Leaflet](http://leafletjs.com/)
 - [PivotTable.js](https://pivottable.js.org/examples/)
-
-***
-- [Download](https://drive.google.com/file/d/0Bw48i1lVhgKedzIySmJveFhSYXM/view?usp=sharing) presentasi program
